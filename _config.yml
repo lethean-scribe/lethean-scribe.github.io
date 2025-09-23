@@ -41,7 +41,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "HyperSocks"
+      author: "gandharan.scholar"
   - scope:
       path: ""
       type: "tutorials"
@@ -53,9 +53,9 @@ paginate: 5
 paginate_path: "/page:num/"
 
 # SEO
-author:
-  name: HyperSocks
-  email: lorenzo.86.campoli@gmail.com
+author: 
+  name: gandharan.scholar
+  email: delphic.node@proton.me
   twitter: __HyperSocks__
 
 # Social
