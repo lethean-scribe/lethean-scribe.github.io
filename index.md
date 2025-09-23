@@ -5,7 +5,8 @@ title: Home
 
 # Welcome to CFD Simulation Hub
 
-Your comprehensive resource for Computational Fluid Dynamics simulation techniques, tutorials, and problem-solving strategies.
+Your comprehensive resource for Computational Fluid Dynamics simulation
+techniques, tutorials, and problem-solving strategies.
 
 ## Latest Posts
 

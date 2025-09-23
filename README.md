@@ -1,6 +1,10 @@
 # CFD Content Pipeline: Automated Publishing with GitHub Pages and Jekyll
 
-This repository contains the setup for an automated content pipeline designed for publishing CFD (Computational Fluid Dynamics) related articles. The pipeline leverages GitHub Pages for hosting a Jekyll-based website and integrates with automation services like Zapier/IFTTT to automatically distribute content to platforms such as Medium, LinkedIn, and Twitter.
+This repository contains the setup for an automated content pipeline designed
+for publishing CFD (Computational Fluid Dynamics) related articles. The
+pipeline leverages GitHub Pages for hosting a Jekyll-based website and
+integrates with automation services like Zapier/IFTTT to automatically
+distribute content to platforms such as Medium, LinkedIn, and Twitter.
 
 ## Table of Contents
 
@@ -17,7 +21,11 @@ This repository contains the setup for an automated content pipeline designed fo
 
 ## Overview
 
-The goal of this project is to streamline the process of creating and distributing CFD-related content. By writing content once in Markdown, it can be automatically published to a personal blog hosted on GitHub Pages and then syndicated to various social media and blogging platforms. This saves time and ensures consistent content delivery across multiple channels.
+The goal of this project is to streamline the process of creating and
+distributing CFD-related content. By writing content once in Markdown, it can
+be automatically published to a personal blog hosted on GitHub Pages and then
+syndicated to various social media and blogging platforms. This saves time and
+ensures consistent content delivery across multiple channels.
 
 ## Features
 
@@ -84,8 +92,12 @@ Before you begin, ensure you have:
 
 This repository is configured for automatic deployment to GitHub Pages using GitHub Actions. 
 
-1.  **Create a new GitHub Repository:** Create a new public repository on GitHub named `your-username.github.io` (replace `your-username` with your actual GitHub username). This is crucial for GitHub Pages to work correctly.
-2.  **Push your code:** Push the contents of this `cfd-content-pipeline` directory to your new `your-username.github.io` repository.
+1.  **Create a new GitHub Repository:** Create a new public repository on
+    GitHub named `your-username.github.io` (replace `your-username` with your
+    actual GitHub username). This is crucial for GitHub Pages to work
+    correctly.
+2.  **Push your code:** Push the contents of this `cfd-content-pipeline`
+    directory to your new `your-username.github.io` repository.
     ```bash
     git remote set-url origin https://github.com/your-username/your-username.github.io.git
     git push -u origin main
@@ -93,17 +105,25 @@ This repository is configured for automatic deployment to GitHub Pages using Git
 3.  **Configure GitHub Pages:** Go to your repository settings on GitHub, navigate to 
 
 
-the "Pages" section, and ensure that GitHub Pages is configured to deploy from the `gh-pages` branch (which the GitHub Action will create and manage).
+the "Pages" section, and ensure that GitHub Pages is configured to deploy from
+the `gh-pages` branch (which the GitHub Action will create and manage).
 
-4.  **Monitor Deployment:** The `jekyll-gh-pages.yml` workflow in `.github/workflows/` will automatically build and deploy your Jekyll site whenever you push changes to the `main` branch. You can monitor the progress in the "Actions" tab of your GitHub repository.
+4.  **Monitor Deployment:** The `jekyll-gh-pages.yml` workflow in
+    `.github/workflows/` will automatically build and deploy your Jekyll site
+    whenever you push changes to the `main` branch. You can monitor the
+    progress in the "Actions" tab of your GitHub repository.
 
 ### Cross-Platform Automation (Zapier/IFTTT)
 
-Once your GitHub Pages site is live, you can set up automation workflows to distribute your content to other platforms. The key is to use your site's RSS feed as the trigger.
+Once your GitHub Pages site is live, you can set up automation workflows to
+distribute your content to other platforms. The key is to use your site's RSS
+feed as the trigger.
 
 Your RSS feed will typically be located at: `https://your-username.github.io/feed.xml`
 
-Refer to the `automation_instructions.md` file in this repository for detailed, step-by-step guides on configuring Zapier or IFTTT for Medium, LinkedIn, Twitter, and Reddit.
+Refer to the `automation_instructions.md` file in this repository for detailed,
+step-by-step guides on configuring Zapier or IFTTT for Medium, LinkedIn,
+Twitter, and Reddit.
 
 ### Content Creation Guide
 
@@ -156,9 +176,11 @@ cfd-content-pipeline/
 
 ### Example Content
 
-An example blog post, `2025-09-21-understanding-airfoil-cfd-simulation.md`, is included in the `_posts` directory. This post demonstrates the use of Markdown, images, and technical explanations relevant to CFD. It also includes an example image `airfoil_cfd_simulation.png` in the `assets/images` directory.
+An example blog post, `2025-09-21-understanding-airfoil-cfd-simulation.md`, is
+included in the `_posts` directory. This post demonstrates the use of Markdown,
+images, and technical explanations relevant to CFD. It also includes an example
+image `airfoil_cfd_simulation.png` in the `assets/images` directory.
 
 ---
 
 This pipeline provides a robust and efficient way to manage and distribute your CFD content. Happy writing!
-

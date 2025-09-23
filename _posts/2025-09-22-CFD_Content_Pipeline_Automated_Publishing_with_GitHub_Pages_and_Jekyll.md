@@ -170,4 +170,3 @@ An example blog post, `2025-09-21-understanding-airfoil-cfd-simulation.md`, is i
 ---
 
 This pipeline provides a robust and efficient way to manage and distribute your CFD content. Happy writing!
-
