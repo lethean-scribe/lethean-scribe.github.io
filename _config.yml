@@ -7,7 +7,7 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "hhttps://github.com/lethean-scribe/fragments-of-gnosis.github.io" 
 twitter_username: __HyperSocks__
-github_username: gandharan.scholar
+github_username: lethean-scribe
 
 # Build settings
 markdown: kramdown
@@ -41,7 +41,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "gandharan.scholar"
+      author: "lethean-scribe"
   - scope:
       path: ""
       type: "tutorials"
@@ -54,7 +54,7 @@ paginate_path: "/page:num/"
 
 # SEO
 author: 
-  name: gandharan.scholar
+  name: lethean-scribe
   email: delphic.node@proton.me
   twitter: __HyperSocks__
 
@@ -64,4 +64,4 @@ social:
   links:
     - https://x.com/__HyperSocks__
     - https://github.com/lethean-scribe
-    - https://www.linkedin.com/in/hyper-socks-a12474386/
+    - https://www.linkedin.com/in/hyper-socks-a12474386
