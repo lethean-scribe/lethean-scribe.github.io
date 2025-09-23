@@ -1,186 +1,336 @@
-# CFD Content Pipeline: Automated Publishing with GitHub Pages and Jekyll
+# Auto Publisher Blog
 
-This repository contains the setup for an automated content pipeline designed
-for publishing CFD (Computational Fluid Dynamics) related articles. The
-pipeline leverages GitHub Pages for hosting a Jekyll-based website and
-integrates with automation services like Zapier/IFTTT to automatically
-distribute content to platforms such as Medium, LinkedIn, and Twitter.
+🚀 **Write once, publish everywhere.** A Jekyll blog with automated cross-platform publishing to LinkedIn, Medium, Reddit, and X (Twitter).
 
-## Table of Contents
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?logo=github)](https://pages.github.com/)
+[![Jekyll](https://img.shields.io/badge/Jekyll-4.3-red?logo=jekyll)](https://jekyllrb.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub-Actions-blue?logo=github-actions)](https://github.com/features/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-1.  [Overview](#overview)
-2.  [Features](#features)
-3.  [Setup Instructions](#setup-instructions)
-    *   [Prerequisites](#prerequisites)
-    *   [Local Development Setup](#local-development-setup)
-    *   [GitHub Pages Deployment](#github-pages-deployment)
-    *   [Cross-Platform Automation (Zapier/IFTTT)](#cross-platform-automation-zapierifttt)
-4.  [Content Creation Guide](#content-creation-guide)
-5.  [Project Structure](#project-structure)
-6.  [Example Content](#example-content)
+## ✨ Features
 
-## Overview
+- **🔄 Automated Publishing**: Automatically share new blog posts to multiple social media platforms
+- **📝 Jekyll-Powered**: Beautiful, fast-loading static blog with Markdown support
+- **🎯 Smart Formatting**: Content automatically adapted for each platform's requirements
+- **⚙️ Flexible Configuration**: Control which posts go where with per-post settings
+- **🔒 Secure**: API credentials stored safely as GitHub Secrets
+- **📊 Built-in Analytics**: Track publishing success and engagement
+- **🎨 Responsive Design**: Mobile-friendly blog with modern styling
+- **🆓 Free Hosting**: Powered by GitHub Pages at no cost
 
-The goal of this project is to streamline the process of creating and
-distributing CFD-related content. By writing content once in Markdown, it can
-be automatically published to a personal blog hosted on GitHub Pages and then
-syndicated to various social media and blogging platforms. This saves time and
-ensures consistent content delivery across multiple channels.
+## 🌐 Supported Platforms
 
-## Features
+| Platform | Features | Content Type |
+|----------|----------|--------------|
+| **LinkedIn** | Professional networking, company pages | Articles, updates, professional content |
+| **Medium** | Long-form publishing, publications | In-depth articles, tutorials, thought leadership |
+| **Reddit** | Community engagement, subreddit targeting | Discussion starters, technical content |
+| **X (Twitter)** | Real-time updates, hashtag optimization | Quick updates, announcements, threads |
 
-*   **Jekyll-based Blog**: A fast, static website generated from Markdown files.
-*   **GitHub Pages Hosting**: Free and reliable hosting directly from your GitHub repository.
-*   **Automated Deployment**: GitHub Actions automatically builds and deploys your site on every push to the `main` branch.
-*   **RSS Feed Generation**: Automatically generates an RSS feed (`/feed.xml`) for easy content syndication.
-*   **Cross-Platform Publishing**: Instructions for setting up Zapier/IFTTT to push content to:
-    *   Medium (as new stories)
-    *   LinkedIn (as shared posts)
-    *   Twitter (as tweets)
-    *   Reddit (via notification for manual posting)
-*   **MathJax & Prism.js Integration**: Support for mathematical equations and code highlighting in your posts.
+## 🚀 Quick Start
 
-## Setup Instructions
+### 1. Fork This Repository
 
-Follow these steps to set up your own CFD content pipeline.
+Click the **"Fork"** button at the top of this page to create your own copy.
+
+### 2. Enable GitHub Pages
+
+1. Go to your forked repository's **Settings**
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **"Deploy from a branch"**
+4. Choose **main** branch and **/ (root)** folder
+5. Click **Save**
+
+Your blog will be available at `https://yourusername.github.io/auto-publisher-blog`
+
+### 3. Configure API Credentials
+
+Set up your social media API credentials following our [detailed setup guide](docs/api-setup.md).
+
+### 4. Create Your First Post
+
+Create a new file in the `_posts` directory with the format `YYYY-MM-DD-your-post-title.md`:
+
+```markdown
+---
+layout: post
+title: "Your Amazing Post Title"
+date: 2025-09-23 10:00:00 +0000
+categories: [blogging, automation]
+tags: [jekyll, social-media]
+excerpt: "A compelling summary of your post that will appear on social media."
+social_media:
+  linkedin: true
+  medium: true
+  reddit: 
+    enabled: true
+    subreddit: "programming"
+  twitter: 
+    enabled: true
+    hashtags: ["#blogging", "#automation"]
+---
+
+Your amazing content goes here!
+```
+
+### 5. Push and Publish
+
+Commit your new post and push to GitHub. The automation will automatically:
+
+1. Detect your new post
+2. Format it for each enabled platform
+3. Publish to your configured social media accounts
+4. Log the results for monitoring
+
+## 📖 Documentation
+
+- **[API Setup Guide](docs/api-setup.md)** - Step-by-step instructions for configuring each platform
+- **[Configuration Reference](docs/configuration.md)** - Detailed configuration options
+- **[Troubleshooting Guide](docs/troubleshooting.md)** - Common issues and solutions
+- **[Advanced Features](docs/advanced.md)** - Power user features and customizations
+
+## 🛠️ Local Development
 
 ### Prerequisites
 
-Before you begin, ensure you have:
+- Python 3.8+
+- Git
+- Text editor
 
-*   A GitHub account.
-*   Basic familiarity with Git and GitHub.
-*   Accounts on Medium, LinkedIn, and Twitter (optional, but recommended for full automation).
-*   An account with Zapier, IFTTT, or Make.com (for cross-platform automation).
+### Setup
 
-### Local Development Setup
+1. **Clone your forked repository:**
+   ```bash
+   git clone https://github.com/yourusername/auto-publisher-blog.git
+   cd auto-publisher-blog
+   ```
 
-1.  **Clone this repository:**
-    ```bash
-    git clone https://github.com/your-username/cfd-content-pipeline.git
-    cd cfd-content-pipeline
-    ```
-    *(Note: You will need to create a new repository on GitHub and push this content to it. Replace `your-username` with your GitHub username.)*
+2. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2.  **Install Ruby and Bundler:**
-    Jekyll is built with Ruby. If you don't have Ruby installed, follow the instructions for your operating system. On Ubuntu, you can use:
-    ```bash
-    sudo apt update
-    sudo apt install -y ruby-full build-essential zlib1g-dev
-    ```
-    Then, set up your gem environment and install Bundler:
-    ```bash
-    echo 'export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"' >> ~/.bashrc
-    source ~/.bashrc # Or restart your terminal
-    gem install --user-install bundler jekyll
-    ```
+3. **Copy environment template:**
+   ```bash
+   cp .env.example .env
+   ```
 
-3.  **Install Jekyll Dependencies:**
-    Navigate to the project directory and install the required gems:
-    ```bash
-    bundle install
-    ```
+4. **Configure your credentials in `.env`** (see [API Setup Guide](docs/api-setup.md))
 
-4.  **Run Jekyll Locally:**
-    To preview your site locally, run:
-    ```bash
-    bundle exec jekyll serve
-    ```
-    Your site will be accessible at `http://localhost:4000`.
+5. **Test your integration:**
+   ```bash
+   python scripts/test_integration.py --credentials-only
+   ```
 
-### GitHub Pages Deployment
+### Testing
 
-This repository is configured for automatic deployment to GitHub Pages using GitHub Actions. 
+Run the integration tester to verify your setup:
 
-1.  **Create a new GitHub Repository:** Create a new public repository on
-    GitHub named `your-username.github.io` (replace `your-username` with your
-    actual GitHub username). This is crucial for GitHub Pages to work
-    correctly.
-2.  **Push your code:** Push the contents of this `cfd-content-pipeline`
-    directory to your new `your-username.github.io` repository.
-    ```bash
-    git remote set-url origin https://github.com/your-username/your-username.github.io.git
-    git push -u origin main
-    ```
-3.  **Configure GitHub Pages:** Go to your repository settings on GitHub, navigate to 
+```bash
+# Test credentials only
+python scripts/test_integration.py --credentials-only
 
+# Dry run (no actual posts)
+python scripts/test_integration.py
 
-the "Pages" section, and ensure that GitHub Pages is configured to deploy from
-the `gh-pages` branch (which the GitHub Action will create and manage).
+# Live test (publishes real test posts)
+python scripts/test_integration.py --live
 
-4.  **Monitor Deployment:** The `jekyll-gh-pages.yml` workflow in
-    `.github/workflows/` will automatically build and deploy your Jekyll site
-    whenever you push changes to the `main` branch. You can monitor the
-    progress in the "Actions" tab of your GitHub repository.
-
-### Cross-Platform Automation (Zapier/IFTTT)
-
-Once your GitHub Pages site is live, you can set up automation workflows to
-distribute your content to other platforms. The key is to use your site's RSS
-feed as the trigger.
-
-Your RSS feed will typically be located at: `https://your-username.github.io/feed.xml`
-
-Refer to the `automation_instructions.md` file in this repository for detailed,
-step-by-step guides on configuring Zapier or IFTTT for Medium, LinkedIn,
-Twitter, and Reddit.
-
-### Content Creation Guide
-
-1.  **Write in Markdown:** All your blog posts should be written in Markdown format (`.md` files).
-2.  **Location:** New blog posts go into the `_posts` directory. The filename format is crucial: `YYYY-MM-DD-your-post-title.md`.
-3.  **Front Matter:** Each post must start with YAML Front Matter, enclosed by `---` lines. This includes metadata like `title`, `date`, `categories`, `tags`, and `author`.
-    ```yaml
-    ---
-    layout: post
-    title: "Your Awesome CFD Tutorial Title"
-    date: 2025-09-21 10:00:00 -0500
-    categories: [CFD, Tutorials]
-    tags: [simulation, fluid dynamics, software]
-    author: "Your Name"
-    ---
-    ```
-4.  **Images:** Place any images for your posts in the `assets/images/` directory and reference them in your Markdown like `![Alt Text](/assets/images/your-image.png)`.
-5.  **Equations:** Use MathJax for rendering mathematical equations. Enclose inline equations with `$` (e.g., `$E=mc^2$`) and block equations with `$$` (e.g., `$$ \nabla \cdot \mathbf{u} = 0 $$`).
-6.  **Code Blocks:** Use standard Markdown fenced code blocks for code highlighting.
-    ````markdown
-    ```python
-    # Example Python code
-    print("Hello CFD!")
-    ```
-    ````
-
-### Project Structure
-
-```
-cfd-content-pipeline/
-├── .github/                 # GitHub Actions workflows
-│   └── workflows/
-│       └── jekyll-gh-pages.yml # Workflow for deploying to GitHub Pages
-├── _includes/               # Reusable HTML snippets (header, footer, social links)
-├── _layouts/                # HTML templates for pages and posts
-├── _posts/                  # Your blog posts (Markdown files)
-├── _sass/                   # Sass files for styling
-├── assets/                  # Static assets like CSS and images
-│   ├── css/
-│   │   └── main.scss        # Main stylesheet
-│   └── images/
-│       └── airfoil_cfd_simulation.png # Example image
-├── automation_instructions.md # Detailed guide for Zapier/IFTTT setup
-├── _config.yml              # Jekyll configuration file
-├── Gemfile                  # Ruby gem dependencies
-├── Gemfile.lock             # Locked gem versions
-├── index.md                 # Homepage content
-└── README.md                # This file
+# Test specific platforms
+python scripts/test_integration.py --platforms linkedin twitter
 ```
 
-### Example Content
+## ⚙️ Configuration
 
-An example blog post, `2025-09-21-understanding-airfoil-cfd-simulation.md`, is
-included in the `_posts` directory. This post demonstrates the use of Markdown,
-images, and technical explanations relevant to CFD. It also includes an example
-image `airfoil_cfd_simulation.png` in the `assets/images` directory.
+### Blog Configuration
+
+Edit `_config.yml` to customize your blog:
+
+```yaml
+title: Your Blog Name
+description: Your blog description
+url: "https://yourusername.github.io/auto-publisher-blog"
+
+# Social media automation settings
+social:
+  linkedin:
+    enabled: true
+  medium:
+    enabled: true
+  reddit:
+    enabled: true
+    subreddit: "programming"  # default subreddit
+  twitter:
+    enabled: true
+    include_hashtags: true
+```
+
+### Per-Post Configuration
+
+Control publishing for individual posts using front matter:
+
+```yaml
+social_media:
+  linkedin: true                    # Simple enable/disable
+  medium: true
+  reddit: 
+    enabled: true
+    subreddit: "webdev"            # Override default subreddit
+  twitter: 
+    enabled: true
+    hashtags: ["#coding", "#tips"]  # Custom hashtags
+```
+
+## 🔧 GitHub Actions Workflow
+
+The automation runs on GitHub Actions with the following triggers:
+
+- **Push to main branch** with changes in `_posts/`
+- **Manual trigger** via GitHub Actions UI
+- **Scheduled runs** (optional, configure in workflow file)
+
+### Workflow Steps
+
+1. **Detect Changes**: Identifies new or modified posts
+2. **Parse Content**: Extracts title, excerpt, tags, and social media settings
+3. **Parallel Publishing**: Publishes to all enabled platforms simultaneously
+4. **Rate Limiting**: Respects API limits to avoid account suspension
+5. **Error Handling**: Retries failed requests and logs detailed results
+6. **Notification**: Reports success/failure status
+
+## 🔒 Security & Privacy
+
+### Credential Management
+
+- **GitHub Secrets**: All API credentials stored as encrypted repository secrets
+- **No Hardcoding**: Never commit credentials to your repository
+- **Minimal Permissions**: Use least-privilege API access
+- **Regular Rotation**: Rotate tokens and passwords regularly
+
+### Best Practices
+
+- Use dedicated social media accounts for automation when possible
+- Monitor API usage to detect unauthorized access
+- Review and audit published content regularly
+- Keep dependencies updated for security patches
+
+## 📊 Analytics & Monitoring
+
+### Built-in Monitoring
+
+- **Publishing Logs**: Detailed success/failure tracking in GitHub Actions
+- **Rate Limit Monitoring**: Automatic rate limit compliance
+- **Error Reporting**: Comprehensive error logging and retry logic
+
+### External Analytics
+
+Integrate with your preferred analytics tools:
+
+- **Google Analytics**: Track blog traffic and engagement
+- **Social Media Analytics**: Monitor platform-specific performance
+- **Custom Dashboards**: Build dashboards using GitHub Actions logs
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+### Ways to Contribute
+
+- 🐛 **Report Bugs**: Found an issue? [Open an issue](https://github.com/yourusername/auto-publisher-blog/issues)
+- 💡 **Suggest Features**: Have an idea? [Start a discussion](https://github.com/yourusername/auto-publisher-blog/discussions)
+- 📖 **Improve Documentation**: Help make our guides clearer
+- 🔧 **Submit Code**: Fix bugs or add features via pull requests
+
+### Development Setup
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Make your changes and test thoroughly
+4. Commit with clear messages: `git commit -m 'Add amazing feature'`
+5. Push to your branch: `git push origin feature/amazing-feature`
+6. Open a Pull Request
+
+### Code Standards
+
+- Follow PEP 8 for Python code
+- Add docstrings to all functions and classes
+- Include tests for new features
+- Update documentation for any changes
+
+## 📋 Roadmap
+
+### Upcoming Features
+
+- [ ] **Additional Platforms**: Instagram, TikTok, YouTube Community posts
+- [ ] **Content Scheduling**: Delayed publishing and optimal timing
+- [ ] **A/B Testing**: Test different content variations
+- [ ] **Analytics Dashboard**: Built-in performance tracking
+- [ ] **Content Templates**: Reusable post templates
+- [ ] **Webhook Integration**: Real-time notifications
+- [ ] **Multi-language Support**: Internationalization features
+
+### Version History
+
+- **v1.0.0** - Initial release with core automation features
+- **v1.1.0** - Enhanced error handling and rate limiting
+- **v1.2.0** - Added Reddit and improved Twitter integration
+- **v2.0.0** - Complete rewrite with modular architecture
+
+## ❓ FAQ
+
+### General Questions
+
+**Q: Is this free to use?**
+A: Yes! The blog hosting (GitHub Pages) and automation (GitHub Actions) are free for public repositories.
+
+**Q: Do I need coding experience?**
+A: Basic familiarity with Git and Markdown is helpful, but detailed guides are provided for all setup steps.
+
+**Q: Can I customize the blog design?**
+A: Absolutely! The Jekyll theme is fully customizable. Edit the CSS, layouts, and templates as needed.
+
+### Technical Questions
+
+**Q: What happens if an API is down?**
+A: The system includes retry logic and will attempt to publish again. Failed posts are logged for manual review.
+
+**Q: Can I publish to only some platforms?**
+A: Yes! Use the `social_media` configuration in each post's front matter to control which platforms receive the content.
+
+**Q: How do I handle rate limits?**
+A: Built-in rate limiting automatically manages API calls to stay within platform limits.
+
+### Troubleshooting
+
+**Q: My posts aren't being published automatically.**
+A: Check the GitHub Actions logs for errors. Common issues include invalid API credentials or incorrect post formatting.
+
+**Q: I'm getting authentication errors.**
+A: Verify your API credentials are correctly configured in GitHub Secrets and haven't expired.
+
+For more help, see our [Troubleshooting Guide](docs/troubleshooting.md) or [open an issue](https://github.com/yourusername/auto-publisher-blog/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Jekyll Team** - For the amazing static site generator
+- **GitHub** - For free hosting and automation via GitHub Pages and Actions
+- **Social Media APIs** - For enabling automated publishing
+- **Open Source Community** - For inspiration and contributions
+
+## 📞 Support
+
+- 📖 **Documentation**: Check our comprehensive guides in the `docs/` folder
+- 💬 **Discussions**: Join conversations in [GitHub Discussions](https://github.com/yourusername/auto-publisher-blog/discussions)
+- 🐛 **Issues**: Report bugs via [GitHub Issues](https://github.com/yourusername/auto-publisher-blog/issues)
+- 📧 **Email**: For private inquiries, contact [your-email@example.com](mailto:your-email@example.com)
 
 ---
 
-This pipeline provides a robust and efficient way to manage and distribute your CFD content. Happy writing!
+**Ready to automate your content distribution?** [Get started now →](docs/api-setup.md)
+
+*Made with ❤️ by the Auto Publisher Blog community*
+

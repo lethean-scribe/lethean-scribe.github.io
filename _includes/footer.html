@@ -22,11 +22,12 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        <p>{{ site.description | escape }}</p>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <p>Automated publishing to LinkedIn, Medium, Reddit, and X (Twitter)</p>
+        <p><a href="{{ "/feed.xml" | relative_url }}">RSS Feed</a> | <a href="https://github.com/yourusername/auto-publisher-blog">GitHub</a></p>
       </div>
     </div>
 

@@ -1,0 +1,17 @@
+# Core dependencies
+requests>=2.31.0
+python-frontmatter>=1.0.0
+PyYAML>=6.0
+markdown>=3.4.0
+beautifulsoup4>=4.12.0
+python-dateutil>=2.8.0
+gitpython>=3.1.0
+
+# Social media platform APIs
+praw>=7.7.0          # Reddit API
+tweepy>=4.14.0       # Twitter API v2
+
+# Optional dependencies for enhanced functionality
+Pillow>=10.0.0       # Image processing
+python-dotenv>=1.0.0 # Environment variable management
+
