@@ -1,0 +1,67 @@
+# Site settings
+title: CFD Simulation Hub
+email: delphic.node@proton.me
+description: >-
+  Advanced CFD simulation techniques, tutorials, and problem-solving strategies.
+  Learn computational fluid dynamics from fundamentals to advanced applications.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "hhttps://github.com/lethean-scribe/fragments-of-gnosis.github.io" 
+twitter_username: __HyperSocks__
+github_username: gandharan.scholar
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "HyperSocks"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# SEO
+author:
+  name: HyperSocks
+  email: lorenzo.86.campoli@gmail.com
+  twitter: __HyperSocks__
+
+# Social
+social:
+  name: CFD Simulation Hub
+  links:
+    - https://x.com/__HyperSocks__
+    - https://github.com/lethean-scribe
+    - https://www.linkedin.com/in/hyper-socks-a12474386/
