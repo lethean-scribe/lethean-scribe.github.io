@@ -21,9 +21,10 @@
 * [Donate](#donate)
 * [License](#license)
 
-# Contributors
+## Contributors
 
-- [Lethean Scribe](https://github.com/lethean-scribe) – Project lead, architecture and content
+This project exists thanks to all the people who contribute!
+For a full list, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## Donate
 
