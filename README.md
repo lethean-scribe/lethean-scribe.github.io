@@ -21,11 +21,6 @@
 * [Donate](#donate)
 * [License](#license)
 
-## Contributors
-
-This project exists thanks to all the people who contribute!
-For a full list, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
-
 ## Donate
 
 You can also donate me a tea, I'll appreciate. Thank you!
