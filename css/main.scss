@@ -3,43 +3,95 @@
 ---
 @charset  "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 /*
- * variables
+ * Enhanced variables for improved design
  */
+ 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "reset", "header", "post", "page", "syntax-highlighting", "index", "demo", "footer", "scrollbar", "backToTop";
+
+// Enhanced Index styles are already included in the index import above
+
+// Additional global enhancements
+* {
+    box-sizing: border-box;
+}
+
+// Smooth scrolling for anchor links
+html {
+    scroll-behavior: smooth;
+}
+
+// Improved focus styles for accessibility
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #4d6dad;
+    outline-offset: 2px;
+}
+
+// Loading animation for theme transitions
+.theme-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Enhanced responsive images
+img {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+// Improved code blocks
+pre, code {
+    font-family: 'Fira Code', 'Monaco', 'Menlo', 'Consolas', monospace;
+}
+
+// Enhanced form elements
+input, textarea, select {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    
+    &:focus {
+        border-color: #4d6dad;
+    }
+}
+
+// Print styles
+@media print {
+    .right,
+    .theme-toggle-section,
+    .hero-actions,
+    .no-posts-section {
+        display: none;
+    }
+    
+    .left {
+        width: 100% !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+    .btn {
+        border: 2px solid;
+    }
+    
+    .hero-section,
+    .no-posts-section {
+        border: 2px solid #000;
+    }
+}
