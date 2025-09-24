@@ -1,10 +1,10 @@
-# About this Cool Concise Jekyll Blog Theme
+# About this Blog
 
-[![GitHub stars](https://img.shields.io/github/stars/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/network)
-[![GitHub issues](https://img.shields.io/github/issues/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues)
-[![GitHub release](https://img.shields.io/github/release/Gaohaoyang/gaohaoyang.github.io.svg)](https://github.com/Gaohaoyang/gaohaoyang.github.io/releases)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Gaohaoyang/gaohaoyang.github.io/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/network)
+[![GitHub issues](https://img.shields.io/github/issues/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/issues)
+[![GitHub release](https://img.shields.io/github/release/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/releases)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/lethean-scribe/lethean-scribe.github.io/master/LICENSE)
 
 ## Content
 
@@ -116,7 +116,7 @@ Of course, I have done a very good mobile adaptation.
 
 ### Footer
 
-**Welcome to use this blog theme, but please keep the theme author info at footer.** Theme designed by [HyG](https://github.com/gaohaoyang).
+**Welcome to use this blog theme, but please keep the theme author info at footer.** Theme designed by [HyG](https://github.com/lethean-scribe).
 
 ![footer](http://ww3.sinaimg.cn/large/7011d6cfjw1f3bepd8002j20hl02ct95.jpg)
 
@@ -174,7 +174,7 @@ Shows at site header part.
 title: HyG
 brief-intro: Front-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gaohaoyang.github.io" # the base hostname & protocol for your site
+url: "http://lethean-scribe.github.io" # the base hostname & protocol for your site
 ```
 
 #### Link info
@@ -183,13 +183,13 @@ Mainly shows at the footer of the site.
 
 ```yml
 # other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
+twitter_username: lethean-scribe126
+facebook_username: lethean-scribe.water
+github_username:  lethean-scribe
+email: lethean-scribe126@126.com
 weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
+zhihu_username: lethean-scribe
+linkedIn_username: lethean-scribe
 dribbble_username:
 
 description_footer: 本站记录我前端之旅的沿途风景！
@@ -301,19 +301,19 @@ You can also donate me for a coffee, and I'll do better. Thanks.
 
 |                                                                     PayPal                                                                     |                                 Wechat Pay                                  |                                   Alipay                                    |
 |:----------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-| [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/gaohaoyang) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) |
+| [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/lethean-scribe) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) |
 
 ## Update Log
 
 ### 2017.2.28
 
-- `[^]` fix smoothScroll bug in Tencent webview like wechat and qq.  [#22](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/22), [#48](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/48)
+- `[^]` fix smoothScroll bug in Tencent webview like wechat and qq.  [#22](https://github.com/lethean-scribe/lethean-scribe.github.io/issues/22), [#48](https://github.com/lethean-scribe/lethean-scribe.github.io/issues/48)
 
 ### 2016.6.20
 
 * `[+]` Add next post and previous post link in post page.
 * `[^]` Change the sort of font-family to avoid full-width half-width characters mistake.
-* `[^]` Fix bug in tags cloud when division by zero. [#26](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/26), [#28](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/28), [#30](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/30)
+* `[^]` Fix bug in tags cloud when division by zero. [#26](https://github.com/lethean-scribe/lethean-scribe.github.io/issues/26), [#28](https://github.com/lethean-scribe/lethean-scribe.github.io/issues/28), [#30](https://github.com/lethean-scribe/lethean-scribe.github.io/issues/30)
 
 ### 2016.5.11 v2.0.1
 
@@ -327,8 +327,8 @@ You can also donate me for a coffee, and I'll do better. Thanks.
 * `[+]` Add busuanzi counter, show the views count at footer
 * `[+]` Add back to top button
 
-About my old blog theme, I won't maintain any more. And I put the code at  [Gaohaoyang/old-blog](https://github.com/Gaohaoyang/old-blog).
+About my old blog theme, I won't maintain any more. And I put the code at  [lethean-scribe/old-blog](https://github.com/lethean-scribe/old-blog).
 
 ## License
 
-[MIT License](https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/LICENSE.md)
+[MIT License](https://github.com/lethean-scribe/lethean-scribe.github.io/blob/master/LICENSE.md)
