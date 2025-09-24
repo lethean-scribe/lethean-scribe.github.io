@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fragments of Gnosis
+title: Delphic Node
 brief-intro: Space Scientist
 email: delphic.node@proton.me
 description: >- # this means to ignore newlines until "baseurl:"
@@ -39,7 +39,7 @@ duoshuo_shortname: lethean-scribe
 disqus_shortname: hypersocks
 reddit_username: South-View825
 
-description_footer: Floating on river of forgetfulness
+description_footer: Floating on river of forgetfulness.
 
 # Build settings
 theme: minima
