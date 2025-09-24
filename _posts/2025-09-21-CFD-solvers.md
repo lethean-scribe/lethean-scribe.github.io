@@ -2,8 +2,8 @@
 layout: post
 title: "CFD solvers"
 date: Sun Sep 21 8:00:00 AUSEST 2025
-categories: [CFD, Gas-dynamics, Fluid-mechanics]
-tags: [CFD, Gas-dynamics, Fluid-mechanics]
+categories: [CFD, Gasdynamics, Fluid mechanics]
+tags: [CFD, Gasdynamics, Fluid mechanics]
 author: Lethean Scribe
 excerpt: Review of commercial and open-source CFD solvers
 mathjax: true
