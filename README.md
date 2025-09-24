@@ -21,6 +21,10 @@
 * [Donate](#donate)
 * [License](#license)
 
+# Contributors
+
+- [Lethean Scribe](https://github.com/lethean-scribe) – Project lead, architecture and content
+
 ## Donate
 
 You can also donate me a tea, I'll appreciate. Thank you!
