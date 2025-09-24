@@ -19,15 +19,26 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Fragments of Gnosis
+brief-intro: Space Scientist
 email: delphic.node@proton.me
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" 
+url: "http://lethean-scribe.github.io" 
 twitter_username: __HyperSocks__
-github_username:  lethean-scribe
+github_username: lethean-scribe
+facebook_username: lethean-scribe
+email: delphic.node@proton.me
+weibo_username: lethean-scribe
+zhihu_username: lethean-scribe
+linkedIn_username: hyper-socks-a12474386
+dribbble_username: lethean-scribe
+duoshuo_shortname: lethean-scribe
+disqus_shortname: lethean-scribe
+
+description_footer: Floating on river of forgetfulness
 
 # Build settings
 theme: minima
