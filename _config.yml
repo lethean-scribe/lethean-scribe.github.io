@@ -42,9 +42,13 @@ reddit_username: South-View825
 description_footer: Floating on river of forgetfulness.
 
 # Build settings
+paginate: 5
+paginate_path: "/page:num/"
+
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -5,9 +5,11 @@ date: Wed Sep 24 15:48:14 AUSEST 2025
 categories: CFD
 tags: CFD
 author: Lethean Scribe
-excerpt: We are floating upon the river of forgetfulness.
 mathjax: true
 ---
+
+* content
+{:toc}
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and
 re-build the site to see your changes. You can rebuild the site in many
