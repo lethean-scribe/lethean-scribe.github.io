@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CFD solvers"
-date: Sun Sep 28 8:00:00 AUSEST 2025
+date: Sun Sep 21 8:00:00 AUSEST 2025
 categories: [CFD, Gas-dynamics, Fluid-mechanics]
 tags: [CFD, Gas-dynamics, Fluid-mechanics]
 author: Lethean Scribe
