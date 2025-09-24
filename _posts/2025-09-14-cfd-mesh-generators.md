@@ -2,8 +2,8 @@
 layout: post
 title: "CFD mesh generators"
 date: Sun Sep 14 8:00:00 AUSEST 2025
-categories: [CFD, Gasdynamics, Fluid mechanics]
-tags: [CFD, Gasdynamics, Fluid mechanics]
+categories: [CFD, Mesh, Gasdynamics, Fluid mechanics]
+tags: [CFD, Mesh, Gasdynamics, Fluid mechanics]
 author: Lethean Scribe
 excerpt: Review of commercial and open-source CFD mesh generators
 mathjax: true
@@ -12,5 +12,5 @@ mathjax: true
 * content
 {:toc}
 
-In this post we will review commercial and open-source CFD nesh generators.
+In this post we will review commercial and open-source CFD mesh generators.
 
