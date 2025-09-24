@@ -1,57 +1,81 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset  "utf-8"; //
-//
-//
-// // Our variables
-// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $base-font-size:   16px;
-// $base-font-weight: 400;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
-//
-// $spacing-unit:     30px;
-//
-// $text-color:       #111;
-// $background-color: #fdfdfd;
-// $brand-color:      #2a7ae2;
-//
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-//
-// // Width of the content area
-// $content-width:    800px;
-//
-// $on-palm:          600px;
-// $on-laptop:        800px;
-//
-//
-//
-// // Use media queries like this:
-// // @include media-query($on-palm) {
-// //     .wrapper {
-// //         padding-right: $spacing-unit / 2;
-// //         padding-left: $spacing-unit / 2;
-// //     }
-// // }
-// @mixin media-query($device) {
-//     @media screen and (max-width: $device) {
-//         @content;
-//     }
-// }
-/*
- * variables
- */
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "reset", "header", "post", "page", "syntax-highlighting", "index", "demo", "footer", "scrollbar", "backToTop";
-// 两个人在列车上相遇
-// 一段旅程充满了诗意
-// 你突然说你要下车
-// 去寻找属于你的灵魂和身体
-//
-// 当你穷的只剩下理想时
-// 就再次回到这列车上
-// 我们谈天说地
-// 把酒言欢，赠予你新路途纹银
+
+@import "minima";
+
+// Custom styles for CFD content
+.post-content {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .equation {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+  }
+  
+  .code-block {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px 0;
+    overflow-x: auto;
+  }
+  
+  .highlight-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px 0;
+    
+    &.tip {
+      background-color: #d1ecf1;
+      border-color: #bee5eb;
+    }
+    
+    &.warning {
+      background-color: #f8d7da;
+      border-color: #f5c6cb;
+    }
+  }
+}
+
+// Navigation improvements
+.site-nav {
+  .page-link {
+    color: #424242;
+    font-weight: 500;
+    
+    &:hover {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+}
+
+// Footer improvements
+.site-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+// Responsive improvements
+@media screen and (max-width: 600px) {
+  .post-content {
+    img {
+      margin: 10px auto;
+    }
+  }
+}
