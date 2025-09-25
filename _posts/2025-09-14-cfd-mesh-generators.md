@@ -15,7 +15,7 @@ mathjax: true
 In this post we will review commercial and open-source CFD mesh generators.
 This comprehensive table contains 150+ mesh generation software packages categorized by type, capabilities, licensing, and developers.
 
-# Comprehensive Mesh Generation Software Catalog
+# CFD Mesh Generation Software Codes - Features Comparison
 
 | Software Name | Category | Dimensions | Element Types | Key Features | License | Developer/Company |
 |--------------|----------|------------|---------------|--------------|---------|-------------------|
