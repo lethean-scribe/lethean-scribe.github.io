@@ -2,15 +2,88 @@
 layout: post
 title: "CFD solvers"
 date: Sun Sep 21 8:00:00 AUSEST 2025
-categories: [CFD, Gasdynamics, Fluid mechanics]
-tags: [CFD, Gasdynamics, Fluid mechanics]
+categories: [CFD, Gasdynamics]
+tags: [CFD, Gasdynamics]
 author: Lethean Scribe
-excerpt: Review of commercial and open-source CFD solvers
+excerpt: Review of CFD solvers
 mathjax: true
 ---
 
 * content
 {:toc}
 
-In this post we will review commercial and open-source CFD solvers.
+In this post we will review CFD solvers.
 
+# CFD Software Codes - Features Comparison
+
+| # | Code | Grid Type | Chemistry Model | Temperature Model | Turbulence Model | Transport Model | Time Integration | Space Discretization | Boundary Conditions | Special Features | Organization | Open Source / Commercial | Description |
+|----|------|-----------|-----------|-------------------|------------|----------------|------------------|---------------------|---------------------|------------------|--------------|-------------------------|-------------|
+| 1 | **ADPDIS3D** | Structured | Finite-rate chemistry | Multi-temperature | RANS models | Gupta-Yos | ADI schemes | Finite difference | Wall interactions | Atmospheric entry focused | Various institutions | Commercial | Axisymmetric/3D parabolized NS solver; finite-rate chemistry for reacting boundary layers; validated for hypersonic nozzles and inlets; multi-species air models |
+| 2 | **ARES** | Structured | Real gas chemistry | Multi-temperature | Various RANS | Sutherland/Gupta | Implicit | Finite volume | Advanced wall models | Atmospheric entry simulations | NASA Ames | Government | Structured-grid NS solver for aerothermodynamics; equilibrium/non-equilibrium air; used for re-entry heat flux; coupled with ablation models |
+| 3 | **Bari's group** | Various | Non-equilibrium chemistry | Multi-temperature | RANS/LES | Collision integrals | Various | Finite volume | Surface reactions | State-to-state models | University of Bari | Research | Custom NS solvers for multi-T non-eq. flows; vibration-dissociation coupling; validated for double-cone shocks; focuses on state-to-state kinetics |
+| 4 | **Candler** | Unstructured | Detailed kinetics | Multi-temperature, state-to-state | Advanced turbulence | Collision integrals | High-order time stepping | High-order finite volume | Advanced surface models | DNS/LES capabilities | University of Minnesota | Research | See US3D; focuses on advanced reacting simulations with finite-rate kinetics and turbulence |
+| 5 | **CARBUR** | Structured | Hydrocarbon chemistry | Multi-temperature | RANS models | Gupta-Yos | Implicit | Finite volume | Ablation, pyrolysis | Carbon ablation specialist | Various | Commercial | 2D/axisymmetric reacting flow solver; carbon ablation chemistry; finite-rate multi-species; used for hypersonic vehicle TPS simulation |
+| 6 | **CELHyO2D** | 2D structured | H2-O2 combustion | Two-temperature | None/laminar | Sutherland | Explicit/implicit | Finite difference | Inflow/outflow | Combustion-focused | Research institutions | Research | 2D hybrid continuum-rarefied solver; multi-T non-eq.; DSMC-CFD coupling; validated for hypersonic entry transition regimes (Mach 20+) |
+| 7 | **CFDWARP** | Structured | Various gas models | Multi-temperature | SA, SST | Various models | MUSCL schemes | Finite volume | Wall functions | Plasma flows, MHD | University of Calgary | Open Source | Multi-block structured compressible solver; plasma/reacting flows; high-order schemes; MHD support; validated for hypersonic entry and nozzles |
+| 8 | **CFL3D** | Structured multi-block | Perfect gas/finite-rate | Single temperature | Baldwin-Lomax, SA, SST | Sutherland/Power law | Line/point implicit | Finite volume | Various wall/farfield | High-lift, compressible flows | NASA Langley | Government | Structured multi-block NS; upwind-biased RANS; real-gas effects; parallel; validated for hypersonic double-cone and shuttle flows |
+| 9 | **COOLFluiD** | Unstructured | Multiple gas models | Various | RANS/LES | Multiple options | Multiple time schemes | Finite volume/element | Flexible BC framework | Multi-physics platform | Von Karman Institute | Open Source | Component-based multi-physics framework; unstructured grids; non-eq. thermo-chemistry; high-order DG/FV; validated for hypersonic aerothermodynamics |
+| 10 | **COSMIC** | Unstructured | Real gas | Multi-temperature | RANS models | Sutherland/Gupta | Implicit | Finite volume | Standard conditions | Commercial CFD focus | COSMIC | Commercial | Multi-block structured NS; equilibrium real-gas; upwind schemes; used for early hypersonic vehicle design (e.g., X-33) |
+| 11 | **DLPR** | Structured | Chemical non-equilibrium | Two-temperature | RANS models | Collision integrals | Line relaxation | Finite volume | Advanced wall models | High-enthalpy flows | NASA/Universities | Research | High-enthalpy flow solver with chemical non-equilibrium capabilities; line relaxation methods |
+| 12 | **DPLR** | Structured multi-block | Finite-rate kinetics | Two-temperature model | SA, Baldwin-Lomax | Gupta-Yos, Wilke mixing | Data-parallel line-relaxation | Finite volume upwind | Standard wall conditions | Shock alignment, high-temperature flows | NASA Ames | Government | Data-Parallel Line Relaxation; parabolized NS for hypersonic; thermochemical non-equilibrium; finite-rate chemistry; validated for RAM-C II and Stardust entry |
+| 13 | **Eilmer4** | Structured/unstructured | Finite-rate chemistry | Multi-temperature | Baldwin-Lomax, SA | Various transport | Explicit time stepping | Finite volume | Various wall models | Gas dynamics focus | University of Queensland | Open Source | Multi-physics for hypersonic continuum; finite-volume on structured grids; equilibrium/non-equilibrium chemistry (up to 11 species); ablation modeling; Lua scripting for custom physics |
+| 14 | **FlowModellium** | Various | Gas models | Multi-temperature | RANS variants | Standard models | Various | Finite volume | Standard | General purpose CFD | Commercial | Commercial | Modular NS solver for multi-T flows; state-to-state kinetics; unstructured; limited public validation |
+| 15 | **FUN3D** | Unstructured | Perfect gas/finite-rate | Various temperature models | SA, SST, DES variants | Sutherland/Power law | Point/line implicit | Finite volume | Standard flow-through, wall | Adjoint-based optimization, AMR | NASA Langley | Government | Unstructured NS; finite-volume; multi-T non-eq.; turbulence (RANS/LES); validated for hypersonic ballutes and re-entry |
+| 16 | **Furudate** | Structured | Real gas effects | Single/multi-temperature | RANS | Japanese models | Implicit | Finite difference | Wall interactions | Japanese development | Japanese institutions | Research | Custom solvers for non-eq. air flows; vibration models; validated for hypersonic blunt bodies; focuses on quantum chemistry integration |
+| 17 | **GIANTS** | Unstructured | Detailed chemistry | State-to-state | Advanced models | Collision integrals | High-order schemes | High-order finite volume | Complex surface interactions | Ground-to-air applications | University of Michigan | Research | Implicit NS for giant planets entry; multi-species non-eq.; high-enthalpy effects; validated for Jovian atmospheres |
+| 18 | **Gökçen** | Structured | Non-equilibrium chemistry | Multi-temperature | Turbulence models | Gupta-Yos | Various | Finite volume | Catalytic walls | Entry vehicle focus | NASA Ames | Research | Custom reacting solvers; finite-rate chemistry; ablation coupling; validated for arc-jet and flight data (e.g., Stardust) |
+| 19 | **H3NS** | Structured | Hypersonic chemistry | Multi-temperature | RANS/LES | Transport models | Various schemes | Finite volume | Ablation models | Entry systems focus | Various institutions | Research | 3D hypersonic NS solver; structured grids; real-gas effects; used for scramjet inlets |
+| 20 | **HTR** | Structured | Real gas | Multi-temperature | RANS models | Heat transfer models | Implicit | Finite volume | Heat transfer focus | Atmospheric entry | NASA | Government | Task-based for Navier-Stokes at hypersonic Mach; finite-rate chemistry for dissociating air; multicomponent transport; focused on high-fidelity reacting boundary layers |
+| 21 | **hy2Foam** | Unstructured | OpenFOAM chemistry | Two-temperature | OpenFOAM turbulence | OpenFOAM transport | OpenFOAM schemes | Finite volume | OpenFOAM BCs | OpenFOAM-based hypersonics | Open-source | Open Source | Two-temperature model for thermal non-equilibrium; CVDV vibration-dissociation coupling; quantum-kinetic rates; validated for Mach 11-20 re-entry |
+| 22 | **HyCFS** | Structured | Non-equilibrium | Multi-temperature | RANS | Chinese models | Implicit | Finite volume | Advanced BCs | Chinese development | Chinese institutions | Research | Hypersonic CFD solver; structured NS; non-eq. air; used for vehicle design. Variant: HyCFS-R for reacting flows |
+| 23 | **HyCFS-R** | Structured | Reacting flows | Multi-temperature | RANS models | Enhanced transport | Implicit | Finite volume | Reaction-specific | Upgraded HyCFS version | Chinese institutions | Research | Enhanced version of HyCFS with improved reacting flow capabilities |
+| 24 | **HyperCode** | Various | Chemical kinetics | Multi-temperature | Turbulence models | Various | Various | Finite volume | Wall interactions | Hypersonic vehicle design | Commercial/Research | Commercial | High-order DG for turbulent non-eq. hypersonic; multi-T chemistry; couples turbulence with thermo-chem; validated for scramjet combustors |
+| 25 | **Josyula et Bailey** | Various | Kinetic models | Multi-temperature | Various | Research models | Research schemes | Various | Specialized | Academic research code | Universities | Research | Custom multi-T solvers; state-to-state kinetics; vibration effects; validated for hypersonic noneq. flows with quantum models |
+| 26 | **KARFS** | Structured | Korean gas models | Multi-temperature | RANS | Korean models | Implicit | Finite volume | Korean-specific | South Korean development | Korean institutions | Research | Kinetic Air Reacting Flow Solver; finite-rate multi-species; structured; used for high-enthalpy shocks |
+| 27 | **LAURA** | Structured | Chemical equilibrium/non-equilibrium | Single/Multi-temperature | Baldwin-Lomax, SA | Gupta-Yos, Wilke mixing | Point-implicit relaxation | Finite volume upwind | Wall catalysis, blowing | Shock-fitting, upwind schemes | NASA Langley | Government | Thin-layer Navier-Stokes; real-gas non-equilibrium (multi-T, finite-rate); upwind TVD scheme; used for shuttle re-entry heat flux prediction |
+| 28 | **LeMans** | Unstructured | DSMC-continuum | Kinetic theory | Molecular models | DSMC transport | DSMC/continuum | DSMC/Finite volume hybrid | Gas-surface interactions | Hybrid continuum-molecular | University of Michigan | Research | Unstructured finite-volume; multi-T non-equilibrium; state-to-state kinetics; hybrid DSMC coupling; validated for hypersonic shock interactions and Mars entry |
+| 29 | **LORE** | Structured | Chemical equilibrium | Single temperature | RANS | European models | Implicit | Finite volume | Standard wall | European development | European institutions | Research | Low-order reacting solver; equilibrium chemistry; used for quick hypersonic estimates |
+| 30 | **MISTRAL** | Unstructured | Multi-species | Multi-temperature | Various RANS | European transport | Implicit | Finite volume | Advanced wall models | European multi-physics | CIRA/European | Research | Structured NS for reacting flows; multi-T non-eq.; shock-aligned meshes; validated for hypersonic inlets and entry |
+| 31 | **NSHYP** | Structured | Hypersonic chemistry | Multi-temperature | RANS | Standard models | Implicit | Finite volume | Specialized BCs | Entry vehicle focus | Research institutions | Research | Hypersonic NS solver; structured; real-gas; used for basic aeroheating predictions |
+| 32 | **PHAROS** | Various | Chemical kinetics | Multi-temperature | Turbulence models | Various | Various | Various | Wall interactions | Atmospheric entry | Research | Research | Hybrid reacting solver; non-eq. chemistry; validated for hypersonic combustion |
+| 33 | **RCFS** | Structured | Reacting flows | Multi-temperature | RANS models | Reaction transport | Implicit | Finite volume | Reaction boundaries | Combustion-focused | Research institutions | Research | Reacting CFD Solver; finite-rate; used for scramjets |
+| 34 | **RGDSV-2** | Structured | Russian gas models | Multi-temperature | Russian turbulence | Russian models | Implicit schemes | Finite difference | Russian-specific | Russian development | Russian institutions | Research | Russian structured NS; real-gas dissociation; multi-T; validated for hypersonic gliders |
+| 35 | **Sawada et al.** | Structured | Japanese models | Multi-temperature | RANS | Japanese transport | Japanese schemes | Finite difference | Japanese-specific | Japanese research | Japanese institutions | Research | Custom unstructured solvers; non-eq. air; validated for re-entry capsules |
+| 36 | **Sciacovelli et al.** | Various | European models | Multi-temperature | Advanced turbulence | European models | High-order | High-order schemes | European standards | European research | European institutions | Research | Multi-physics NS; ablation and non-eq.; focuses on TPS materials in hypersonic flows |
+| 37 | **SPARC** | Unstructured | Various chemistry | Multi-temperature | RANS/LES | Multiple models | Multiple schemes | Finite volume | Flexible boundaries | Research platform | Universities | Research | Parallel NS for re-entry; thermochemical non-eq.; ablation/TPS response; cell-centered FV; validated for hypersonic heating and vibrations |
+| 38 | **SPARK** | Various | Chemical kinetics | Multi-temperature | Turbulence models | Various | Various | Various | Surface reactions | Propulsion focus | Research | Research | Sparse reacting kinetics solver; state-to-state; used for high-enthalpy air |
+| 39 | **SU2-NEMO** | Unstructured | Non-equilibrium chemistry | Multi-temperature | SA, SST | Gupta-Yos, Wilke mixing | Implicit/explicit | Finite volume | Wall catalysis, ablation | Open-source, automatic differentiation | Stanford/Open-source | Open Source | High-Mach non-eq. multi-species; thermal/chem non-eq. via Mutation++; finite-volume; validated for Earth/Mars entry (e.g., Pathfinder capsule) |
+| 40 | **TAU** | Unstructured | DLR gas models | Various temperature | DLR turbulence | DLR transport | DLR schemes | Finite volume | DLR boundaries | German aerospace code | DLR (German) | Government | Unstructured hybrid grids; RANS/LES; real-gas non-eq.; chemistry; validated for hypersonic vehicles (e.g., SHEFEX) |
+| 41 | **TINA** | Structured | Italian models | Multi-temperature | Italian turbulence | Italian transport | Italian schemes | Finite volume | Italian-specific | Italian development | Italian institutions | Research | Transient NS for ablation; multi-T; used for TPS simulation |
+| 42 | **TsAGI** | Structured | Russian models | Multi-temperature | Russian turbulence | Russian transport | Russian schemes | Finite volume | Russian walls | Russian aerospace | TsAGI (Russian) | Government | Suite of structured NS codes; non-eq. air; validated for hypersonic wind tunnel data |
+| 43 | **URANUS** | Structured | Space chemistry | Multi-temperature | Space-focused RANS | Space environment | Implicit | Finite volume | Space environment | Japanese space focus | JAXA | Government | Multi-block NS; reacting flows; ionization; used for plasma sheaths in hypersonic |
+| 44 | **US3D** | Unstructured (tetrahedra, prisms, pyramids, hexahedra) | Finite-rate kinetics, 11-species air model | Single/Multi-temperature, vibrational-electronic | SA-Catris, SST-V, DES, DDES, IDDES, LES | Gupta-Yos, Wilke/Armaly-Sutton mixing | DPLR line-relaxation, explicit/implicit | Modified Steger-Warming, KEC up to 6th-order | Gas-surface interactions, ablation, catalysis | API, shape change, conjugate heat transfer, 6th-order accuracy | University of Minnesota / NASA | Research | Unstructured implicit solver; thermochemical non-equilibrium (multi-T, state-to-state); high-order methods; ablation/ionization; validated for hypersonic boundary layers and re-entry |
+| 45 | **UST3D** | Unstructured | Chemical kinetics | Multi-temperature | RANS models | Standard models | Implicit | Finite volume | Standard | 3D unstructured focus | Universities | Research | Unstructured 3D NS; non-eq.; similar to US3D but variant for specific geometries |
+| 46 | **VULCAN** | Unstructured | Real gas, chemical kinetics | Multi-temperature | RANS models | Various | Implicit | Finite volume | Conjugate heat transfer | Multi-physics coupling | NASA | Government | Compressible turbulent NS; finite-rate chemistry/thermal non-eq.; structured/unstructured; multi-block; validated for hypersonic propulsion and entry |
+
+## Key Features Legend:
+- **Grid Type**: Structured (regular connectivity), Unstructured (irregular connectivity), Hybrid
+- **Chemistry Model**: Perfect gas, Finite-rate kinetics, Chemical equilibrium/non-equilibrium, DSMC
+- **Temperature Model**: Single (one temperature), Multi-temperature, Two-temperature, State-to-state
+- **Turbulence Model**: SA (Spalart-Allmaras), SST (Shear Stress Transport), DES (Detached Eddy Simulation), LES (Large Eddy Simulation), DNS (Direct Numerical Simulation)
+- **Transport Model**: Sutherland (temperature-dependent viscosity), Gupta-Yos (collision integrals), Wilke mixing (mixture rules)
+- **Time Integration**: Explicit, Implicit, DPLR (Data-Parallel Line Relaxation), ADI (Alternating Direction Implicit)
+- **Space Discretization**: Finite volume, Finite difference, Finite element, High-order schemes
+- **Boundary Conditions**: Wall interactions, catalysis, ablation, gas-surface reactions
+- **Open Source/Commercial**: Open Source (freely available), Commercial (licensed), Government (restricted access), Research (academic use)
+
+## Notes:
+1. **Government** = Restricted to government/contractors with appropriate clearance
+2. **Research** = Academic/research use primarily
+3. **Open Source** = Publicly available source code
+4. **Commercial** = Licensed commercial software
+
+## Recent Developments (2024-2025):
+- Increased focus on automated mesh generation and 10X performance improvements
+- Advanced shock-aligned meshing techniques for improved accuracy
+- Integration of machine learning for turbulence modeling and closure
+- Enhanced parallel computing capabilities for exascale systems
