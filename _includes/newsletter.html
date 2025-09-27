@@ -1,0 +1,142 @@
+```html
+<!-- _includes/newsletter.html -->
+<div class="newsletter-signup">
+  <div class="newsletter-container">
+    <h3>📬 Subscribe to Our Newsletter</h3>
+    <p>Get the latest posts delivered right to your inbox. No spam, unsubscribe at any time.</p>
+    
+    <!-- Mailchimp Form -->
+    <div id="mc_embed_signup">
+      <form action="https://YOUR-DOMAIN.us1.list-manage.com/subscribe/post?u=YOUR_USER_ID&amp;id=YOUR_LIST_ID" 
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+            class="validate newsletter-form" target="_blank" novalidate>
+        
+        <div id="mc_embed_signup_scroll">
+          <div class="newsletter-input-group">
+            <input type="email" value="" name="EMAIL" class="required email newsletter-input" 
+                   id="mce-EMAIL" placeholder="Enter your email address" required>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" 
+                   class="newsletter-button">
+          </div>
+          
+          <!-- Honeypot for bots -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_YOUR_USER_ID_YOUR_LIST_ID" tabindex="-1" value="">
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <p class="newsletter-privacy">
+      <small>We respect your privacy. Read our <a href="/privacy-policy">privacy policy</a>.</small>
+    </p>
+  </div>
+</div>
+
+<style>
+.newsletter-signup {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.newsletter-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-signup h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.newsletter-signup p {
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  margin-bottom: 1rem;
+}
+
+.newsletter-input-group {
+  display: flex;
+  gap: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  font-size: 1rem;
+  background: white;
+  color: #333;
+  outline: none;
+}
+
+.newsletter-input::placeholder {
+  color: #999;
+}
+
+.newsletter-button {
+  padding: 12px 24px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+  background: #ff5252;
+}
+
+.newsletter-privacy {
+  opacity: 0.8;
+  margin: 0;
+}
+
+.newsletter-privacy a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .newsletter-signup {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .newsletter-input-group {
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  
+  .newsletter-input,
+  .newsletter-button {
+    border-radius: 0;
+  }
+  
+  .newsletter-input {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .newsletter-button {
+    border-radius: 0 0 8px 8px;
+    padding: 14px 24px;
+  }
+}
+</style>
+```
