@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CFD mesh generators"
+title: "Mesh generators"
 date: Sun Sep 14 8:00:00 AUSEST 2025
 categories: [CFD, Mesh, Gasdynamics]
 tags: [CFD, Mesh, Gasdynamics]
