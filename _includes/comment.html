@@ -1,0 +1,46 @@
+```html
+<!-- _includes/comments.html -->
+<div class="comments-section">
+  <h3>Comments</h3>
+  <div id="comments-container">
+    <script src="https://giscus.app/client.js"
+            data-repo="lethean-scribe/lethean-scribe.github.io"
+            data-repo-id="YOUR_REPO_ID"
+            data-category="General"
+            data-category-id="YOUR_CATEGORY_ID"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </div>
+</div>
+
+<style>
+.comments-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e5e9;
+}
+
+.comments-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #24292f;
+}
+
+@media (prefers-color-scheme: dark) {
+  .comments-section {
+    border-top-color: #30363d;
+  }
+  .comments-section h3 {
+    color: #f0f6fc;
+  }
+}
+</style>
+```
