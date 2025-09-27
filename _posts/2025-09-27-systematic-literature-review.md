@@ -1,0 +1,15 @@
+---
+layout: post
+title: "SLR"
+date: Sun Sep 27 8:00:00 AUSEST 2025
+categories: [SLR]
+tags: [SLR]
+author: Lethean Scribe
+excerpt: Systematic Literature Review
+mathjax: true
+---
+
+* content
+{:toc}
+
+In this post we will explore systematic literature review approaches and tools.
