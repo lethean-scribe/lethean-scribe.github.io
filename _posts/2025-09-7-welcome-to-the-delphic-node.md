@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to the Delphic Node"
-date: Sun Sep 27 8:00:00 AUSEST 2025
+date: Sun Sep 7 8:00:00 AUSEST 2025
 categories: [Blog]
 tags: [Blog]
 author: Lethean Scribe
