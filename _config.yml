@@ -31,9 +31,3 @@ paginate_path: "/page:num/"
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-
-  
-header_pages:
-  - about.md
-  - newsletter.md
-  - archive.md
