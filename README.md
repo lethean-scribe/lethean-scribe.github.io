@@ -8,6 +8,26 @@
 
 The Delphic Node repository hosts the official blog of the Lethean Scribe, record-keeper of oblivion. A platform dedicated to exploring and documenting various technical topics, with a particular focus on Computational Fluid Dynamics (CFD). 
 
+The content will be published on several platforms, listed below.
+
+*   **[Academia.edu](https://www.academia.edu/ )**: A platform for academics to share research papers, monitor their impact, and follow the work of others in their field.
+*   **[Dev.to](https://dev.to/ )**: A community for software developers to share articles, tutorials, and discussions.
+*   **[Discord](https://discord.com/ )**: A communication platform for building communities around specific topics through text, voice, and video chat.
+*   **[Facebook](https://www.facebook.com/ )**: A massive social network for connecting with friends, family, and communities, as well as sharing various types of content.
+*   **[Ghost](https://ghost.org/ )**: An open-source publishing platform that offers full control over content, design, and monetization.
+*   **[Hashnode](https://hashnode.com/ )**: A blogging platform for developers that allows for publishing on a personal domain while being part of a community.
+*   **[Instagram](https://www.instagram.com/ )**: A visual-first social media platform for sharing photos and videos.
+*   **[LinkedIn](https://www.linkedin.com/ )**: The leading professional platform for connecting with colleagues, sharing professional updates, and publishing articles.
+*   **[Mastodon](https://joinmastodon.org/ )**: A decentralized, open-source social network composed of independent servers.
+*   **[Medium](https://medium.com/ )**: A popular platform for writers of all kinds, with a large built-in audience and a partner program for monetization.
+*   **[Reddit](https://www.reddit.com/ )**: A network of communities based on people's interests, featuring news, discussions, and user-generated content.
+*   **[ResearchGate](https://www.researchgate.net/ )**: A social networking site for scientists and researchers to share papers, ask and answer questions, and find collaborators.
+*   **[Substack](https://substack.com/ )**: A newsletter platform that allows writers to build a direct relationship with their audience through paid subscriptions.
+*   **[TikTok](https://www.tiktok.com/ )**: A short-form video platform for creating and sharing engaging and viral content.
+*   **[WordPress](https://wordpress.org/ )**: A powerful, open-source content management system for creating websites and blogs with complete customization.
+*   **[X (formerly Twitter)](https://x.com/ )**: A microblogging and social networking service for real-time information and conversation.
+*   **[YouTube](https://www.youtube.com/ )**: The world's largest video-sharing platform, ideal for tutorials, presentations, and visual demonstrations.
+
 ## Content Focus
 
 The primary focus of the Lethean Scribe blog is Computational Fluid Dynamics (CFD). This includes, but is not limited to:
