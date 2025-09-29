@@ -1,5 +1,19 @@
 # Delphic Node: Fragments of Gnosis
 
+https://dev.to/lethean-scribe
+
+https://discord.com/channels/1421710400646283299/1421710401850310740
+
+https://hashnode.com/@LetheanScribe
+
+https://letheanscribe.wordpress.com/wp-admin/profile.php
+
+https://mas.to/@LetheanScribe
+
+https://www.reddit.com/user/Lethean_Scribe/
+
+https://x.com/LScribe32851
+
 [![GitHub stars](https://img.shields.io/github/stars/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/network)
 [![GitHub issues](https://img.shields.io/github/issues/lethean-scribe/lethean-scribe.github.io.svg)](https://github.com/lethean-scribe/lethean-scribe.github.io/issues)
