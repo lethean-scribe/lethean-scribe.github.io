@@ -109,14 +109,6 @@ For inquiries, you can reach the author at `delphic.node@proton.me`.
 *   Uses the Minima theme
 *   Hosted on GitHub Pages
 
-## Donate
-
-You can also donate me a tea, I'll appreciate. Thank you!
-
-|                                                                     PayPal                                                                     |                                 Wechat Pay                                  |                                   Alipay                                    |
-|:----------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-| [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/lethean-scribe) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) |
-
 ## License
 
 [MIT License](https://github.com/lethean-scribe/lethean-scribe.github.io/blob/master/LICENSE.md)
