@@ -1,0 +1,14 @@
+---
+title: "Data-driven turbulence modelling"
+description: In this blog we will explore several current strategies to improve turbulence models through data-driven approches.
+author:
+  - name: Lethean Scribe
+date: "2026-01-24"
+categories: [machine-learning, artificial-intelligence, CFD, Turbulence, Data-driven]
+image: earthaccesslogo.png
+draft: true
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------

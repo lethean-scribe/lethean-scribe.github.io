@@ -1,0 +1,71 @@
+project:
+  type: website
+
+website:
+  title: "Lethean Scribe"
+  site-url: https://lethean-scribe.github.io/
+  favicon: images/lethean-scribe0.jpeg
+
+  page-footer: 
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/), with theme from [vetiver](https://github.com/rstudio/vetiver.rstudio.com)"
+    left: "&copy; CC-By Lethean Scribe"
+
+  navbar:
+    logo: images/lethean-scribe0.jpeg
+    href: https://openscapes.org
+    right:
+      #- text: "About"
+      #href: about.qmd
+    - text: "Blog"
+      href: blog.qmd
+    - text: "Books"
+      href: books.qmd
+    - text: "Business"
+      href: business.qmd
+    - text: "Courses"
+      href: courses.qmd
+    - text: "Papers"
+      href: papers.qmd
+    - text: "Travel"
+      href: travel.qmd
+    - text: "<i class='fas fa-coffee' style='font-size: 1.1em;'></i>"
+      href: https://buymeacoffee.com/lethean.scribe
+      aria-label: Buy Me a Coffee
+    - icon: envelope
+      href: mailto:delphic.node@proton.me
+    - icon: github
+      href: https://lethean-scribe.github.io
+    - icon: instagram
+      href: https://instagram.com/lethean_scribe
+    - icon: linkedin
+      href: https://linkedin.com/in/lethean-scribe-3a6202387
+    - icon: mastodon
+      href: https://mas.to/@LetheanScribe
+    - icon: medium
+      href: https://medium.com/@LetheanNode
+    - icon: reddit
+      href: https://reddit.com/user/Lethean_Scribe
+    - icon: rss-fill
+      href: index.xml
+      aria-label: RSS
+    - text: "<i class='fas fa-newspaper' style='font-size: 1.1em;'></i>"
+      href: https://letheanscribe.substack.com
+      aria-label: Substack
+    - icon: tiktok
+      href: https://tiktok.com/@lethean.scribe
+    - icon: twitter
+      href: https://twitter.com/@LScribe32851
+    - icon: wordpress
+      href: https://letheanscribe.wordpress.com
+    - icon: youtube
+      href: https://youtube.com/yourchannel
+
+format:
+  html:
+    theme: 
+      dark: [darkly, styles-dark.scss]
+    highlight-style: a11y-dark
+    css: styles.css
+    toc: true
+    toc-title: Contents
+    toc-location: left

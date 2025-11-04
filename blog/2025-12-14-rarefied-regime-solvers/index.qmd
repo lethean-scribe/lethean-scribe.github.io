@@ -1,0 +1,15 @@
+---
+title: "Rarefied regime fluid dynamic solvers"
+description: In this blog we will explore hypersonic flow solvers for the rarefied regime.
+author:
+  - name: Lethean Scribe
+date: "2025-12-14"
+categories: [shock-capturing, hypersonics, rarefied-regime]
+image: earthaccesslogo.png
+draft: true
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+

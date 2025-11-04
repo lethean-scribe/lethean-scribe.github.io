@@ -1,0 +1,3009 @@
+---
+title: "# A Comprehensive Guide to Conducting a Systematic Literature Review"
+description: In this blog we will explore systematic literature review approaches and tools.
+author:
+  - name: Lethean Scribe
+date: "2025-11-02"
+categories: [SLR]
+image: image.jpeg
+---
+
+*Blog post: /2025-11-02-systematic-literature-review*
+
+------------------------------------------------------------------------
+
+Systematic literature reviews have become the gold standard for synthesizing
+research evidence across disciplines. Unlike traditional narrative reviews,
+systematic reviews follow a rigorous, transparent, and reproducible methodology
+that minimizes bias and provides reliable conclusions. This comprehensive guide
+walks you through each step of conducting a systematic literature review, from
+initial planning to final dissemination.
+
+## What is a Systematic Literature Review?
+
+A systematic literature review is a methodical approach to identifying,
+evaluating, and synthesizing all relevant research on a specific question or
+topic. It differs from traditional literature reviews in its explicit
+methodology, comprehensive search strategy, and transparent reporting of how
+studies were selected and appraised.
+
+### Systematic vs. Traditional Literature Review
+
+| Feature | Traditional Literature Review | Systematic Literature Review |
+|---------|------------------------------|------------------------------|
+| **Research Question** | Broad, general | Focused, specific (e.g., PICO) |
+| **Search Strategy** | Not specified, potentially biased | Comprehensive, documented, reproducible |
+| **Study Selection** | Not specified, subjective | Explicit criteria, multiple reviewers |
+| **Quality Assessment** | Variable or absent | Standardized, rigorous tools |
+| **Data Synthesis** | Narrative, subjective | Systematic (narrative or meta-analysis) |
+| **Bias Minimization** | Limited | Multiple safeguards |
+| **Reproducibility** | Low | High |
+| **Time Required** | Weeks to months | 6-18 months |
+
+## Overall Systematic Review Workflow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PLANNING PHASE                           │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Define      │───▶│  Develop     │───▶│  Establish   │   │
+│  │  Research    │    │  Protocol    │    │  Eligibility │   │
+│  │  Question    │    │              │    │  Criteria    │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+│                            │                                │
+│                            ▼                                │
+│                   ┌──────────────┐                          │
+│                   │  Register    │                          │
+│                   │  Protocol    │                          │
+│                   └──────────────┘                          │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  SEARCH & SELECTION PHASE                   │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Design      │───▶│  Execute     │───▶│  Screen      │   │
+│  │  Search      │    │  Searches    │    │  Titles &    │   │
+│  │  Strategy    │    │              │    │  Abstracts   │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+│                                                 │           │
+│                                                 ▼           │
+│                                        ┌──────────────┐     │
+│                                        │  Full-Text   │     │
+│                                        │  Review      │     │
+│                                        └──────────────┘     │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  DATA COLLECTION PHASE                      │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Extract     │───▶│  Assess      │───▶│  Assess      │   │
+│  │  Data        │    │  Study       │    │  Evidence    │   │
+│  │              │    │  Quality     │    │  Certainty   │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  SYNTHESIS & REPORTING PHASE                │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Synthesize  │───▶│  Write       │───▶│  Disseminate │   │
+│  │  Data        │    │  Review      │    │  & Update    │   │
+│  │              │    │              │    │              │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Step 1: Defining the Research Question
+
+The foundation of any systematic review is a well-formulated **research
+question**. A poorly defined question leads to unfocused searches, irrelevant
+studies, and ultimately, inconclusive results.
+
+### Question Development Workflow
+
+```
+START: Identify Broad Topic of Interest
+    │
+    ▼
+┌─────────────────────────────────────┐
+│ Step 1: Background Research         │
+│ • Review existing literature        │
+│ • Identify knowledge gaps           │
+│ • Consult with experts              │
+│ • Check existing systematic reviews │
+└─────────────┬───────────────────────┘
+              │
+              ▼
+┌─────────────────────────────────────┐
+│ Step 2: Define Scope                │
+│ • What do I want to know?           │
+│ • Why is this important?            │
+│ • Who will use this information?    │
+│ • Is the question answerable?       │
+└─────────────┬───────────────────────┘
+              │
+              ▼
+┌─────────────────────────────────────┐
+│ Step 3: Select Framework            │
+│ Intervention study? → PICO          │
+│ Exposure/risk? → PEO                │
+│ Qualitative? → PICo or SPIDER       │
+│ Review existing reviews? → Topi     │
+└─────────────┬───────────────────────┘
+              │
+              ▼
+┌─────────────────────────────────────┐
+│ Step 4: Specify Each Component      │
+│ • Be specific but not too narrow    │
+│ • Consider clinical relevance       │
+│ • Think about available studies     │
+│ • Balance feasibility vs. breadth   │
+└─────────────┬───────────────────────┘
+              │
+              ▼
+┌─────────────────────────────────────┐
+│ Step 5: Write Question              │
+│ • Use structured format             │
+│ • Make it answerable                │
+│ • Ensure measurable outcomes        │
+└─────────────┬───────────────────────┘
+              │
+              ▼
+┌─────────────────────────────────────┐
+│ Step 6: Peer Review                 │
+│ • Team discussion                   │
+│ • Stakeholder feedback              │
+│ • Librarian consultation            │
+│ • Methodologist review              │
+└─────────────┬───────────────────────┘
+              │
+              ▼
+        ┌───────────┐
+        │Is question│ NO ──┐
+        │ clear &   │      │
+        │answerable?│      │
+        └─────┬─────┘      │
+              │YES         │
+              ▼            │
+        ┌─────────────┐    │
+        │  FINALIZE   │◄───┘
+        │  QUESTION   │ Refine
+        └─────────────┘
+```
+
+### Question Quality Assessment Checklist
+
+| Quality Criteria | Good Question | Poor Question | Your Question |
+|------------------|---------------|---------------|---------------|
+| **Focused** | Addresses specific, well-defined issue | Too broad or vague | ☐ |
+| **Answerable** | Can be addressed with available research | Requires unavailable data | ☐ |
+| **Relevant** | Important to field/practice | Trivial or purely academic | ☐ |
+| **Novel** | Fills knowledge gap | Already comprehensively answered | ☐ |
+| **Feasible** | Can be completed with available resources | Requires excessive resources | ☐ |
+| **Structured** | Uses framework (PICO, PEO, etc.) | Unstructured narrative | ☐ |
+| **Measurable** | Clear, definable outcomes | Vague or unmeasurable outcomes | ☐ |
+| **Ethical** | No ethical concerns | Potentially harmful implications | ☐ |
+
+### Research Question Frameworks
+
+| Framework | Best For | Components | Example |
+|-----------|----------|------------|---------|
+| **PICO** | Quantitative studies, interventions | Population, Intervention, Comparison, Outcome | In adults with T2DM (P), does Mediterranean diet (I) vs low-fat diet (C) improve HbA1c (O)? |
+| **PEO** | Observational studies | Population, Exposure, Outcome | In adolescents (P), does social media use (E) affect mental health (O)? |
+| **PICo** | Qualitative studies | Population, Interest, Context | What are experiences of nurses (P) regarding end-of-life care (I) in ICU settings (Co)? |
+| **SPIDER** | Qualitative/mixed methods | Sample, Phenomenon, Design, Evaluation, Research type | What are patients' (S) experiences of telehealth (PI) explored through interviews (D/R)? |
+| **SPICE** | Social sciences | Setting, Perspective, Intervention, Comparison, Evaluation | In schools (S), how do teachers (P) view anti-bullying programs (I) vs standard policies (C)? |
+| **ECLIPSE** | Service evaluation/quality improvement | Expectation, Client group, Location, Impact, Professionals, Service | What service improvements (E) do elderly patients (C) in nursing homes (L) expect to improve quality of life (I) from nursing staff (P) care services (S)? |
+
+### PICO Framework Detailed
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PICO FRAMEWORK                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  P - POPULATION                                             │
+│  └─▶ Who are you studying?                                  │
+│      • Demographics (age, gender, ethnicity)                │
+│      • Condition/disease                                    │
+│      • Setting (hospital, community, school)                │
+│      • Severity/stage                                       │
+│                                                             │
+│  I - INTERVENTION                                           │
+│  └─▶ What is being tested/applied?                          │
+│      • Treatment/therapy                                    │
+│      • Diagnostic test                                      │
+│      • Exposure/risk factor                                 │
+│      • Prognostic factor                                    │
+│                                                             │
+│  C - COMPARISON                                             │
+│  └─▶ What is it compared to?                                │
+│      • Placebo                                              │
+│      • Standard care                                        │
+│      • Alternative intervention                             │
+│      • No intervention                                      │
+│                                                             │
+│  O - OUTCOME                                                │
+│  └─▶ What are you measuring?                                │
+│      • Primary outcomes                                     │
+│      • Secondary outcomes                                   │
+│      • Time points                                          │
+│      • Measurement method                                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#<!--## PICO Development Table -->
+<!---->
+<!--| Component | Broad | Focused | Too Narrow | Selected |-->
+<!--|-----------|-------|---------|------------|----------|-->
+<!--| **Population** | Adults with diabetes | Adults 40-70 with type 2 diabetes, HbA1c 7-9% | Adults 45-50 with T2DM diagnosed 2020-2021, HbA1c 7.5-8% | Adults with type 2 diabetes |-->
+<!--| **Intervention** | Diet | Mediterranean diet | Mediterranean diet with exactly 35% fat, 50% carbs, 15% protein | Mediterranean diet (defined pattern) |-->
+<!--| **Comparison** | Other diets | Low-fat diet or usual care | Ornish diet only | Low-fat diet or usual care |-->
+<!--| **Outcome** | Blood sugar | Glycemic control (HbA1c, fasting glucose) | HbA1c measured at exactly 24 weeks | HbA1c at ≥12 weeks |-->
+<!---->
+
+## Step 2: Developing the Review Protocol
+
+### Protocol Development Workflow
+
+Before beginning your search, create a detailed protocol that outlines your
+entire methodology. This protocol serves as your roadmap and helps maintain
+consistency throughout the review process.
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│            PROTOCOL DEVELOPMENT PROCESS                      │
+└──────────────────────────────────────────────────────────────┘
+
+Week 1: Core Protocol Elements
+│
+├─ Day 1-2: Background & Rationale
+│  ├─ Literature review
+│  ├─ Justify need for review
+│  └─ Define knowledge gaps
+│
+├─ Day 3-4: Objectives & Questions
+│  ├─ Primary objectives
+│  ├─ Secondary objectives
+│  └─ Structured questions (PICO)
+│
+└─ Day 5-7: Eligibility Criteria
+   ├─ Study designs
+   ├─ Population criteria
+   ├─ Intervention/exposure details
+   ├─ Outcome measures
+   └─ Time/language restrictions
+
+Week 2: Methods Development
+│
+├─ Day 8-9: Information Sources
+│  ├─ Database selection
+│  ├─ Gray literature sources
+│  ├─ Citation searching plan
+│  └─ Contact with experts
+│
+├─ Day 10-11: Search Strategy
+│  ├─ Librarian consultation
+│  ├─ Key terms identification
+│  ├─ Boolean operators
+│  └─ Pilot testing
+│
+├─ Day 12: Study Selection Process
+│  ├─ Screening levels
+│  ├─ Number of reviewers
+│  ├─ Software/tools
+│  └─ Conflict resolution
+│
+└─ Day 13-14: Data Collection Planning
+   ├─ Variables to extract
+   ├─ Extraction form design
+   ├─ Pilot testing plan
+   └─ Missing data handling
+
+Week 3: Analysis & Quality
+│
+├─ Day 15-16: Quality Assessment
+│  ├─ Tool selection (RoB 2, NOS, etc.)
+│  ├─ Assessment process
+│  └─ Training plan
+│
+├─ Day 17-18: Synthesis Methods
+│  ├─ Narrative synthesis approach
+│  ├─ Meta-analysis plan (if appropriate)
+│  ├─ Heterogeneity handling
+│  ├─ Subgroup analyses
+│  └─ Sensitivity analyses
+│
+└─ Day 19-20: Additional Elements
+   ├─ GRADE assessment plan
+   ├─ Publication bias assessment
+   ├─ Timeline and resources
+   └─ Team roles
+
+Week 4: Finalization & Registration
+│
+├─ Day 21-23: Internal Review
+│  ├─ Team review
+│  ├─ Methodologist review
+│  ├─ Revisions
+│  └─ Final approval
+│
+└─ Day 24-28: Registration
+   ├─ Select registry (PROSPERO, OSF)
+   ├─ Complete registration form
+   ├─ Submit
+   ├─ Receive registration number
+   └─ Share with team
+```
+
+### Protocol Components Checklist
+
+| Section | Key Elements | Status |
+|---------|-------------|---------|
+| **Title** | • Clear identification as systematic review<br>• Topic and population specified | ☐ |
+| **Background** | • Rationale for review<br>• Summary of existing evidence<br>• Knowledge gaps | ☐ |
+| **Objectives** | • Primary objectives<br>• Secondary objectives<br>• Research questions | ☐ |
+| **Methods: Eligibility** | • PICO/framework criteria<br>• Study designs included<br>• Language restrictions<br>• Publication dates | ☐ |
+| **Methods: Search** | • Databases to search<br>• Search terms<br>• Gray literature sources<br>• Citation searching plan | ☐ |
+| **Methods: Selection** | • Screening process<br>• Number of reviewers<br>• Disagreement resolution | ☐ |
+| **Methods: Data Collection** | • Extraction form design<br>• Variables to extract<br>• Pilot testing plan | ☐ |
+| **Methods: Quality Assessment** | • Assessment tools<br>• Domains to evaluate<br>• Independent assessment plan | ☐ |
+| **Methods: Synthesis** | • Narrative or meta-analysis<br>• Subgroup analyses planned<br>• Heterogeneity assessment | ☐ |
+| **Timeline** | • Estimated completion dates<br>• Milestones | ☐ |
+| **Team** | • Reviewers and roles<br>• Expertise areas | ☐ |
+
+### Team Roles and Responsibilities Matrix
+
+| Role | Responsibilities | Skills Required | Time Commitment |
+|------|------------------|-----------------|-----------------|
+| **Principal Investigator (PI)** | • Overall leadership<br>• Protocol development<br>• Final decisions<br>• Manuscript writing | Topic expertise, review methodology | 30-40% time |
+| **Co-Investigator(s)** | • Protocol input<br>• Screening<br>• Data extraction<br>• Quality assessment<br>• Manuscript review | Topic expertise, critical appraisal | 20-30% time |
+| **Information Specialist** | • Search strategy development<br>• Database searching<br>• Search documentation | Information science, database searching | 10-15% time |
+| **Statistician** | • Meta-analysis planning<br>• Statistical analysis<br>• Interpretation of results | Biostatistics, meta-analysis | 10-20% time |
+| **Methodologist** | • Protocol review<br>• Method guidance<br>• Quality assurance | Systematic review methodology | 5-10% time |
+| **Research Assistant(s)** | • Screening<br>• Data extraction<br>• Reference management<br>• Administrative tasks | Attention to detail, organization | 40-50% time |
+| **Content Expert(s)** | • Protocol review<br>• Clinical interpretation<br>• Relevance assessment | Clinical/topic expertise | 5-10% time |
+
+### Protocol Registration Options
+
+| Registry | Suitable For | Website | Cost | Review Time |
+|----------|--------------|---------|------|-------------|
+| **PROSPERO** | Health-related reviews | www.crd.york.ac.uk/prospero | Free | 1-2 weeks |
+| **Open Science Framework** | Any discipline | osf.io | Free | Immediate |
+| **Cochrane Library** | Cochrane reviews only | www.cochranelibrary.com | Free | Varies |
+| **Campbell Collaboration** | Social sciences | www.campbellcollaboration.org | Free | 2-4 weeks |
+
+## Step 3: Establishing Inclusion and Exclusion Criteria
+
+Clear eligibility criteria ensure consistency in study selection and help other
+researchers understand the scope of your review.
+
+### Criteria Development Workflow
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│         ELIGIBILITY CRITERIA DEVELOPMENT                     │
+└──────────────────────────────────────────────────────────────┘
+
+STEP 1: Define Study Characteristics
+        │
+        ├─▶ Study Design
+        │   • RCTs only?
+        │   • Include observational studies?
+        │   • Qualitative studies?
+        │   • Mixed methods?
+        │
+        ├─▶ Publication Type
+        │   • Peer-reviewed only?
+        │   • Gray literature?
+        │   • Conference abstracts?
+        │   • Dissertations/theses?
+        │
+        └─▶ Publication Status
+            • Published only?
+            • Include unpublished?
+            • In-press acceptable?
+            │
+            ▼
+STEP 2: Define Population Criteria
+        │
+        ├─▶ Inclusion Criteria
+        │   • Age range
+        │   • Diagnosis/condition
+        │   • Disease stage/severity
+        │   • Setting
+        │   • Geographic location (if relevant)
+        │
+        └─▶ Exclusion Criteria
+            • Specific populations to exclude
+            • Co-morbidities
+            • Prior treatments
+            │
+            ▼
+STEP 3: Define Intervention/Exposure
+        │
+        ├─▶ Intervention Characteristics
+        │   • Type and description
+        │   • Minimum duration
+        │   • Delivery method
+        │   • Intensity/dose
+        │
+        └─▶ Exclusion Criteria
+            • Interventions to exclude
+            • Co-interventions
+            │
+            ▼
+STEP 4: Define Comparison
+        │
+        └─▶ Acceptable Comparators
+            • Placebo
+            • Standard care
+            • Alternative interventions
+            • No treatment
+            │
+            ▼
+STEP 5: Define Outcomes
+        │
+        ├─▶ Primary Outcomes
+        │   • Must be reported
+        │   • How measured
+        │   • Minimum follow-up
+        │
+        ├─▶ Secondary Outcomes
+        │   • Additional outcomes of interest
+        │
+        └─▶ Exclusion
+            • Studies without relevant outcomes
+            │
+            ▼
+STEP 6: Define Other Criteria
+        │
+        ├─▶ Temporal
+        │   • Date restrictions (justified)
+        │
+        ├─▶ Language
+        │   • Languages included (team capacity)
+        │
+        └─▶ Other
+            • Sample size minimums?
+            • Follow-up duration?
+            │
+            ▼
+STEP 7: Test Criteria
+        │
+        ├─▶ Apply to sample of studies
+        ├─▶ Check if key studies included
+        ├─▶ Check if too restrictive/permissive
+        └─▶ Refine as needed
+            │
+            ▼
+      FINALIZE CRITERIA
+```
+
+### Sample Eligibility Criteria Table
+
+| Criterion | Inclusion | Exclusion | Rationale |
+|-----------|-----------|-----------|-----------|
+| **Study Design** | Randomized controlled trials (RCTs), quasi-experimental studies | Case reports, editorials, opinion pieces, narrative reviews | Need rigorous evaluation of causality |
+| **Population** | Adults aged 18-75 with diagnosed type 2 diabetes (any duration, any HbA1c level) | Type 1 diabetes, gestational diabetes, prediabetes, children/adolescents | Focus on adult T2DM population |
+| **Intervention** | Dietary interventions defined as Mediterranean diet pattern, lasting ≥12 weeks | Pharmaceutical interventions, surgical interventions, interventions <12 weeks, undefined "healthy" diets | Sufficient duration to see metabolic effects; need clearly defined intervention |
+| **Comparison** | Any comparison diet (low-fat, low-carb, usual diet) or usual care/no intervention | No comparison group, same diet with different caloric restriction only | Need comparative data; focus on diet pattern not calories alone |
+| **Outcomes** | Must report at least one glycemic outcome: HbA1c, fasting glucose, postprandial glucose, or insulin sensitivity | Studies reporting only weight, lipids, or quality of life without glycemic measures | Primary interest in metabolic/glycemic outcomes |
+| **Language** | English, Spanish, French, German, Italian | All other languages | Team language capabilities; major Mediterranean diet research languages |
+| **Publication Date** | January 2010 - present | Before 2010 | Major dietary guidelines updated 2010; modern diabetes management era |
+| **Publication Type** | Peer-reviewed journals (full articles) | Conference abstracts without full publication, dissertations, protocols, study registrations | Need complete methodology and results for quality assessment |
+| **Geographic** | No restrictions | None | Mediterranean diet applicable globally |
+| **Setting** | Any setting (hospital, outpatient, community, home-based) | None | Want to capture all settings |
+
+## Step 4: Designing the Search Strategy
+
+A comprehensive search strategy is crucial for identifying all relevant studies
+and minimizing publication bias.
+
+### Search Strategy Development Timeline
+
+```
+Week 1: Planning & Preparation
+│
+├─ Day 1: Librarian Meeting
+│  ├─ Discuss PICO components
+│  ├─ Identify key concepts
+│  ├─ Select databases
+│  └─ Set timeline
+│
+├─ Day 2-3: Term Generation
+│  ├─ List synonyms for each concept
+│  ├─ Identify subject headings (MeSH, Emtree)
+│  ├─ Check truncation options
+│  └─ Note spelling variations
+│
+└─ Day 4-5: Build Initial Strategy
+   ├─ Combine terms with Boolean operators
+   ├─ Test in one database (PubMed)
+   ├─ Check sample of results
+   └─ Identify known key studies
+
+Week 2: Testing & Refinement
+│
+├─ Day 6-7: Sensitivity Check
+│  ├─ Are known studies captured?
+│  ├─ Results too broad? Too narrow?
+│  ├─ Review first 50-100 results
+│  └─ Adjust terms as needed
+│
+├─ Day 8-9: Specificity Check
+│  ├─ Too many irrelevant results?
+│  ├─ Add more specific terms
+│  ├─ Use proximity operators
+│  └─ Re-test
+│
+└─ Day 10: Peer Review
+   ├─ Share strategy with team
+   ├─ Get feedback from content expert
+   ├─ Librarian final review
+   └─ Make final adjustments
+
+Week 3: Translation & Documentation
+│
+├─ Day 11-14: Adapt for Each Database
+│  ├─ PubMed/MEDLINE (MeSH)
+│  ├─ Embase (Emtree)
+│  ├─ Cochrane Library
+│  ├─ Web of Science
+│  └─ Discipline-specific databases
+│
+└─ Day 15: Document Everything
+   ├─ Create search log template
+   ├─ Save all strategies
+   ├─ Prepare supplementary file
+   └─ Ready for execution
+
+
+┌─────────────────────────────────────────────────────────────┐
+│              SEARCH STRATEGY DEVELOPMENT                    │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ├─▶ STEP 1: Identify Key Concepts from PICO
+    │   • Break down each component
+    │   • List main concepts
+    │
+    ├─▶ STEP 2: Generate Synonyms and Related Terms
+    │   • Use thesauri and dictionaries
+    │   • Consider spelling variations
+    │   • Include acronyms and abbreviations
+    │
+    ├─▶ STEP 3: Identify Database Subject Headings
+    │   • MeSH terms (PubMed)
+    │   • Emtree terms (Embase)
+    │   • Check each database's controlled vocabulary
+    │
+    ├─▶ STEP 4: Build Search Strings
+    │   • Combine synonyms with OR
+    │   • Combine concepts with AND
+    │   • Use truncation (*) and wildcards (?)
+    │   • Apply proximity operators (NEAR, ADJ)
+    │
+    ├─▶ STEP 5: Add Filters
+    │   • Date range
+    │   • Language
+    │   • Publication type
+    │   • Study design (if possible)
+    │
+    ├─▶ STEP 6: Pilot Test
+    │   • Run in one database
+    │   • Check sample of results
+    │   • Verify known studies are captured
+    │
+    ├─▶ STEP 7: Refine
+    │   • Adjust sensitivity/specificity
+    │   • Add missing terms
+    │   • Remove ineffective terms
+    │
+    └─▶ STEP 8: Adapt for Each Database
+        • Modify syntax as needed
+        • Translate subject headings
+        • Document all variations
+```
+
+### Database Selection by Discipline
+
+| Discipline | Primary Databases | Supplementary Databases | Gray Literature Sources |
+|------------|-------------------|------------------------|------------------------|
+| **Medicine/Health** | PubMed/MEDLINE, Embase, Cochrane Library | CINAHL, PsycINFO, Web of Science | ClinicalTrials.gov, WHO ICTRP, FDA.gov |
+| **Psychology** | PsycINFO, PubMed, Scopus | PsycARTICLES, Web of Science | DARE, PsycEXTRA, dissertations |
+| **Education** | ERIC, Education Source | British Education Index, Web of Science | Education databases, policy documents |
+| **Social Sciences** | Sociological Abstracts, Social Sciences Citation Index | JSTOR, ProQuest | Government reports, NGO publications |
+| **Engineering** | IEEE Xplore, Engineering Village | ACM Digital Library, Scopus | Technical reports, patents |
+| **Business** | Business Source Complete, ABI/INFORM | EconLit, Web of Science | Industry reports, working papers |
+| **Environmental** | Web of Science, Scopus | GeoRef, Environmental Science Database | EPA, environmental agency reports |
+
+### Search String Construction Guide
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           BUILDING EFFECTIVE SEARCH STRINGS                  │
+└──────────────────────────────────────────────────────────────┘
+
+STEP 1: Identify Core Concepts (from PICO)
+        Example: Diabetes, Mediterranean diet, Glycemic control
+
+STEP 2: Generate Synonyms & Related Terms
+        │
+        Diabetes:
+        ├─ diabetes mellitus
+        ├─ diabetic
+        ├─ T2DM
+        ├─ NIDDM
+        └─ non-insulin dependent diabetes
+        
+        Mediterranean Diet:
+        ├─ Mediterranean diet
+        ├─ MedDiet
+        ├─ Mediterranean-style diet
+        └─ Mediterranean dietary pattern
+        
+        Glycemic Control:
+        ├─ glycemic control
+        ├─ glycaemic control (UK spelling)
+        ├─ blood glucose
+        ├─ HbA1c
+        ├─ hemoglobin A1c
+        └─ glucose control
+
+STEP 3: Add Database Subject Headings
+        │
+        PubMed MeSH Terms:
+        ├─ "Diabetes Mellitus, Type 2"[Mesh]
+        ├─ "Diet, Mediterranean"[Mesh]
+        └─ "Glycated Hemoglobin A"[Mesh]
+
+STEP 4: Combine Synonyms with OR (within concept)
+        │
+        (diabetes OR "diabetes mellitus" OR diabetic OR T2DM OR NIDDM)
+
+STEP 5: Combine Concepts with AND (between concepts)
+        │
+        [Diabetes terms] AND [Diet terms] AND [Outcome terms]
+
+STEP 6: Apply Truncation & Wildcards
+        │
+        diet* → diet, diets, dietary
+        glyc?emic → glycemic, glycaemic
+
+STEP 7: Use Proximity Operators (if available)
+        │
+        mediterranean ADJ2 diet → Mediterranean, diet within 2 words
+        "mediterranean diet" → exact phrase
+
+STEP 8: Add Filters
+        │
+        Filters: English, 2010-present, Humans, Clinical Trial or RCT
+
+FINAL SEARCH STRING:
+("Diabetes Mellitus, Type 2"[Mesh] OR "diabetes mellitus, type 2" 
+OR "type 2 diabetes" OR T2DM OR NIDDM OR "non-insulin dependent 
+diabetes") AND ("Diet, Mediterranean"[Mesh] OR "mediterranean diet*" 
+OR "MedDiet" OR "mediterranean-style diet*") AND ("Glycated Hemoglobin 
+A"[Mesh] OR HbA1c OR "hemoglobin A1c" OR "haemoglobin A1c" OR 
+"glycemic control" OR "glycaemic control" OR "blood glucose" OR 
+"glucose control") 
+Filters: English, 2010/01/01 - present, Humans
+```
+
+### Search Sensitivity vs Precision Trade-off
+
+```
+                HIGH SENSITIVITY
+                (Comprehensive)
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+    Many results   Captures all   Time-consuming
+    (10,000+)    relevant studies    to screen
+        │             │             │
+        └─────────────┼─────────────┘
+                      │
+        ◄─────────────●─────────────►
+      BROAD                      NARROW
+     Search                      Search
+        │                           │
+        └─────────────┬─────────────┘
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+    Fewer results  May miss some   Faster to
+    (100-500)      relevant studies  screen
+        │             │             │
+        └─────────────┼─────────────┘
+                      │
+                HIGH PRECISION
+                 (Focused)
+
+RECOMMENDATION: Start with HIGH SENSITIVITY
+Then refine if needed based on results
+```
+
+### Comprehensive Search Source Checklist
+
+| Source Type | Specific Sources | Purpose | Completed |
+|-------------|------------------|---------|-----------|
+| **Electronic Databases** | PubMed, Embase, Cochrane, Web of Science, etc. | Primary literature search | ☐ |
+| **Gray Literature** | | | |
+| ├─ Trial Registries | ClinicalTrials.gov, WHO ICTRP, EU Clinical Trials Register | Unpublished/ongoing trials | ☐ |
+| ├─ Thesis/Dissertations | ProQuest Dissertations, EThOS, DART-Europe | Academic gray literature | ☐ |
+| ├─ Conference Proceedings | Web of Science Conference Proceedings, Scopus | Recent unpublished findings | ☐ |
+| ├─ Government/Agency Reports | WHO, CDC, FDA, NICE, relevant agencies | Policy/regulatory documents | ☐ |
+| **Citation Searching** | | | |
+| ├─ Backward Citation | Reference lists of included studies | Studies cited by included papers | ☐ |
+| ├─ Forward Citation | Google Scholar, Web of Science "Cited by" | Studies citing included papers | ☐ |
+| **Hand Searching** | | | |
+| ├─ Key Journals | Top 3-5 journals in field | Issues not yet indexed | ☐ |
+| ├─ Relevant Organizations | Professional societies, advocacy groups | Organization publications | ☐ |
+| **Expert Consultation** | | | |
+| ├─ Content Experts | Email key researchers in field | Known ongoing/unpublished work | ☐ |
+| ├─ Author Contact | Contact authors of conference abstracts | Request full papers | ☐ |
+
+### Search Results Tracking Table
+
+| Database | Date Searched | Search Strategy File | Results | Unique Records | Notes |
+|----------|---------------|---------------------|---------|----------------|-------|
+| PubMed | 2025-03-15 | search_pubmed_v1.txt | 1,247 | 1,247 | Baseline search |
+| Embase | 2025-03-15 | search_embase_v1.txt | 1,834 | 978 | 856 duplicates with PubMed |
+| Cochrane CENTRAL | 2025-03-15 | search_cochrane_v1.txt | 156 | 34 | 122 already in PubMed/Embase |
+| CINAHL | 2025-03-16 | search_cinahl_v1.txt | 423 | 89 | 334 duplicates |
+| Web of Science | 2025-03-16 | search_wos_v1.txt | 967 | 234 | 733 duplicates |
+| **Subtotal Databases** | — | — | **4,627** | **2,582** | — |
+| ClinicalTrials.gov | 2025-03-17 | manual_search_log.docx | 45 | 12 | 33 already found or not relevant |
+| WHO ICTRP | 2025-03-17 | manual_search_log.docx | 23 | 8 | — |
+| **Subtotal Trials** | — | — | **68** | **20** | — |
+| Forward citation (5 key papers) | 2025-03-18 | citation_tracking.xlsx | 234 | 45 | Google Scholar |
+| Backward citation (included studies) | 2025-03-18 | citation_tracking.xlsx | 156 | 28 | From initial screening |
+| **Subtotal Citation** | — | — | **390** | **73** | — |
+| Hand search: 3 key journals | 2025-03-19 | manual_search_log.docx | 12 | 12 | 2023-2024 issues |
+| Gray literature (ProQuest) | 2025-03-19 | search_proquest_v1.txt | 34 | 7 | Dissertations |
+| **Grand Total** | — | — | **5,131** | **2,694** | After de-duplication |
+
+### Search Documentation Template
+
+| Database | Platform | Date | Search # | Search Terms | Limiters | Results |
+|----------|----------|------|----------|--------------|----------|---------|
+| PubMed | NLM | 2025-03-15 | #1 | "diabetes mellitus, type 2"[MeSH] | None | 156,823 |
+| PubMed | NLM | 2025-03-15 | #2 | "type 2 diabetes" OR T2DM OR NIDDM | None | 203,456 |
+| PubMed | NLM | 2025-03-15 | #3 | #1 OR #2 | None | 245,789 |
+| PubMed | NLM | 2025-03-15 | #4 | "diet, mediterranean"[MeSH] OR "mediterranean diet*" | None | 3,456 |
+| PubMed | NLM | 2025-03-15 | #5 | #3 AND #4 | None | 234 |
+| PubMed | NLM | 2025-03-15 | #6 | #5 AND ("HbA1c" OR "glycemic control"...) | English, 2010-present | 87 |
+
+## Step 5: Conducting the Search
+
+Execute your search strategy systematically across all selected databases.
+
+### Search Execution Workflow
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              SEARCH EXECUTION PROCESS                         │
+└──────────────────────────────────────────────────────────────┘
+
+Phase 1: Pre-Execution Setup (Day 1)
+│
+├─ Set up reference management software
+├─ Create folder structure
+├─ Prepare search log template
+├─ Test export functions
+└─ Brief team on process
+
+Phase 2: Database Searches (Day 2-5)
+│
+├─ Day 2: Primary Databases
+│  ├─ PubMed/MEDLINE
+│  │  ├─ Execute search
+│  │  ├─ Note results count
+│  │  ├─ Export citations (RIS/XML)
+│  │  ├─ Save search strategy
+│  │  └─ Screenshot for documentation
+│  │
+│  ├─ Embase
+│  │  ├─ Adapt search strategy
+│  │  ├─ Execute and document
+│  │  └─ Export results
+│  │
+│  └─ Cochrane Library
+│     └─ Same process
+│
+├─ Day 3: Discipline-Specific Databases
+│  ├─ Execute in each database
+│  ├─ Document thoroughly
+│  └─ Export all results
+│
+└─ Day 4-5: Import to Reference Manager
+   ├─ Import all database results
+   ├─ Verify import completeness
+   ├─ Check for errors
+   └─ Initial duplicate check
+
+Phase 3: Supplementary Searches (Day 6-8)
+│
+├─ Day 6: Trial Registries
+│  ├─ ClinicalTrials.gov
+│  ├─ WHO ICTRP
+│  ├─ Manual screening
+│  └─ Export/enter relevant trials
+│
+├─ Day 7: Gray Literature
+│  ├─ Dissertation databases
+│  ├─ Conference proceedings
+│  ├─ Government/agency websites
+│  └─ Document and import
+│
+└─ Day 8: Citation Searching
+   ├─ Identify key papers
+   ├─ Forward citation search
+   ├─ Backward citation search
+   └─ Import new citations
+
+Phase 4: De-duplication (Day 9-10)
+│
+├─ Automated Duplicate Detection
+│  ├─ Use reference manager tools
+│  ├─ Review suggested duplicates
+│  ├─ Merge confirmed duplicates
+│  └─ Note number removed
+│
+└─ Manual Duplicate Check
+   ├─ Sort by first author + year
+   ├─ Check for missed duplicates
+   ├─ Review similar titles
+   └─ Final de-duplicate count
+
+Phase 5: Preparation for Screening (Day 11-12)
+│
+├─ Export to Screening Software
+│  ├─ Covidence, Rayyan, or DistillerSR
+│  ├─ Verify all citations imported
+│  └─ Set up screening questions
+│
+├─ Create Screening Team Access
+│  ├─ Add reviewers to platform
+│  ├─ Assign permissions
+│  └─ Provide training
+│
+└─ Final Documentation
+   ├─ Complete search log
+   ├─ Archive all search strategies
+   ├─ Document total unique citations
+   └─ Ready to begin screening
+
+TOTAL: 12 days for complete search execution
+```
+
+### De-duplication Strategy
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              DE-DUPLICATION WORKFLOW                         │
+└──────────────────────────────────────────────────────────────┘
+
+Stage 1: Automated Detection
+│
+├─ Reference Manager Built-in Tools
+│  ├─ EndNote: "Find Duplicates"
+│  ├─ Mendeley: "Check for Duplicates"
+│  ├─ Zotero: Duplicate Items folder
+│  └─ Review each suggested match
+│
+└─ Criteria for Automated Matching
+   ├─ Same DOI
+   ├─ Same PMID
+   ├─ Title + first author + year match
+   └─ Fuzzy title matching (90%+ similar)
+
+Stage 2: Manual Review of Suggestions
+│
+For each suggested duplicate pair:
+├─ Compare titles (exact match?)
+├─ Compare authors (same first author?)
+├─ Compare year (same year?)
+├─ Compare journal (same source?)
+├─ Compare DOI/PMID (definitive match)
+│
+Decision:
+├─ ✓ TRUE DUPLICATE → Merge, keep most complete
+├─ ✗ NOT DUPLICATE → Keep both
+└─ ? UNCERTAIN → Flag for team review
+
+Stage 3: Manual Search for Missed Duplicates
+│
+├─ Sort by First Author A-Z
+│  └─ Scan for same author + similar years
+│
+├─ Sort by Publication Year
+│  └─ Within same year, check similar titles
+│
+├─ Sort by Journal
+│  └─ Check for same paper in same journal
+│
+└─ Search for common duplicates:
+   ├─ Journal article + conference abstract
+   ├─ Preprint + published version
+   ├─ Different language versions
+   └─ Retraction + original
+
+Stage 4: Documentation
+│
+Record:
+├─ Total citations before de-duplication
+├─ Automated duplicates removed
+├─ Manual duplicates removed
+├─ Final unique citations
+└─ Examples of tricky duplicates resolved
+
+Common Tricky Duplicates:
+┌────────────────────────┬──────────────────────────┐
+│ Type                   │ How to Handle            │
+├────────────────────────┼──────────────────────────┤
+│ Erratum + Original     │ Keep original only       │
+│ Abstract + Full paper  │ Keep full paper only     │
+│ Preprint + Published   │ Keep published version   │
+│ Different author order │ Compare content, merge   │
+│ Supplement + Main      │ Keep both, note relation │
+│ Different page numbers │ Check if truly different │
+└────────────────────────┴──────────────────────────┘
+```
+
+### Search Results Summary Table
+
+| Source | Date Searched | Results Retrieved | After De-duplication |
+|--------|---------------|-------------------|---------------------|
+| PubMed | 2025-03-15 | 1,247 | — |
+| Embase | 2025-03-15 | 1,834 | — |
+| Cochrane Library | 2025-03-15 | 156 | — |
+| CINAHL | 2025-03-16 | 423 | — |
+| Web of Science | 2025-03-16 | 967 | — |
+| Citation searching | 2025-03-17 | 78 | — |
+| Gray literature | 2025-03-18 | 34 | — |
+| Hand searching | 2025-03-18 | 12 | — |
+| **Total** | — | **4,751** | **3,842** |
+
+## Step 6: Screening and Study Selection
+
+Study selection typically occurs in two stages: title/abstract screening
+followed by full-text review.
+
+### Comprehensive Screening Workflow
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│           COMPLETE SCREENING WORKFLOW                         │
+└──────────────────────────────────────────────────────────────┘
+
+PREPARATION PHASE (Week 1)
+│
+├─ Day 1-2: Screening Tool Setup
+│  ├─ Choose platform (Covidence, Rayyan, DistillerSR)
+│  ├─ Import all citations
+│  ├─ Configure screening questions
+│  ├─ Set up eligibility criteria checklist
+│  └─ Test workflow with 5 sample citations
+│
+├─ Day 3: Team Training
+│  ├─ Review eligibility criteria
+│  ├─ Practice on 10 test citations
+│  ├─ Discuss challenging scenarios
+│  ├─ Establish decision rules
+│  └─ Set conflict resolution process
+│
+└─ Day 4-5: Pilot Screening
+   ├─ Both reviewers screen same 50 citations
+   ├─ Compare results
+   ├─ Calculate Cohen's kappa
+   ├─ Discuss disagreements
+   ├─ Refine criteria if needed
+   └─ Document changes
+
+TITLE/ABSTRACT SCREENING (Week 2-4)
+│
+├─ Independent Screening
+│  ├─ Reviewer 1 & 2 work independently
+│  ├─ No communication during screening
+│  ├─ Flag uncertain citations for discussion
+│  └─ Target: 100-200 citations per reviewer per day
+│
+├─ Screening Questions (for each citation)
+│  ├─ Q1: Correct population? (Yes/No/Unclear)
+│  ├─ Q2: Correct intervention/exposure? (Yes/No/Unclear)
+│  ├─ Q3: Correct study design? (Yes/No/Unclear)
+│  ├─ Q4: Relevant outcomes reported? (Yes/No/Unclear)
+│  └─ Decision: Include / Exclude / Maybe
+│
+├─ Decision Rules
+│  ├─ All "Yes" → INCLUDE
+│  ├─ Any "No" (with certainty) → EXCLUDE
+│  ├─ Any "Unclear" → INCLUDE (review at full-text)
+│  └─ When in doubt → INCLUDE
+│
+└─ Weekly Progress Review
+   ├─ Check screening pace
+   ├─ Discuss challenging citations
+   ├─ Monitor agreement rates
+   └─ Adjust timeline if needed
+
+CONFLICT RESOLUTION (Ongoing)
+│
+├─ Automatic Conflicts
+│  ├─ R1: Include vs R2: Exclude
+│  └─ Flag for discussion
+│
+├─ Resolution Process
+│  ├─ Both reviewers discuss rationale
+│  ├─ Re-review eligibility criteria
+│  ├─ Reach consensus if possible
+│  ├─ If no consensus → Third reviewer
+│  └─ Document final decision + rationale
+│
+└─ Agreement Tracking
+   ├─ Calculate kappa at 25%, 50%, 75%, 100%
+   ├─ Target: Kappa >0.60
+   └─ If kappa drops, retrain and recalibrate
+
+FULL-TEXT RETRIEVAL (Week 5)
+│
+├─ Identify All Potentially Relevant Citations
+│  └─ All "Include" and "Maybe" from title/abstract
+│
+├─ Retrieval Methods (in order)
+│  ├─ 1. Direct download (open access)
+│  ├─ 2. Institution library access
+│  ├─ 3. Interlibrary loan request
+│  ├─ 4. Author contact via email
+│  ├─ 5. ResearchGate request
+│  └─ 6. Note as "unable to retrieve"
+│
+├─ Organization
+│  ├─ Create folder: "Full_Texts_For_Review"
+│  ├─ Name files: "FirstAuthor_Year_ShortTitle.pdf"
+│  ├─ Link to citation in database
+│  └─ Track retrieval status
+│
+└─ Retrieval Tracking
+   | Status | Count | % |
+   |--------|-------|---|
+   | Retrieved | 267 | 97% |
+   | In progress | 5 | 2% |
+   | Unobtainable | 3 | 1% |
+   | TOTAL | 275 | 100% |
+
+FULL-TEXT SCREENING (Week 6-8)
+│
+├─ Independent Full-Text Review
+│  ├─ Reviewer 1 & 2 independently
+│  ├─ Read full text carefully
+│  ├─ Apply ALL eligibility criteria
+│  ├─ Document specific exclusion reasons
+│  └─ Target: 10-15 papers per reviewer per day
+│
+├─ Detailed Screening Form
+│  For each paper:
+│  ├─ Study Design
+│  │  ├─ Type: __________
+│  │  └─ Meets criteria? Y/N
+│  │
+│  ├─ Population
+│  │  ├─ N = ____
+│  │  ├─ Age range: ____
+│  │  ├─ Diagnosis method: ____
+│  │  └─ Meets criteria? Y/N
+│  │
+│  ├─ Intervention/Exposure
+│  │  ├─ Description: ____
+│  │  ├─ Duration: ____
+│  │  └─ Meets criteria? Y/N
+│  │
+│  ├─ Comparison
+│  │  ├─ Description: ____
+│  │  └─ Meets criteria? Y/N
+│  │
+│  ├─ Outcomes
+│  │  ├─ Primary: ____
+│  │  ├─ Secondary: ____
+│  │  └─ Meets criteria? Y/N
+│  │
+│  └─ Other Criteria
+│     ├─ Language: ____
+│     ├─ Date: ____
+│     ├─ Publication type: ____
+│     └─ All met? Y/N
+│
+├─ Exclusion Reasons (Primary only)
+│  Use predefined categories:
+│  ├─ 1. Wrong population
+│  ├─ 2. Wrong intervention/exposure
+│  ├─ 3. Wrong comparison
+│  ├─ 4. Wrong outcomes
+│  ├─ 5. Wrong study design
+│  ├─ 6. Wrong publication type
+│  ├─ 7. Language
+│  ├─ 8. Duplicate/multiple publication
+│  └─ 9. Other (specify)
+│
+└─ Conflict Resolution
+   ├─ Discuss all conflicts
+   ├─ Third reviewer if needed
+   ├─ Document decisions
+   └─ Create exclusion table
+
+FINAL SELECTION (Week 9)
+│
+├─ Compile Final Included Studies List
+│  ├─ All studies passing full-text review
+│  ├─ Verify no duplicates
+│  ├─ N = ____ studies
+│  └─ Create master spreadsheet
+│
+├─ Create PRISMA Flow Diagram
+│  ├─ Numbers at each stage
+│  ├─ Exclusion reasons with counts
+│  ├─ Visual representation
+│  └─ Review with team
+│
+└─ Documentation
+   ├─ List of excluded studies with reasons
+   ├─ Inter-rater agreement statistics
+   ├─ Screening timeline actual vs planned
+   └─ Notes on challenging decisions
+
+ESTIMATED TIME: 9 weeks total
+├─ Preparation: 1 week
+├─ Title/Abstract: 3 weeks (for ~4,000 citations)
+├─ Retrieval: 1 week
+└─ Full-Text: 3-4 weeks (for ~270 papers)
+```
+
+### PRISMA 2020 Flow Diagram
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     IDENTIFICATION                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Records identified from:              Records identified   │
+│  Databases (n = 4,739)                 from other sources:  │
+│  • PubMed (n = 1,247)                  • Citation (n = 78)  │
+│  • Embase (n = 1,834)                  • Gray lit (n = 34)  │
+│  • Cochrane (n = 156)                  • Hand (n = 12)      │
+│  • CINAHL (n = 423)                                         │
+│  • Web of Science (n = 967)            (n = 124)            │
+│  • Registers (n = 112)                                      │
+│                                                             │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Records removed before screening:                          │
+│  • Duplicate records (n = 909)                              │
+│  • Records marked ineligible by automation tools (n = 112)  │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      SCREENING                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Records screened                    Records excluded       │
+│  (n = 3,842)                        (n = 3,567)             │
+│                                                             │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Reports sought for retrieval        Reports not retrieved  │
+│  (n = 275)                          (n = 8)                 │
+│                                                             │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Reports assessed for eligibility  Reports excluded:        │
+│  (n = 267)                         (n = 224)                │
+│                                    • Wrong population (87)  │
+│                                    • Wrong intervention (56)│
+│                                    • Wrong outcome (42)     │
+│                                    • Wrong study design (29)│
+│                                    • Wrong publication (10) │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      INCLUDED                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Studies included in review                                 │
+│  (n = 43)                                                   │
+│                                                             │
+│  Reports of included studies                                │
+│  (n = 43)                                                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Screening Process Workflow
+
+| Stage | Process | Reviewers | Tool | Output |
+|-------|---------|-----------|------|--------|
+| **Title/Abstract** | Quick screening against broad eligibility | 2 independent | Covidence/Rayyan | Include/Exclude/Uncertain |
+| **Conflict Resolution** | Discuss disagreements | 2 + 1 arbiter if needed | Discussion meeting | Consensus decision |
+| **Full-Text** | Detailed assessment against all criteria | 2 independent | Covidence/Manual | Include/Exclude with reason |
+| **Final Selection** | Resolve conflicts, finalize list | 2 + 1 arbiter | Discussion meeting | Final included studies |
+
+### Inter-Rater Reliability
+
+| Kappa Value | Interpretation | Action Needed |
+|-------------|----------------|---------------|
+| < 0.20 | Poor agreement | Review criteria, retrain reviewers, discuss discrepancies |
+| 0.21 - 0.40 | Fair agreement | Clarify criteria, discuss challenging cases |
+| 0.41 - 0.60 | Moderate agreement | Minor refinements to process |
+| 0.61 - 0.80 | Good agreement | Continue with current process |
+| 0.81 - 1.00 | Excellent agreement | Process working well |
+
+### Search Strategy Development Process
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              SEARCH STRATEGY DEVELOPMENT                     │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ├─▶ STEP 1: Identify Key Concepts from PICO
+    │   • Break down each component
+    │   • List main concepts
+    │
+    ├─▶ STEP 2: Generate Synonyms and Related Terms
+    │   • Use thesauri and dictionaries
+    │   • Consider spelling variations
+    │   • Include acronyms and abbreviations
+    │
+    ├─▶ STEP 3: Identify Database Subject Headings
+    │   • MeSH terms (PubMed)
+    │   • Emtree terms (Embase)
+    │   • Check each database's controlled vocabulary
+    │
+    ├─▶ STEP 4: Build Search Strings
+    │   • Combine synonyms with OR
+    │   • Combine concepts with AND
+    │   • Use truncation (*) and wildcards (?)
+    │   • Apply proximity operators (NEAR, ADJ)
+    │
+    ├─▶ STEP 5: Add Filters
+    │   • Date range
+    │   • Language
+    │   • Publication type
+    │   • Study design (if possible)
+    │
+    ├─▶ STEP 6: Pilot Test
+    │   • Run in one database
+    │   • Check sample of results
+    │   • Verify known studies are captured
+    │
+    ├─▶ STEP 7: Refine
+    │   • Adjust sensitivity/specificity
+    │   • Add missing terms
+    │   • Remove ineffective terms
+    │
+    └─▶ STEP 8: Adapt for Each Database
+        • Modify syntax as needed
+        • Translate subject headings
+        • Document all variations
+```
+
+### Sample Search Strategy
+
+**Example Topic**: Mediterranean diet and glycemic control in type 2 diabetes
+
+| Concept | Search Terms | Combined With |
+|---------|--------------|---------------|
+| **Population** | ("diabetes mellitus, type 2"[MeSH] OR "type 2 diabetes" OR "T2DM" OR "adult onset diabetes" OR "non-insulin dependent diabetes" OR "NIDDM") | AND |
+| **Intervention** | ("diet, mediterranean"[MeSH] OR "mediterranean diet*" OR "Mediterranean-style diet*" OR "MedDiet" OR "med diet") | AND |
+| **Outcome** | ("glycated hemoglobin"[MeSH] OR "HbA1c" OR "hemoglobin A1c" OR "glycemic control" OR "blood glucose" OR "fasting glucose" OR "glucose control") | — |
+| **Filters** | English language, January 2010-present, Humans | — |
+
+**Combined Search String**:
+```
+("diabetes mellitus, type 2"[MeSH] OR "type 2 diabetes" OR "T2DM" OR 
+"adult onset diabetes" OR "non-insulin dependent diabetes" OR "NIDDM")
+AND
+("diet, mediterranean"[MeSH] OR "mediterranean diet*" OR 
+"Mediterranean-style diet*" OR "MedDiet" OR "med diet")
+AND
+("glycated hemoglobin"[MeSH] OR "HbA1c" OR "hemoglobin A1c" OR 
+"glycemic control" OR "blood glucose" OR "fasting glucose" OR 
+"glucose control")
+Filters: English, 2010-present, Humans
+```
+
+### Search Documentation Template
+
+| Database | Platform | Date | Search # | Search Terms | Limiters | Results |
+|----------|----------|------|----------|--------------|----------|---------|
+| PubMed | NLM | 2025-03-15 | #1 | "diabetes mellitus, type 2"[MeSH] | None | 156,823 |
+| PubMed | NLM | 2025-03-15 | #2 | "type 2 diabetes" OR T2DM OR NIDDM | None | 203,456 |
+| PubMed | NLM | 2025-03-15 | #3 | #1 OR #2 | None | 245,789 |
+| PubMed | NLM | 2025-03-15 | #4 | "diet, mediterranean"[MeSH] OR "mediterranean diet*" | None | 3,456 |
+| PubMed | NLM | 2025-03-15 | #5 | #3 AND #4 | None | 234 |
+| PubMed | NLM | 2025-03-15 | #6 | #5 AND ("HbA1c" OR "glycemic control"...) | English, 2010-present | 87 |
+
+## Step 5: Conducting the Search
+
+Execute your search strategy systematically across all selected databases.
+
+### Search Execution Timeline
+
+```
+Week 1-2: Database Searches
+│
+├─ Day 1-2: Primary databases (PubMed, Embase, Cochrane)
+├─ Day 3-4: Discipline-specific databases
+├─ Day 5-6: Gray literature sources
+└─ Day 7-10: Citation searching and hand searching
+
+Week 3: De-duplication and Organization
+│
+├─ Import all results to reference manager
+├─ Run automated duplicate detection
+├─ Manual duplicate check
+└─ Create screening database
+
+Week 4: Preparation for Screening
+│
+├─ Set up screening software (Covidence, DistillerSR, Rayyan)
+├─ Train additional reviewers
+├─ Conduct pilot screening on 50-100 records
+└─ Finalize screening forms and processes
+```
+
+### Search Results Summary Table
+
+| Source | Date Searched | Results Retrieved | After De-duplication |
+|--------|---------------|-------------------|---------------------|
+| PubMed | 2025-03-15 | 1,247 | — |
+| Embase | 2025-03-15 | 1,834 | — |
+| Cochrane Library | 2025-03-15 | 156 | — |
+| CINAHL | 2025-03-16 | 423 | — |
+| Web of Science | 2025-03-16 | 967 | — |
+| Citation searching | 2025-03-17 | 78 | — |
+| Gray literature | 2025-03-18 | 34 | — |
+| Hand searching | 2025-03-18 | 12 | — |
+| **Total** | — | **4,751** | **3,842** |
+
+## Step 6: Screening and Study Selection
+
+Study selection typically occurs in two stages: title/abstract screening followed by full-text review.
+
+### PRISMA 2020 Flow Diagram
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     IDENTIFICATION                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Records identified from:              Records identified    │
+│  Databases (n = 4,739)                 from other sources:   │
+│  • PubMed (n = 1,247)                  • Citation (n = 78)   │
+│  • Embase (n = 1,834)                  • Gray lit (n = 34)   │
+│  • Cochrane (n = 156)                  • Hand (n = 12)       │
+│  • CINAHL (n = 423)                                          │
+│  • Web of Science (n = 967)            (n = 124)             │
+│  • Registers (n = 112)                                       │
+│                                                              │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Records removed before screening:                          │
+│  • Duplicate records (n = 909)                              │
+│  • Records marked ineligible by automation tools (n = 112)  │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      SCREENING                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Records screened                    Records excluded        │
+│  (n = 3,842)                        (n = 3,567)             │
+│                                                              │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Reports sought for retrieval        Reports not retrieved   │
+│  (n = 275)                          (n = 8)                 │
+│                                                              │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Reports assessed for eligibility   Reports excluded:        │
+│  (n = 267)                          (n = 224)               │
+│                                      • Wrong population (87) │
+│                                      • Wrong intervention (56)│
+│                                      • Wrong outcome (42)    │
+│                                      • Wrong study design (29)│
+│                                      • Wrong publication (10) │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      INCLUDED                                │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  Studies included in review                                  │
+│  (n = 43)                                                    │
+│                                                              │
+│  Reports of included studies                                 │
+│  (n = 43)                                                    │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Screening Process Workflow
+
+| Stage | Process | Reviewers | Tool | Output |
+|-------|---------|-----------|------|--------|
+| **Title/Abstract** | Quick screening against broad eligibility | 2 independent | Covidence/Rayyan | Include/Exclude/Uncertain |
+| **Conflict Resolution** | Discuss disagreements | 2 + 1 arbiter if needed | Discussion meeting | Consensus decision |
+| **Full-Text** | Detailed assessment against all criteria | 2 independent | Covidence/Manual | Include/Exclude with reason |
+| **Final Selection** | Resolve conflicts, finalize list | 2 + 1 arbiter | Discussion meeting | Final included studies |
+
+### Screening Performance Monitoring Dashboard
+
+| Metric | Target | Current | Status |
+|--------|--------|---------|--------|
+| **Cohen's Kappa** | >0.60 | 0.72 | ✓ Excellent |
+| **Screening Rate** | 150/day/reviewer | 142/day | ✓ On track |
+| **Conflict Rate** | <20% | 15% | ✓ Good |
+| **Resolution Time** | <7 days | 4 days | ✓ Excellent |
+| **Retrieval Success** | >95% | 97% | ✓ Excellent |
+| **Full-text Rate** | 12/day/reviewer | 11/day | ⚠ Slightly behind |
+
+### Inter-Rater Reliability
+
+| Kappa Value | Interpretation | Action Needed |
+|-------------|----------------|---------------|
+| < 0.20 | Poor agreement | Review criteria, retrain reviewers, discuss discrepancies |
+| 0.21 - 0.40 | Fair agreement | Clarify criteria, discuss challenging cases |
+| 0.41 - 0.60 | Moderate agreement | Minor refinements to process |
+| 0.61 - 0.80 | Good agreement | Continue with current process |
+| 0.81 - 1.00 | Excellent agreement | Process working well |
+
+## Step 7: Data Extraction
+
+### Data Extraction Workflow
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│            COMPREHENSIVE DATA EXTRACTION PROCESS              │
+└──────────────────────────────────────────────────────────────┘
+
+PHASE 1: FORM DEVELOPMENT (Week 1)
+│
+├─ Day 1-2: Design Extraction Form
+│  ├─ List all required variables
+│  │  ├─ Study identifiers
+│  │  ├─ Study characteristics
+│  │  ├─ Participant characteristics
+│  │  ├─ Intervention details
+│  │  ├─ Outcome data
+│  │  └─ Quality/bias indicators
+│  │
+│  ├─ Choose Format
+│  │  ├─ Excel/Google Sheets
+│  │  ├─ Covidence extraction
+│  │  ├─ DistillerSR forms
+│  │  └─ REDCap database
+│  │
+│  └─ Create Instructions
+│     ├─ Define each variable
+│     ├─ Coding guidelines
+│     ├─ Examples for each field
+│     └─ Decision rules for ambiguity
+│
+├─ Day 3: Peer Review Form
+│  ├─ Team reviews form
+│  ├─ Content expert reviews
+│  ├─ Statistician reviews (outcome data)
+│  └─ Incorporate feedback
+│
+└─ Day 4-5: Pilot Test
+   ├─ Select 5 diverse studies
+   ├─ Both extractors extract independently
+   ├─ Time the process
+   ├─ Compare results
+   ├─ Identify issues
+   │  ├─ Missing variables?
+   │  ├─ Unclear instructions?
+   │  ├─ Ambiguous coding?
+   │  └─ Data not in papers?
+   │
+   └─ Refine form and retest
+
+PHASE 2: TEAM TRAINING (Week 2)
+│
+├─ Training Session 1: Form Overview
+│  ├─ Review each variable
+│  ├─ Explain coding schemes
+│  ├─ Discuss common issues
+│  └─ Q&A session
+│
+├─ Training Session 2: Practice Extraction
+│  ├─ Work through example study
+│  ├─ Extract data together
+│  ├─ Discuss challenging decisions
+│  └─ Compare results
+│
+├─ Independent Practice
+│  ├─ Each extractor does 3 studies
+│  ├─ Compare with "gold standard"
+│  ├─ Discuss discrepancies
+│  └─ Clarify any confusion
+│
+└─ Finalize Procedures
+   ├─ Document decision rules
+   ├─ Create FAQ document
+   ├─ Establish contact protocol
+   └─ Set quality checks
+
+PHASE 3: DATA EXTRACTION (Week 3-10)
+│
+├─ Extraction Process
+│  │
+│  For each study:
+│  │
+│  ├─ STEP 1: Independent Extraction
+│  │  ├─ Extractor 1 completes form
+│  │  ├─ Extractor 2 completes form
+│  │  ├─ No communication during extraction
+│  │  └─ Flag uncertainties
+│  │
+│  ├─ STEP 2: Comparison
+│  │  ├─ Use comparison function
+│  │  ├─ Identify discrepancies
+│  │  ├─ Calculate agreement
+│  │  └─ Flag for resolution
+│  │
+│  ├─ STEP 3: Resolution
+│  │  ├─ Discuss differences
+│  │  ├─ Re-check original paper
+│  │  ├─ Consult third party if needed
+│  │  ├─ Reach consensus
+│  │  └─ Document decision
+│  │
+│  └─ STEP 4: Missing Data
+│     ├─ Mark clearly in database
+│     ├─ Add to author contact list
+│     ├─ Note if could be calculated
+│     └─ Plan for handling in analysis
+│
+├─ Progress Tracking
+│  │
+│  Weekly Check:
+│  ├─ Studies extracted: ___/43
+│  ├─ Agreement rate: ___%
+│  ├─ Average time per study: ___ min
+│  ├─ Issues encountered: ___
+│  └─ Estimated completion: ___
+│
+└─ Quality Assurance
+   ├─ Random audit of 10% extractions
+   ├─ Check for systematic errors
+   ├─ Verify calculations
+   └─ Ensure consistency
+
+PHASE 4: AUTHOR CONTACT (Week 6-10, ongoing)
+│
+├─ Identify Missing Data
+│  ├─ List data needed from each study
+│  ├─ Prioritize critical vs nice-to-have
+│  ├─ Group by study/author
+│  └─ Check if calculable from available data
+│
+├─ Prepare Contact Email
+│  ├─ Introduce self and review
+│  ├─ Specific data requests (numbered list)
+│  ├─ Attach extraction form section
+│  ├─ Offer authorship/acknowledgment
+│  ├─ Set reasonable deadline (3-4 weeks)
+│  └─ Keep polite and professional
+│
+├─ Tracking System
+│  | Study | Contact Date | Response | Data Received | Follow-up |
+│  |-------|-------------|----------|---------------|-----------|
+│  | Smith 2020 | 2025-04-01 | 2025-04-05 | Yes (partial) | - |
+│  | Jones 2021 | 2025-04-01 | - | - | 2025-04-15 |
+│  | Brown 2022 | 2025-04-02 | 2025-04-20 | Yes (complete) | - |
+│  | Davis 2023 | 2025-04-02 | Bounced | No | Try alt email |
+│
+└─ Follow-up Protocol
+   ├─ Week 2: Send reminder if no response
+   ├─ Week 4: Final reminder
+   ├─ Week 6: Mark as "no response"
+   ├─ Document all correspondence
+   └─ Note in review how missing data handled
+
+PHASE 5: DATA VERIFICATION & CLEANING (Week 11)
+│
+├─ Completeness Check
+│  ├─ All studies have extraction completed?
+│  ├─ All required fields populated?
+│  ├─ Resolved conflicts documented?
+│  └─ Missing data clearly marked?
+│
+├─ Accuracy Check
+│  ├─ Random 20% double-check
+│  ├─ Verify calculations (effect sizes, etc.)
+│  ├─ Check units of measurement
+│  └─ Validate data entry
+│
+├─ Consistency Check
+│  ├─ Coding consistent across studies?
+│  ├─ Same variable interpretations?
+│  ├─ Units standardized?
+│  └─ Categorical data consistent?
+│
+└─ Final Database
+   ├─ Create analysis-ready dataset
+   ├─ Code book for all variables
+   ├─ Backup in multiple locations
+   └─ Share with statistician
+
+ESTIMATED TIME: 11 weeks for 43 studies
+├─ Form development: 1 week
+├─ Training: 1 week
+├─ Extraction: 8 weeks (5-6 studies/week)
+└─ Verification: 1 week
+```
+
+### Data Extraction Form Structure
+
+| Category | Variables to Extract | Format | Example |
+|----------|---------------------|---------|---------|
+| **Study Identification** | | | |
+| | First author surname | Text | Smith |
+| | Publication year | Number (YYYY) | 2020 |
+| | Study ID | Text | Smith2020 |
+| | Title | Text | Effects of Mediterranean... |
+| | Journal | Text | Diabetes Care |
+| | DOI | Text | 10.1234/dc20-1234 |
+| | Country | Dropdown | USA, UK, Spain, etc. |
+| **Study Design** | | | |
+| | Study design | Dropdown | RCT, Quasi-exp, etc. |
+| | Randomization method | Text | Computer-generated |
+| | Blinding | Checkboxes | Participants, Assessors, Analysts |
+| | Study duration | Number (weeks) | 24 |
+| | Follow-up period | Number (weeks) | 52 |
+| | Multi-center? | Yes/No | Yes |
+| | Number of centers | Number | 3 |
+| | Setting | Dropdown | Hospital, Community, etc. |
+| **Participants** | | | |
+| | Sample size - total | Number | 150 |
+| | Sample size - intervention | Number | 75 |
+| | Sample size - control | Number | 75 |
+| | Age - mean (SD) | Number (Number) | 58.3 (8.2) |
+| | Age - range | Text | 45-72 |
+| | Sex - % female | Percentage | 52% |
+| | BMI - mean (SD) | Number (Number) | 31.2 (4.5) |
+| | Diabetes duration - years mean (SD) | Number (Number) | 7.3 (3.1) |
+| | Baseline HbA1c - mean (SD) | Number (Number) | 8.1 (0.9) |
+| | Inclusion criteria | Text | Adults 18-75, T2DM, HbA1c 7-10% |
+| | Exclusion criteria | Text | T1DM, insulin therapy, CVD |
+| | Ethnicity breakdown | Text | 60% Caucasian, 25% Hispanic... |
+| **Intervention** | | | |
+| | Intervention name | Text | Mediterranean diet |
+| | Intervention description | Text | <45% fat, olive oil primary... |
+| | Duration | Number (weeks) | 24 |
+| | Intensity/frequency | Text | Daily, counseling q2weeks |
+| | Delivery method | Dropdown | Individual, Group, Self-directed |
+| | Provider training | Text | Registered dietitians |
+| | Adherence measure | Text | Food diary, olive oil biomarkers |
+| | Adherence rate | Percentage | 78% |
+| | Co-interventions | Text | Exercise encouraged |
+| **Comparison** | | | |
+| | Comparison name | Text | Low-fat diet |
+| | Comparison description | Text | <30% fat, low saturated fat... |
+| | Duration | Number (weeks) | 24 |
+| | Other details | Text | Same counseling schedule |
+| **Outcomes** | | | |
+| | PRIMARY: HbA1c at end | | |
+| | - Intervention mean (SD) | Number (Number) | 7.2 (0.8) |
+| | - Control mean (SD) | Number (Number) | 7.7 (0.9) |
+| | - Mean difference (95% CI) | Number (Number, Number) | -0.5 (-0.8, -0.2) |
+| | - P-value | Number | 0.003 |
+| | Fasting glucose at end | | |
+| | - Intervention mean (SD) | Number (Number) | 132 (18) |
+| | - Control mean (SD) | Number (Number) | 145 (22) |
+| | - Mean difference (95% CI) | Number (Number, Number) | -13 (-21, -5) |
+| | - P-value | Number | 0.002 |
+| | [Additional outcomes...] | | |
+| **Quality Indicators** | | | |
+| | Funding source | Text | NIH grant R01DK12345 |
+| | Conflicts of interest | Text | None declared |
+| | Trial registration | Text | NCT01234567 |
+| | Protocol published | Yes/No | Yes |
+| | ITT analysis | Yes/No/Unclear | Yes |
+| | Attrition rate | Percentage | 12% |
+| | Reasons for dropout | Text | Lost follow-up (8%), adverse events (2%) |
+| **Risk of Bias** | | | |
+| | [RoB 2 domains] | Low/Some concerns/High | [See RoB section] |
+| **Notes** | | | |
+| | Additional notes | Text | Subgroup analysis by baseline HbA1c |
+| | Missing data | Text | Lipid data not reported |
+| | Contact author | Yes/No | Yes - requested lipid data |
+| | Data calculated | Text | SE converted to SD |
+
+### Example Completed Extraction
+
+**Study: Smith et al. 2020**
+
+| Field | Data |
+|-------|------|
+| **Study ID** | Smith2020 |
+| **Design** | Parallel RCT |
+| **Duration** | 24 weeks |
+| **Total N** | 150 (75 intervention, 75 control) |
+| **Population** | Adults 45-72 years with T2DM |
+| **Mean age** | 58.3 ± 8.2 years |
+| **Female** | 52% |
+| **Baseline HbA1c** | 8.1 ± 0.9% |
+| **Intervention** | Mediterranean diet (35% fat, olive oil, nuts, fish, fruits, vegetables, whole grains) with biweekly dietitian counseling |
+| **Comparison** | Low-fat diet (<30% fat) with same counseling schedule |
+| **Primary Outcome** | HbA1c at 24 weeks |
+| **Results** | Intervention: 7.2 ± 0.8% vs Control: 7.7 ± 0.9%, MD -0.5% (95% CI -0.8 to -0.2), p=0.003 |
+| **Secondary** | Fasting glucose: MD -13 mg/dL (95% CI -21 to -5), p=0.002 |
+| **Adherence** | 78% based on food diaries and olive oil biomarkers |
+| **Attrition** | 12% (18/150) - 8% lost to follow-up, 2% adverse events, 2% withdrew consent |
+| **Risk of Bias** | Low risk overall (see detailed assessment) |
+
+### Missing Data Management Strategy
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│              HANDLING MISSING DATA                            │
+└──────────────────────────────────────────────────────────────┘
+
+TYPE 1: Missing Study-Level Data
+│
+├─ Standard Deviations Not Reported
+│  Options:
+│  ├─ Calculate from SE, CI, or p-value
+│  ├─ Request from authors
+│  ├─ Impute from similar studies
+│  └─ Document method used
+│
+├─ Only Median/IQR Reported
+│  Options:
+│  ├─ Request mean/SD from authors
+│  ├─ Estimate mean/SD using formulas
+│  ├─ Include in narrative only
+│  └─ Sensitivity analysis with/without
+│
+└─ Outcome Not Reported
+   Options:
+   ├─ Contact authors
+   ├─ Check for protocol or trial registry
+   ├─ Document as selective reporting
+   └─ Note in risk of bias
+
+TYPE 2: Participant-Level Missing Data
+│
+├─ Intention-to-Treat (ITT) Analysis
+│  ├─ All randomized included
+│  └─ Preferred for meta-analysis
+│
+├─ Per-Protocol or Complete-Case
+│  ├─ Only completers analyzed
+│  ├─ Potential for bias
+│  └─ Note in quality assessment
+│
+└─ Last Observation Carried Forward (LOCF)
+   ├─ Imputation method used
+   └─ Note in extraction
+
+EXTRACTION CODING FOR MISSING DATA:
+├─ "NR" = Not reported
+├─ "NC" = Not calculable from available data
+├─ "Requested" = Contacted author
+├─ "Calculated" = Derived from other data
+└─ "Estimated" = Imputed or estimated
+
+ANALYSIS PLAN:
+├─ Best-case: Use all available data
+├─ Sensitivity: Exclude studies with missing data
+├─ Exploration: Examine impact of missing data
+└─ Report: Transparent about all missing data
+```
+
+### Data Extraction Agreement Tracking
+
+| Extractor Pair | Studies Extracted | Perfect Agreement | Minor Discrepancy | Major Discrepancy | Agreement % |
+|----------------|-------------------|-------------------|-------------------|-------------------|-------------|
+| Extractor 1 & 2 | 43 | 28 (65%) | 12 (28%) | 3 (7%) | 93% |
+
+**Discrepancy Types**:
+- Minor: Rounding differences, formatting (easily resolved)
+- Major: Different values extracted, missing vs present data (requires discussion)
+
+**Common Discrepancies**:
+1. Baseline vs endpoint data confusion (5 instances)
+2. ITT vs per-protocol sample sizes (3 instances)  
+3. Converting units (4 instances)
+4. Interpreting unclear text (6 instances)
+
+## Step 8: Assessing Study Quality and Risk of Bias
+
+Quality assessment evaluates the methodological rigor of included studies and
+helps interpret findings.
+
+### Risk of Bias Tools by Study Design
+
+| Study Design | Recommended Tool | Key Domains |
+|--------------|------------------|-------------|
+| **Randomized Controlled Trials** | Cochrane RoB 2 | Randomization, deviations from intended interventions, missing outcome data, outcome measurement, selective reporting |
+| **Non-randomized Studies** | ROBINS-I | Confounding, participant selection, intervention classification, deviations, missing data, outcome measurement, selective reporting |
+| **Observational Studies** | Newcastle-Ottawa Scale | Selection, comparability, outcome/exposure |
+| **Diagnostic Accuracy** | QUADAS-2 | Patient selection, index test, reference standard, flow and timing |
+| **Qualitative Studies** | CASP Qualitative Checklist | Research design, data collection, trustworthiness, analysis, findings |
+| **Mixed Methods** | MMAT | Appropriate rationale, integration of methods, interpretation of results, limitations |
+| **Systematic Reviews** | AMSTAR 2 | Protocol registration, search comprehensiveness, study selection, quality assessment, synthesis methods |
+
+
+### Quality Assessment Workflow
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│         RISK OF BIAS ASSESSMENT PROCESS                       │
+└──────────────────────────────────────────────────────────────┘
+
+PHASE 1: TOOL SELECTION & PREPARATION (Week 1)
+│
+├─ Select Appropriate Tool(s)
+│  ├─ RCTs → Cochrane RoB 2
+│  ├─ Non-randomized → ROBINS-I
+│  ├─ Multiple designs → Multiple tools
+│  └─ Justify tool selection
+│
+├─ Customize Assessment Form
+│  ├─ Domain-specific signaling questions
+│  ├─ Judgment options (Low/Some concerns/High)
+│  ├─ Space for justification/quotes
+│  └─ Overall risk of bias judgment
+│
+└─ Team Training
+   ├─ Review tool and guidance
+   ├─ Watch training videos (Cochrane)
+   ├─ Practice on example studies
+   ├─ Discuss challenging scenarios
+   └─ Establish consensus process
+
+PHASE 2: PILOT ASSESSMENT (Week 2)
+│
+├─ Independent Assessment
+│  ├─ 2 assessors evaluate same 5 studies
+│  ├─ Complete all domains
+│  ├─ Provide rationales
+│  └─ Make overall judgments
+│
+├─ Compare Results
+│  ├─ Calculate kappa for each domain
+│  ├─ Discuss disagreements
+│  ├─ Identify source of differences
+│  └─ Clarify interpretation issues
+│
+└─ Refine Process
+   ├─ Update guidance document
+   ├─ Add decision rules
+   ├─ Re-assess pilot studies if needed
+   └─ Proceed to full assessment
+
+PHASE 3: FULL ASSESSMENT (Week 3-6)
+│
+For each study:
+│
+├─ DOMAIN 1: Bias from Randomization
+│  Signaling Questions:
+│  ├─ Was allocation sequence random?
+│  ├─ Was allocation sequence concealed?
+│  ├─ Baseline differences suggesting problem?
+│  │
+│  Evidence to collect:
+│  ├─ Quote randomization method
+│  ├─ Quote concealment procedure
+│  ├─ Check baseline table
+│  │
+│  Judgment: Low / Some concerns / High
+│  Rationale: [text explanation with quotes]
+│
+├─ DOMAIN 2: Deviations from Intended Interventions
+│  Signaling Questions:
+│  ├─ Were participants aware of intervention?
+│  ├─ Were carers/staff aware?
+│  ├─ Deviations from intended intervention?
+│  ├─ Deviations balanced across groups?
+│  ├─ Appropriate analysis used?
+│  │
+│  Evidence to collect:
+│  ├─ Blinding procedures
+│  ├─ Protocol deviations reported
+│  ├─ Analysis approach
+│  │
+│  Judgment: Low / Some concerns / High
+│  Rationale: [text]
+│
+├─ DOMAIN 3: Missing Outcome Data
+│  Signaling Questions:
+│  ├─ Data available for all/most participants?
+│  ├─ Evidence that missingness related to true value?
+│  ├─ Missingness likely to depend on true value?
+│  │
+│  Evidence to collect:
+│  ├─ Attrition rates per group
+│  ├─ Reasons for missingness
+│  ├─ How missing data handled
+│  │
+│  Judgment: Low / Some concerns / High
+│  Rationale: [text]
+│
+├─ DOMAIN 4: Measurement of the Outcome
+│  Signaling Questions:
+│  ├─ Was outcome measurement appropriate?
+│  ├─ Did measurement differ between groups?
+│  ├─ Were assessors aware of intervention?
+│  ├─ Awareness likely to influence assessment?
+│  │
+│  Evidence to collect:
+│  ├─ Outcome measurement methods
+│  ├─ Assessor blinding
+│  ├─ Potential for bias
+│  │
+│  Judgment: Low / Some concerns / High
+│  Rationale: [text]
+│
+└─ DOMAIN 5: Selection of Reported Result
+   Signaling Questions:
+   ├─ Data analyzed per pre-specified plan?
+   ├─ Multiple outcome measurements?
+   ├─ Multiple analyses of data?
+   ├─ Result selected from multiple options?
+   │
+   Evidence to collect:
+   ├─ Trial registration/protocol
+   ├─ All outcomes reported?
+   ├─ Multiple analyses noted
+   │
+   Judgment: Low / Some concerns / High
+   Rationale: [text]
+
+OVERALL RISK OF BIAS:
+├─ Low: Low risk across all domains
+├─ Some concerns: Some concerns in ≥1 domain
+└─ High: High risk in ≥1 domain OR concerns in multiple
+
+PHASE 4: CONSENSUS & FINALIZATION (Week 7)
+│
+├─ Compare Independent Assessments
+│  ├─ Identify discrepancies
+│  ├─ Review evidence together
+│  ├─ Discuss rationales
+│  └─ Reach consensus
+│
+├─ Calculate Inter-Rater Reliability
+│  ├─ Kappa for each domain
+│  ├─ Kappa for overall judgment
+│  ├─ Percentage agreement
+│  └─ Document reliability
+│
+├─ Quality Assurance
+│  ├─ Senior reviewer spot-checks 20%
+│  ├─ Verify evidence supports judgments
+│  ├─ Check for consistency across studies
+│  └─ Ensure adequate detail in rationales
+│
+└─ Create Summary Tables & Figures
+   ├─ Risk of bias summary table
+   ├─ Risk of bias graph
+   ├─ Traffic light plot
+   └─ Narrative summary
+
+ESTIMATED TIME: 7 weeks for 43 studies
+```
+
+### Data Extraction Form Template
+
+| Category | Data Elements | Details |
+|----------|---------------|---------|
+| **Study Identification** | • First author<br>• Publication year<br>• Title<br>• Journal<br>• DOI<br>• Country | Basic bibliographic info |
+| **Study Characteristics** | • Study design<br>• Setting (hospital, community, etc.)<br>• Study duration<br>• Follow-up period<br>• Funding source | Methodological details |
+| **Population** | • Sample size (total, per group)<br>• Age (mean, range)<br>• Sex distribution<br>• Inclusion criteria<br>• Exclusion criteria<br>• Baseline characteristics | Participant details |
+| **Intervention** | • Intervention description<br>• Duration<br>• Intensity/frequency<br>• Delivery method<br>• Provider training<br>• Adherence measurement | Treatment details |
+| **Comparison** | • Control/comparison description<br>• Duration<br>• Co-interventions | Control group details |
+| **Outcomes** | • Primary outcomes<br>• Secondary outcomes<br>• Measurement tools<br>• Time points<br>• Results (means, SDs, effect sizes)<br>• Statistical significance | Results data |
+| **Quality Indicators** | • Randomization method<br>• Allocation concealment<br>• Blinding<br>• Attrition rate<br>• ITT analysis<br>• Conflicts of interest | Risk of bias data |
+
+### Data Extraction Process
+
+```
+┌────────────────────────────────────────────────────────┐
+│            DATA EXTRACTION WORKFLOW                     │
+└────────────────────────────────────────────────────────┘
+
+STEP 1: Design Extraction Form
+│
+├─ List all data elements needed
+├─ Create standardized form/spreadsheet
+├─ Include dropdown menus for categorical data
+└─ Add instructions and coding guidelines
+
+STEP 2: Pilot Test (5-10 studies)
+│
+├─ Two reviewers extract independently
+├─ Compare results
+├─ Calculate agreement
+├─ Identify ambiguities
+└─ Revise form as needed
+
+STEP 3: Train Reviewers
+│
+├─ Review form instructions
+├─ Practice on sample studies
+├─ Discuss challenging scenarios
+└─ Establish decision rules
+
+STEP 4: Independent Extraction
+│
+├─ Each reviewer extracts data independently
+├─ Do not discuss until both complete
+├─ Use same form/software
+└─ Flag uncertainties
+
+STEP 5: Compare and Reconcile
+│
+├─ Compare extractions systematically
+├─ Calculate agreement statistics
+├─ Discuss discrepancies
+├─ Reach consensus
+└─ Document decisions
+
+STEP 6: Contact Authors (if needed)
+│
+├─ Draft polite, specific request
+├─ Allow 2-4 weeks for response
+├─ Send one reminder if no response
+├─ Document all correspondence
+└─ Note missing data in review
+
+STEP 7: Create Data Summary Tables
+│
+├─ Table of study characteristics
+├─ Table of results by outcome
+├─ Risk of bias summary
+└─ Additional tables as needed
+```
+
+## Step 8: Assessing Study Quality and Risk of Bias
+
+Quality assessment evaluates the methodological rigor of included studies and helps interpret findings.
+
+### Risk of Bias Tools by Study Design
+
+| Study Design | Recommended Tool | Key Domains |
+|--------------|------------------|-------------|
+| **Randomized Controlled Trials** | Cochrane RoB 2 | Randomization, deviations from intended interventions, missing outcome data, outcome measurement, selective reporting |
+| **Non-randomized Studies** | ROBINS-I | Confounding, participant selection, intervention classification, deviations, missing data, outcome measurement, selective reporting |
+| **Observational Studies** | Newcastle-Ottawa Scale | Selection, comparability, outcome/exposure |
+| **Diagnostic Accuracy** | QUADAS-2 | Patient selection, index test, reference standard, flow and timing |
+| **Qualitative Studies** | CASP Qualitative Checklist | Research design, data collection, trustworthiness, analysis, findings |
+| **Mixed Methods** | MMAT | Appropriate rationale, integration of methods, interpretation of results, limitations |
+| **Systematic Reviews** | AMSTAR 2 | Protocol registration, search comprehensiveness, study selection, quality assessment, synthesis methods |
+
+## Software Tools and Technologies for Systematic Reviews
+
+### Comprehensive Tool Comparison Table
+
+| Tool/Platform | Type | Primary Function | Key Features | Cost | Best For |
+|---------------|------|------------------|--------------|------|----------|
+| **SCREENING & SELECTION** | | | | | |
+| **Covidence** | Web-based platform | Complete SR management | Title/abstract screening, full-text review, data extraction, RoB assessment, team collaboration, deduplication | $$ (Subscription: ~$500-2000/year) | Teams, institutions, comprehensive reviews |
+| **Rayyan** | Web-based platform | Screening & collaboration | AI-assisted screening, blind mode, collaboration, mobile app, free tier available | Free - $ (Free for basic, paid for advanced) | Solo researchers, small teams, budget-conscious |
+| **DistillerSR** | Web-based platform | Complete SR workflow | Highly customizable forms, advanced automation, quality control, regulatory compliance | $$ (Subscription: contact for pricing) | Large teams, complex reviews, regulatory submissions |
+| **EPPI-Reviewer** | Web-based platform | SR with ML support | Machine learning screening, text mining, coding, data extraction, cost-effectiveness analysis | $$ (Subscription: ~£500-2000/year) | Academic institutions, ML-enhanced screening |
+| **ASReview** | Open-source software | AI-assisted screening | Active learning algorithms, multiple models, simulation mode, completely free | Free (Open-source) | Budget-conscious, researchers comfortable with Python |
+| **Abstrackr** | Web-based tool | Semi-automated screening | Machine learning prioritization, team screening, progress tracking | Free | Quick reviews, small to medium projects |
+| **SWIFT-Review** | Software application | Active screening | Active learning, priority screening, workload estimation | Free | Researchers wanting desktop application |
+| **Colandr** | Web-based platform | Screening for environmental reviews | Team collaboration, screening, data extraction, designed for environmental science | Free - $ | Environmental science reviews |
+| **RobotAnalyst** | Web-based tool | Automated screening | ML-powered screening, risk of bias assessment automation | Research tool | Experimental automation |
+| | | | | | |
+| **REFERENCE MANAGEMENT** | | | | | |
+| **EndNote** | Desktop/Web | Citation management | Library organization, cite-while-you-write, PDF annotation, deduplication | $$ (~$250 or institutional) | Established researchers, institutions |
+| **Mendeley** | Desktop/Web | Citation management | Free reference manager, PDF annotation, social features, cloud sync | Free | Budget-conscious, social collaboration |
+| **Zotero** | Desktop/Web | Citation management | Open-source, browser integration, group libraries, extensive plugins | Free (Open-source) | Open-source enthusiasts, flexibility |
+| **RefWorks** | Web-based | Citation management | Cloud-based, institutional subscriptions, write-n-cite | $ (Institutional) | Academic institutions |
+| | | | | | |
+| **DATA EXTRACTION & MANAGEMENT** | | | | | |
+| **REDCap** | Web-based database | Data collection & management | HIPAA-compliant, customizable forms, data validation, audit trails, free for institutions | Free (Institutional) | Complex data extraction, regulated research |
+| **Microsoft Excel** | Spreadsheet | Data organization | Familiar interface, formulas, pivot tables, widely available | $ (License or Office 365) | Simple reviews, budget options |
+| **Google Sheets** | Web-based spreadsheet | Collaborative data extraction | Real-time collaboration, cloud-based, free, version history | Free | Team collaboration, accessibility |
+| **Qualtrics** | Web-based survey | Form-based extraction | Complex logic, validation rules, institutional licenses | $$ (Institutional) | Institutions with existing access |
+| | | | | | |
+| **META-ANALYSIS & STATISTICS** | | | | | |
+| **RevMan** | Desktop software | Cochrane reviews & meta-analysis | Free Cochrane software, forest plots, risk of bias tools, GRADE | Free | Cochrane reviews, RCT meta-analyses |
+| **R (meta packages)** | Programming language | Statistical analysis | Highly flexible, meta, metafor, dmetar packages, completely free, publication-quality graphics | Free (Open-source) | Researchers comfortable coding, complex analyses |
+| **Stata** | Statistical software | Advanced statistics | Comprehensive meta-analysis suite, publication-quality output, extensive support | $$ (~$600-2000) | Researchers with Stata experience, complex analyses |
+| **Comprehensive Meta-Analysis (CMA)** | Desktop software | User-friendly meta-analysis | Point-and-click interface, excellent visualizations, publication bias tools | $$ (~$1000-1500) | Non-statisticians, user-friendly needs |
+| **MetaXL** | Excel add-in | Meta-analysis in Excel | Works in familiar Excel, prevalence and incidence studies, forest plots | $ (~$200-400) | Excel users, simple analyses |
+| **OpenMeta[Analyst]** | Desktop software | Free meta-analysis | Cross-platform, multiple effect sizes, forest plots | Free (Open-source) | Budget-conscious, simple to moderate analyses |
+| **JASP** | Desktop software | Statistical software with meta | User-friendly GUI, Bayesian and frequentist meta-analysis, free | Free (Open-source) | User-friendly statistical analyses |
+| | | | | | |
+| **QUALITY ASSESSMENT** | | | | | |
+| **RoB 2 Tool** | Excel/Web | RCT risk of bias | Cochrane's official tool, structured assessment, traffic light plots | Free | RCT quality assessment |
+| **ROBINS-I Tool** | Excel/Web | Non-randomized studies | Comprehensive bias assessment for observational studies | Free | Non-randomized study assessment |
+| **GRADEpro GDT** | Web-based | GRADE evidence assessment | Evidence profiles, summary of findings tables, GRADE guidance | Free - $ (Free basic, paid for full) | Evidence certainty rating |
+| **RobotReviewer** | Web-based AI | Automated RoB assessment | AI-powered risk of bias extraction from PDFs | Free (Research tool) | Quick initial assessment, validation needed |
+| | | | | | |
+| **SEARCH & DATABASE ACCESS** | | | | | |
+| **PubMed/MEDLINE** | Database | Biomedical literature | Free access, MeSH terms, 35M+ citations, advanced search | Free | Health/medical reviews |
+| **Embase** | Database | Biomedical & pharmacological | More comprehensive than PubMed, Emtree terms, drug information | $$ (Institutional) | Comprehensive health reviews, drug studies |
+| **Web of Science** | Database | Multidisciplinary | Citation tracking, broad coverage, impact metrics | $$ (Institutional) | Citation searching, broad topics |
+| **Scopus** | Database | Multidisciplinary | Large abstract database, author profiles, citation analysis | $$ (Institutional) | Comprehensive searches, author tracking |
+| **Google Scholar** | Search engine | Academic literature | Free, very broad coverage, simple interface, citation tracking | Free | Supplementary searches, gray literature |
+| | | | | | |
+| **REPORTING & WRITING** | | | | | |
+| **PRISMA** | Guideline/Checklist | Reporting standards | 27-item checklist, flow diagram template, extensions available | Free | Ensuring complete reporting |
+| **Microsoft Word** | Word processor | Manuscript writing | Track changes, reference integration, widely accepted | $ (License or Office 365) | Traditional manuscript writing |
+| **LaTeX/Overleaf** | Typesetting system | Academic writing | Professional formatting, version control, collaborative editing, free | Free - $ | Technical/mathematical content, journal templates |
+| **Google Docs** | Web-based word processor | Collaborative writing | Real-time collaboration, commenting, free, cloud-based | Free | Team collaboration, accessibility |
+
+### AI-Enhanced Tools for Systematic Reviews
+
+| Tool | Technology | Primary Application | Validation Status | Availability |
+|------|------------|-------------------|------------------|--------------|
+| **ASReview** | Active learning ML | Prioritizes relevant studies during screening, reduces screening time by 30-50% | Validated in multiple studies | Free, open-source |
+| **Abstrackr** | Machine learning | Semi-automated title/abstract screening with learning from user decisions | Used in published reviews | Free, web-based |
+| **RobotReviewer** | NLP + ML | Automatically extracts risk of bias information and PICO elements from RCT PDFs | Validated against human extraction | Free, research tool |
+| **RobotSearch** | Machine learning | Identifies RCTs in large result sets, filters non-RCT study designs | Validated for RCT identification | Free, research tool |
+| **Cochrane RCT Classifier** | Machine learning | Identifies randomized controlled trials with high accuracy from PubMed | Used by Cochrane | Free via PubMed |
+| **ExaCT** | Machine learning | Extracts PICO elements, detects duplicates, classifies study types | Research validation | Academic access |
+| **DistillerAI** | NLP + ML | AI-assisted screening, duplicate detection, data extraction suggestions | Commercial tool, validated | Paid subscription |
+| **EPPI-Reviewer ML** | Active learning | Machine learning-assisted screening, priority screening, text mining | Widely validated | Paid subscription |
+| **Screen4Me** | Machine learning | Pre-screens search results to identify RCTs and remove non-relevant citations | Cochrane-developed | Free for Cochrane |
+| **SWIFT Active Screener** | Active learning | Prioritizes citations likely to be relevant, continuous learning | Validated, EPA-developed | Free |
+| **LitSuggest** | NLP | Suggests relevant PubMed articles based on seed articles | NCBI-developed | Free, web-based |
+| **Research Screener** | Machine learning | Web-based active learning tool for screening acceleration | Academic validation | Free |
+| **Rayyan AI** | Machine learning | AI predictions for inclusion/exclusion, keyword highlighting | Integrated in platform | Freemium |
+| **FASTREAD** | Active learning | Accelerated screening using active learning, estimates remaining workload | Research validation | Research tool |
+| **Concept Encoder** | NLP + ML | Assists in building Boolean search strategies from example articles | Research tool | Academic |
+| **MetaPreg** | ML + NLP | Combines ML techniques for high-accuracy pregnancy medication study identification | Specialized domain | Research |
+| **MMiDaS-AE** | Machine learning | Semi-automated meta-analysis construction for medication safety | Validated for specific domain | Research |
+| **IBM Watson (PARSE)** | Machine learning | Assists in screening abstracts, particularly for genetics studies | IBM research tool | Research access |
+| **GAPScreener** | ML + text mining | Automated extraction of elements from RCTs | Research validation | Research tool |
+
+### AI Tools: Detailed Specifications
+
+| Methods/Tools | Algorithms/Technologies | Key Applications | Strengths | Limitations |
+|---------------|------------------------|------------------|-----------|-------------|
+| **Abstrackr** | Supervised ML (SVM, random forests) | Sorting, searching and extracting information; organizing results; priority screening | Free, user-friendly, proven time savings | Requires training set, web-dependent |
+| **Active PubMed Search (APS)** | Machine learning | Semi-automated sorting of PubMed articles based on relevance | Direct PubMed integration | Limited to PubMed only |
+| **ASReview** | Active learning (multiple algorithms: Naive Bayes, SVM, neural networks) | AI-assisted screening with continuous learning; simulation mode for testing strategies | Open-source, multiple ML models, transparent, simulation mode | Requires Python knowledge for advanced use |
+| **Bibliography Bot (BIBOT)** | Machine learning | Online searching system with retrieval and ranking of relevant articles | Automated retrieval | Limited current availability |
+| **Cochrane RCT Classifier** | NLP + supervised ML | Identifying and classifying randomized controlled trials in PubMed | High accuracy (>99%), Cochrane-validated | RCTs only, PubMed only |
+| **Colandr** | Machine learning | Semi-automated citation screening and data extraction, particularly for environmental reviews | Designed for environmental science, team features | Domain-specific optimization |
+| **Concept Encoder** | NLP + semantic analysis | Assistance in query formulation and search strategy development | Improves search strategy | Requires example articles |
+| **Covidence** | Manual + some automation | Complete SR workflow: screening, full-text review, extraction, RoB, team management | Comprehensive, user-friendly, widely adopted | Expensive, limited AI features |
+| **DistillerAI** | NLP + ML | AI-assisted screening suggestions and data extraction | Integrated in DistillerSR platform | Paid subscription, part of DistillerSR |
+| **DistillerSR** | Customizable workflow + ML features | Complete SR platform with semi-automated sorting, custom forms, quality control | Highly customizable, regulatory-compliant | Expensive, complex setup |
+| **EPPI-Reviewer** | Active learning ML + text mining | ML-assisted screening, coding, data extraction, cost-effectiveness | Strong ML features, text mining | Steeper learning curve, subscription |
+| **ExaCT** | Machine learning + NLP | Duplicate detection, PICO extraction, study classification, grouping | Multiple automation features | Academic/research access |
+| **FASTREAD (FAST2)** | Active learning | Accelerated screening with workload estimation | Efficient screening, workload tracking | Research tool, limited availability |
+| **GAPScreener** | ML + text mining | Automated extraction of trial elements (population, interventions, outcomes) | Structured data extraction | Domain-specific training needed |
+| **IBM PARSe** | Machine learning (Watson) | Screening PubMed abstracts, particularly human genetics literature | IBM AI power, high accuracy | Limited availability, domain-specific |
+| **Lingo3G** | ML + clustering | Automated grouping and categorization of studies; identifying relevant publications | Visual clustering, pattern recognition | Commercial tool |
+| **LitSuggest** | NLP (PubMed similar articles algorithm) | Suggests relevant PubMed articles from seed article list with high accuracy | Free, NCBI-maintained, easy to use | PubMed only, requires good seed articles |
+| **MetaPreg** | ML + NLP | Specialized for identifying pregnancy medication studies with high accuracy | Domain-specific accuracy | Limited to specific domain |
+| **MMiDaS-AE** | Machine learning classifiers | Semi-automated meta-analysis for medication safety in pregnancy | Specialized automation | Narrow application domain |
+| **NaCTeM** | NLP + text mining | Text mining and semantic analysis for biomedical literature | Advanced text mining | Academic/research access |
+| **Rayyan** | ML + semantic analysis | AI-assisted screening, blind mode, collaboration, duplicate detection | Free tier, user-friendly, mobile app | Advanced features require payment |
+| **Research Screener** | Active learning ML | Web-based priority screening tool for accelerated review | Free, web-based, easy interface | Research tool, basic features |
+| **Revtools** | Machine learning + topic modeling | Semi-automated screening using topic models; visualization of literature | R package, flexible, visualization | Requires R knowledge |
+| **RobotAnalyst** | Machine learning | Automated screening and data extraction during evidence synthesis | Comprehensive automation | Research stage, validation ongoing |
+| **RobotReviewer** | NLP + deep learning | Automated extraction of RoB assessments and PICO elements from PDFs | High automation, time-saving, free | Requires validation, not 100% accurate |
+| **RobotSearch** | Machine learning + NLP | Automated RCT identification; filtering non-RCT studies | High accuracy for RCT detection | RCTs only |
+| **Screen4Me** | Machine learning | Pre-screening to identify RCTs and exclude clearly irrelevant citations | Cochrane-developed, validated | Cochrane-focused, RCTs primarily |
+| **SWIFT Active Screener** | Active learning | Priority screening with continuous learning; workload estimation | Free, EPA-developed, validated | Desktop application |
+
+### Tool Selection Decision Matrix
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              TOOL SELECTION FRAMEWORK                        │
+└─────────────────────────────────────────────────────────────┘
+
+Consider these factors:
+
+1. BUDGET
+   ├─ No budget → ASReview, Rayyan Free, Zotero, RevMan, R
+   ├─ Limited budget → Rayyan Plus, EPPI-Reviewer, CMA
+   └─ Well-funded → Covidence, DistillerSR, Stata, EndNote
+
+2. TEAM SIZE
+   ├─ Solo (1 person) → Rayyan, ASReview, Google Sheets, R
+   ├─ Small team (2-5) → Rayyan, Covidence, REDCap, Excel
+   └─ Large team (6+) → Covidence, DistillerSR, EPPI-Reviewer
+
+3. TECHNICAL EXPERTISE
+   ├─ Non-technical → Covidence, Rayyan, CMA, RevMan
+   ├─ Some technical → EPPI-Reviewer, Stata, MetaXL
+   └─ Highly technical → R, Python, ASReview, LaTeX
+
+4. REVIEW COMPLEXITY
+   ├─ Simple review → Rayyan, RevMan, Google Sheets, CMA
+   ├─ Moderate complexity → Covidence, EPPI-Reviewer, Stata
+   └─ Highly complex → DistillerSR, R, REDCap, custom solutions
+
+5. SCREENING VOLUME
+   ├─ <1,000 citations → Manual screening acceptable, any tool
+   ├─ 1,000-5,000 citations → Consider ML tools: ASReview, Abstrackr
+   └─ >5,000 citations → ML essential: ASReview, EPPI-Reviewer ML
+
+6. INSTITUTIONAL REQUIREMENTS
+   ├─ Regulatory compliance → DistillerSR, REDCap
+   ├─ Data security (HIPAA) → REDCap, institutional platforms
+   └─ No special requirements → Any appropriate tool
+
+7. TIMELINE
+   ├─ Rushed (<6 months) → ML tools for screening, simple platforms
+   ├─ Standard (6-12 months) → Any appropriate tool
+   └─ Extended (>12 months) → Can accommodate learning curve
+
+RECOMMENDED COMBINATIONS by scenario:
+
+Academic, Budget-Conscious:
+├─ Screening: ASReview or Rayyan Free
+├─ Reference: Zotero
+├─ Data: Google Sheets or Excel
+├─ Analysis: R or RevMan
+└─ Writing: Google Docs or Word
+
+Well-Funded Institution:
+├─ Complete platform: Covidence or DistillerSR
+├─ Reference: EndNote (institutional)
+├─ Data: REDCap (if complex)
+├─ Analysis: Stata or R
+└─ Writing: Word or LaTeX
+
+Beginner-Friendly:
+├─ Screening: Rayyan
+├─ Reference: Mendeley or Zotero
+├─ Data: Excel or Google Sheets
+├─ Analysis: RevMan or CMA
+└─ Writing: Word or Google Docs
+
+Advanced/Technical Team:
+├─ Screening: ASReview or EPPI-Reviewer
+├─ Reference: Zotero
+├─ Data: REDCap or R (data frames)
+├─ Analysis: R (meta packages)
+└─ Writing: LaTeX/Overleaf
+```
+
+### Emerging AI Technologies in Systematic Reviews
+
+| Technology | Current Status | Potential Application | Timeline |
+|------------|----------------|----------------------|----------|
+| **Large Language Models (ChatGPT, Claude, etc.)** | Experimental | Question formulation, search strategy assistance, summarization, preliminary screening | Currently experimental, validation needed |
+| **GPT-4 for screening** | Research phase | Automated title/abstract screening, data extraction | 1-3 years for validation |
+| **Automated GRADE assessment** | Development | AI-assisted certainty of evidence rating | 2-5 years |
+| **Real-time updating systems** | Early adoption | Continuous surveillance and automated updates when new studies published | Available in limited contexts |
+| **Automated meta-analysis** | Research phase | Fully automated data extraction and statistical pooling | 3-5 years for clinical adoption |
+| **Natural language search** | Emerging | Conversational search query building | 1-2 years for practical tools |
+| **Cross-language AI** | Development | Automated translation and screening of non-English studies | 2-4 years for reliability |
+
+### Important Considerations for AI Tool Use
+
+**⚠️ Critical Warnings:**
+
+1. **AI tools are assistive, not replacement**: Always have human reviewers validate AI decisions
+2. **Validation required**: Check AI suggestions against known relevant studies
+3. **Bias concerns**: AI tools may perpetuate biases in training data
+4. **Transparency**: Document AI tool use, version, settings in methods section
+5. **Quality assurance**: Conduct periodic manual checks of AI-screened citations
+6. **Training data**: AI performance depends on quality of training examples
+7. **Not 100% accurate**: Expect false positives and false negatives
+8. **Regulatory acceptance**: Some regulatory bodies may not accept AI-only screening
+
+**Best Practices:**
+- Use AI to prioritize, not exclude without review
+- Start with high-recall settings (capture everything relevant)
+- Validate AI performance on subset before full deployment
+- Always maintain ability to review all excluded citations
+- Document AI tool parameters and version numbers
+- Consider hybrid approach: AI + human verification
+
+### Cost-Benefit Analysis: Manual vs AI-Assisted Screening
+
+| Aspect | Traditional Manual | AI-Assisted | Hybrid Approach |
+|--------|-------------------|-------------|-----------------|
+| **Time for 5,000 citations** | 200-300 hours | 50-100 hours | 100-150 hours |
+| **Cost (2 reviewers)** | $6,000-9,000 | $1,500-3,000 | $3,000-4,500 |
+| **Accuracy** | High (with training) | Variable (requires validation) | High |
+| **Reviewer fatigue** | High | Low | Moderate |
+| **Regulatory acceptance** | Universally accepted | Limited acceptance | Growing acceptance |
+| **Reproducibility** | Moderate | High (if documented) | High |
+| **Best for** | Small reviews, regulatory | Large reviews, preliminary | Most scenarios |
+
+## Tools and Technologies Summary
+
+### Essential Tool Kit by Review Stage
+
+| Stage | Essential Tools | Optional Enhancements |
+|-------|----------------|----------------------|
+| **Planning** | Word processor, Project management | Protocol templates, Gantt chart software |
+| **Search** | Database access, Reference manager | Search translation tools, Alert systems |
+| **Screening** | Screening software (Rayyan/Covidence), Spreadsheet | AI-assisted tools (ASReview, Abstrackr) |
+| **Extraction** | Spreadsheet or forms (Excel/REDCap), PDF reader | Data validation scripts, OCR software |
+| **Quality Assessment** | RoB tools, Spreadsheet | RobotReviewer for initial screening |
+| **Synthesis** | Statistical software (R/Stata/RevMan), Spreadsheet | Meta-analysis packages, Visualization tools |
+| **GRADE** | GRADEpro, Spreadsheet | GRADE guidance documents |
+| **Writing** | Word processor, Reference manager | PRISMA checklist, Grammar tools, LaTeX |
+| **Collaboration** | Cloud storage, Communication tools | Version control (Git), Project management |
+
+### Risk of Bias Tools by Study Design
+
+| Study Design | Recommended Tool | Key Domains |
+|--------------|------------------|-------------|
+| **Randomized Controlled Trials** | Cochrane RoB 2 | Randomization, deviations from intended interventions, missing outcome data, outcome measurement, selective reporting |
+| **Non-randomized Studies** | ROBINS-I | Confounding, participant selection, intervention classification, deviations, missing data, outcome measurement, selective reporting |
+| **Observational Studies** | Newcastle-Ottawa Scale | Selection, comparability, outcome/exposure |
+| **Diagnostic Accuracy** | QUADAS-2 | Patient selection, index test, reference standard, flow and timing |
+| **Qualitative Studies** | CASP Qualitative Checklist | Research design, data collection, trustworthiness, analysis, findings |
+| **Mixed Methods** | MMAT | Appropriate rationale, integration of methods, interpretation of results, limitations |
+| **Systematic Reviews** | AMSTAR 2 | Protocol registration, search comprehensiveness, study selection, quality assessment, synthesis methods |
+
+### Cochrane Risk of Bias 2 (RoB 2) Domains
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              COCHRANE ROB 2 ASSESSMENT                       │
+└─────────────────────────────────────────────────────────────┘
+
+Domain 1: Bias arising from randomization process
+├─ Was allocation sequence random?
+├─ Was allocation sequence concealed?
+└─ Were baseline differences suggesting a problem?
+   → Low risk / Some concerns / High risk
+
+Domain 2: Bias due to deviations from intended interventions
+├─ Were participants/personnel aware of intervention?
+├─ Were there deviations from intended intervention?
+├─ Were deviations balanced between groups?
+└─ Was analysis appropriate?
+   → Low risk / Some concerns / High risk
+
+Domain 3: Bias due to missing outcome data
+├─ Were data available for all/nearly all participants?
+├─ Is there evidence data missing depended on its true value?
+└─ Could missingness in outcome depend on its true value?
+   → Low risk / Some concerns / High risk
+
+Domain 4: Bias in measurement of outcome
+├─ Was measurement method appropriate?
+├─ Did measurement differ between groups?
+└─ Were outcome assessors aware of intervention?
+   → Low risk / Some concerns / High risk
+
+Domain 5: Bias in selection of reported result
+├─ Were outcomes analyzed according to pre-specified plan?
+├─ Were multiple analyses performed?
+└─ Was reported result likely selected from multiple analyses?
+   → Low risk / Some concerns / High risk
+
+OVERALL RISK OF BIAS
+└─ Low risk: Low across all domains
+   Some concerns: Some concerns in ≥1 domain
+   High risk: High in ≥1 domain OR concerns in multiple domains
+```
+
+### Risk of Bias Summary Table
+
+| Study | Random Sequence | Allocation Concealment | Blinding Participants | Blinding Assessors | Incomplete Data | Selective Reporting | Overall |
+|-------|----------------|----------------------|---------------------|-------------------|----------------|-------------------|---------|
+| Smith 2020 | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ⚠ Some concerns | ✓ Low | ⚠ Some concerns |
+| Jones 2021 | ✓ Low | ⚠ Some concerns | ✗ High | ✓ Low | ✓ Low | ✓ Low | ✗ High |
+| Brown 2022 | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ✓ Low |
+| Davis 2023 | ⚠ Some concerns | ✓ Low | ✗ High | ⚠ Some concerns | ✓ Low | ✓ Low | ✗ High |
+
+**Legend**: ✓ = Low risk, ⚠ = Some concerns, ✗ = High risk
+
+### Risk of Bias Graph
+
+```
+Percentage of studies with each risk of bias judgment
+
+Randomization              ████████████████████ 85% Low
+                          ███ 15% Some concerns
+
+Allocation Concealment    ██████████████ 70% Low
+                          ████ 20% Some concerns
+                          ██ 10% High
+
+Blinding (participants)   ████████ 40% Low
+                          ████ 20% Some concerns
+                          ████████ 40% High
+
+Blinding (assessors)      ████████████ 60% Low
+                          ██████ 30% Some concerns
+                          ██ 10% High
+
+Incomplete Outcome Data   ████████████████ 80% Low
+                          ████ 20% Some concerns
+
+Selective Reporting       ██████████████████ 90% Low
+                          ██ 10% Some concerns
+
+Overall Risk of Bias      ██████████ 50% Low
+                          ██████ 30% Some concerns
+                          ████ 20% High
+```
+
+## Step 9: Data Synthesis
+
+Synthesis integrates findings across studies to answer your research question.
+
+### Choosing Synthesis Method
+
+| Factor | Narrative Synthesis | Meta-Analysis |
+|--------|-------------------|---------------|
+| **Study Homogeneity** | Studies too diverse | Studies sufficiently similar |
+| **Outcome Measures** | Different measurement tools/scales | Same or convertible measures |
+| **Statistical Data** | Incomplete or varied reporting | Complete statistical data available |
+| **Study Designs** | Multiple different designs | Same design (typically RCTs) |
+| **Populations** | Highly variable | Comparable populations |
+| **Interventions** | Diverse interventions | Similar interventions |
+| **When to Use** | High heterogeneity, limited data | Low-moderate heterogeneity, adequate data |
+
+### Meta-Analysis Statistical Concepts
+
+| Concept | Description | Interpretation |
+|---------|-------------|----------------|
+| **Effect Size** | Standardized measure of intervention effect | Cohen's d: 0.2=small, 0.5=medium, 0.8=large |
+| **Confidence Interval** | Range likely to contain true effect | If excludes null value, effect is significant |
+| **Heterogeneity (I²)** | Percentage of variability due to heterogeneity not chance | 0-40%: Low, 30-60%: Moderate, 50-90%: Substantial, 75-100%: Considerable |
+| **Fixed-Effect Model** | Assumes one true effect size | Use when I² <40% |
+| **Random-Effects Model** | Assumes distribution of true effects | Use when I² >40% |
+| **Forest Plot** | Visual display of study results and pooled estimate | Shows effect sizes with confidence intervals |
+| **Funnel Plot** | Scatter plot for publication bias detection | Asymmetry suggests bias |
+
+### Sample Forest Plot Structure
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    FOREST PLOT EXAMPLE                               │
+│  Effect of Mediterranean Diet on HbA1c (%) vs Control                │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                       │
+│ Study                     Mean Difference [95% CI]        Weight %   │
+│                          -2.0  -1.0   0   1.0   2.0                  │
+│                           |     |     |    |     |                   │
+│ Smith 2020                ●─────|─────|    |     |        12.5%      │
+│   MD: -0.85 [-1.2, -0.5] |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ Jones 2021                |    ●──────|────|     |        15.3%      │
+│   MD: -0.62 [-0.9, -0.3] |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ Brown 2022                |     ●─────|────|     |        18.2%      │
+│   MD: -0.45 [-0.7, -0.2] |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ Davis 2023                |     |    ●────|─────|        14.7%      │
+│   MD: -0.35 [-0.6, -0.1] |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ Wilson 2024               |     |  ●──────|─────|        13.8%      │
+│   MD: -0.28 [-0.5, -0.05]|     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ Taylor 2024               |     | ●───────|─────|        11.2%      │
+│   MD: -0.15 [-0.4, 0.1]  |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ Anderson 2024             |     |   ●─────|─────|        14.3%      │
+│   MD: -0.22 [-0.5, 0.05] |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│ ═══════════════════════════════════════════════════════════════     │
+│ Overall (Random)          |    ◆────|─────|     |        100%        │
+│   MD: -0.42 [-0.61, -0.23]|    |    |     |     |                   │
+│   I² = 68%, p < 0.001     |     |     |    |     |                   │
+│                           |     |     |    |     |                   │
+│                       Favours     |   Favours                         │
+│                       Mediterranean  Control                          │
+│                                                                       │
+│ Heterogeneity: I² = 68% (substantial), χ² = 21.8, p < 0.001         │
+│ Test for overall effect: Z = 4.32 (p < 0.0001)                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Heterogeneity Assessment
+
+| Statistical Test | What It Measures | Interpretation |
+|-----------------|------------------|----------------|
+| **Chi-squared (χ²) test** | Statistical significance of heterogeneity | p < 0.10 suggests significant heterogeneity |
+| **I² statistic** | Percentage of total variation due to heterogeneity | 0-40%: Might not be important<br>30-60%: Moderate<br>50-90%: Substantial<br>75-100%: Considerable |
+| **Tau² (τ²)** | Variance of true effect sizes | No universal interpretation; compare across subgroups |
+| **Prediction interval** | Range of true effects in similar future studies | Wider than CI; shows clinical applicability |
+
+### Subgroup Analysis Plan
+
+| Variable | Subgroups | Rationale | Minimum Studies per Subgroup |
+|----------|-----------|-----------|------------------------------|
+| **Age** | <50 years vs ≥50 years | Metabolic differences by age | 3 |
+| **Baseline HbA1c** | <8% vs ≥8% | Disease severity may affect response | 3 |
+| **Intervention Duration** | 12-24 weeks vs >24 weeks | Longer duration may show greater effects | 3 |
+| **Study Quality** | Low risk vs high risk of bias | Quality may impact effect estimates | 3 |
+| **Geographic Region** | North America vs Europe vs Asia | Cultural dietary differences | 3 |
+| **Adherence Level** | High (>80%) vs Low (<80%) | Adherence affects outcomes | 3 |
+
+### Publication Bias Assessment
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    FUNNEL PLOT                               │
+│         Standard Error (SE) vs Effect Size                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│   0.0 ┐                      ●                              │
+│       │                    ●   ●                            │
+│   0.1 │                  ●   ●   ●                          │
+│       │                ●   ●   ●   ●                        │
+│   0.2 │              ●   ●   ●   ●   ●                      │
+│ S     │            ●   ●   ●   ●   ●   ●                    │
+│ E 0.3 │          ●   ●   ●   ● ◆ ●   ●   ●                  │
+│       │        ●   ●   ●   ●   ●   ●   ●   ●                │
+│   0.4 │      ●   ●   ●   ●   ●   ●   ●   ●   ●              │
+│       │    ●   ●   ●   ●   ●   ●   ●   ●   ●   ●            │
+│   0.5 └──┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──     │
+│         -2.0  -1.5  -1.0  -0.5   0   0.5   1.0   1.5   2.0  │
+│                      Mean Difference                         │
+│                                                              │
+│  ◆ = Pooled Effect Estimate                                 │
+│  Symmetrical funnel = Low publication bias                  │
+│  Asymmetry suggests missing studies on one side             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Publication Bias Tests**:
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| **Egger's Test** | p = 0.03 | Significant asymmetry detected |
+| **Begg's Test** | p = 0.08 | Borderline significance |
+| **Trim and Fill** | 5 studies imputed | Adjusted MD: -0.38 [-0.55, -0.21] |
+| **Fail-safe N** | 124 studies | 124 null studies needed to nullify effect |
+
+## Step 10: Assessing Certainty of Evidence
+
+The GRADE (Grading of Recommendations Assessment, Development and Evaluation) approach provides a structured framework for rating evidence certainty.
+
+### GRADE Assessment Process
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              GRADE ASSESSMENT WORKFLOW                       │
+└─────────────────────────────────────────────────────────────┘
+
+STARTING POINT
+├─ Randomized Controlled Trials → HIGH certainty
+└─ Observational Studies → LOW certainty
+
+↓ DOWNGRADE FOR:
+
+1. Risk of Bias (-1 or -2)
+   └─ Study limitations affecting confidence in results
+
+2. Inconsistency (-1 or -2)
+   └─ Unexplained heterogeneity or variability in results
+
+3. Indirectness (-1 or -2)
+   └─ Differences in population, intervention, or outcomes
+
+4. Imprecision (-1 or -2)
+   └─ Wide confidence intervals, small sample size
+
+5. Publication Bias (-1)
+   └─ Strong evidence of missing studies
+
+↑ UPGRADE FOR (observational studies only):
+
+1. Large Effect (+1 or +2)
+   └─ RR >2 or <0.5 (no confounders)
+
+2. Dose-Response Gradient (+1)
+   └─ Clear gradient supports causality
+
+3. All Plausible Confounding Would Reduce Effect (+1)
+   └─ Strengthens confidence in findings
+
+FINAL CERTAINTY RATING
+├─ High: Very confident in effect estimate
+├─ Moderate: Moderately confident; true effect likely close
+├─ Low: Limited confidence; true effect may differ substantially
+└─ Very Low: Very little confidence; true effect likely differs
+```
+
+### GRADE Evidence Profile Example
+
+| Outcome | Studies (Participants) | Risk of Bias | Inconsistency | Indirectness | Imprecision | Publication Bias | Effect Size | Certainty | Importance |
+|---------|------------------------|--------------|---------------|--------------|-------------|------------------|-------------|-----------|------------|
+| **HbA1c reduction at 6 months** | 7 RCTs (n=843) | Serious (-1) | Not serious | Not serious | Not serious | Suspected (-1) | MD -0.42% [-0.61, -0.23] | ⊕⊕○○ LOW | Critical |
+| **Fasting glucose** | 5 RCTs (n=612) | Serious (-1) | Serious (-1) | Not serious | Not serious | Not detected | MD -12.5 mg/dL [-18.3, -6.7] | ⊕⊕○○ LOW | Critical |
+| **Total cholesterol** | 6 RCTs (n=734) | Not serious | Serious (-1) | Not serious | Serious (-1) | Not detected | MD -8.2 mg/dL [-15.1, -1.3] | ⊕⊕○○ LOW | Important |
+| **Adverse events** | 4 RCTs (n=523) | Serious (-1) | Not serious | Not serious | Very serious (-2) | Not detected | RR 1.12 [0.68, 1.85] | ⊕○○○ VERY LOW | Important |
+
+**GRADE Certainty Legend**: 
+- ⊕⊕⊕⊕ HIGH
+- ⊕⊕⊕○ MODERATE  
+- ⊕⊕○○ LOW
+- ⊕○○○ VERY LOW
+
+## Step 11: Writing the Review
+
+Structure your systematic review following reporting guidelines like PRISMA.
+
+### PRISMA 2020 Checklist
+
+| Section | Item # | Checklist Item | Reported? | Page # |
+|---------|--------|----------------|-----------|---------|
+| **TITLE** | | | | |
+| Title | 1 | Identify report as systematic review | ☐ | |
+| **ABSTRACT** | | | | |
+| Abstract | 2 | Structured summary (background, objectives, methods, results, conclusions) | ☐ | |
+| **INTRODUCTION** | | | | |
+| Rationale | 3 | Describe rationale in context of existing knowledge | ☐ | |
+| Objectives | 4 | Provide explicit statement of objectives/questions (PICO) | ☐ | |
+| **METHODS** | | | | |
+| Eligibility criteria | 5 | Specify inclusion/exclusion criteria with rationale | ☐ | |
+| Information sources | 6 | Specify all databases, registers, websites, date last searched | ☐ | |
+| Search strategy | 7 | Present full search strategy for ≥1 database | ☐ | |
+| Selection process | 8 | Specify process for selecting studies (screening, eligibility) | ☐ | |
+| Data collection | 9 | Specify methods for data extraction and any confirmation processes | ☐ | |
+| Data items | 10a | List and define all outcomes, variables collected | ☐ | |
+| | 10b | Specify assumptions and simplifications made | ☐ | |
+| Study risk of bias | 11 | Specify methods for assessing risk of bias | ☐ | |
+| Effect measures | 12 | Specify effect measures used (RR, MD, etc.) | ☐ | |
+| Synthesis methods | 13a | Describe processes for deciding which studies eligible for meta-analysis | ☐ | |
+| | 13b | Describe methods for tabular/visual display of results | ☐ | |
+| | 13c | Describe methods for synthesizing results (statistical methods) | ☐ | |
+| | 13d | Describe methods for exploring causes of heterogeneity | ☐ | |
+| | 13e | Describe sensitivity analyses | ☐ | |
+| Reporting bias | 14 | Describe methods for assessing publication bias | ☐ | |
+| Certainty assessment | 15 | Describe methods for assessing certainty of evidence | ☐ | |
+| **RESULTS** | | | | |
+| Study selection | 16a | Describe results of search and selection (with flow diagram) | ☐ | |
+| | 16b | Cite excluded studies and reasons | ☐ | |
+| Study characteristics | 17 | Cite each study and present characteristics | ☐ | |
+| Risk of bias | 18 | Present assessments of risk of bias | ☐ | |
+| Results synthesis | 19a | Present results for all outcomes (with confidence intervals) | ☐ | |
+| | 19b | Present results of meta-analyses (forest plots) | ☐ | |
+| Reporting biases | 20 | Present assessment of publication bias | ☐ | |
+| Certainty | 21 | Present certainty of evidence assessments | ☐ | |
+| **DISCUSSION** | | | | |
+| Discussion | 22a | Provide general interpretation in context of other evidence | ☐ | |
+| | 22b | Discuss limitations | ☐ | |
+| | 22c | Discuss implications for practice, policy, and research | ☐ | |
+| **OTHER** | | | | |
+| Registration | 23a | Provide registration info including number | ☐ | |
+| | 23b | Indicate where protocol can be accessed | ☐ | |
+| | 23c | Describe and explain deviations from protocol | ☐ | |
+| Support | 24 | Describe sources of financial/non-financial support | ☐ | |
+| Competing interests | 25 | Declare competing interests | ☐ | |
+| Data availability | 26 | Report which data are publicly available and where | ☐ | |
+| Code availability | 27 | Report which analysis code is available and where | ☐ | |
+
+### Review Writing Timeline
+
+```
+Week 1-2: Results Section
+├─ Create all tables and figures
+├─ Write study selection results
+├─ Describe study characteristics
+├─ Present quality assessment
+└─ Report synthesis results
+
+Week 3-4: Methods Section
+├─ Document protocol details
+├─ Describe search strategy
+├─ Explain selection process
+├─ Detail data extraction
+└─ Describe analysis methods
+
+Week 5: Introduction & Abstract
+├─ Write background and rationale
+├─ State objectives clearly
+├─ Draft structured abstract
+└─ Finalize title
+
+Week 6-7: Discussion & Conclusion
+├─ Interpret findings
+├─ Discuss in context of existing evidence
+├─ Address limitations honestly
+├─ State implications
+└─ Draw evidence-based conclusions
+
+Week 8: Finalization
+├─ Check PRISMA compliance
+├─ Format references
+├─ Proofread thoroughly
+├─ Prepare supplementary materials
+└─ Submit to co-authors for review
+```
+
+### Essential Tables and Figures
+
+| Table/Figure | Purpose | Contents |
+|--------------|---------|----------|
+| **PRISMA Flow Diagram** | Show study selection process | Numbers at each stage, exclusion reasons |
+| **Table 1: Study Characteristics** | Describe included studies | Author, year, design, setting, sample size, intervention details |
+| **Table 2: Risk of Bias Summary** | Present quality assessment | Judgments for each domain per study |
+| **Table 3: Summary of Findings** | Present key results | Outcomes, effect estimates, certainty ratings |
+| **Forest Plot(s)** | Show meta-analysis results | Individual study effects, pooled estimate, heterogeneity |
+| **Funnel Plot** | Assess publication bias | Visual asymmetry check |
+
+## Step 12: Dissemination and Updates
+
+### Publication Strategy
+
+| Target | Format | Timeline | Audience |
+|--------|--------|----------|----------|
+| **Peer-reviewed journal** | Full manuscript | Months 18-24 | Academic/clinical |
+| **Conference presentation** | Abstract + slides/poster | Months 12-18 | Academic/clinical |
+| **Policy brief** | 2-4 page summary | Month 24+ | Policymakers |
+| **Plain language summary** | 1-page infographic | Month 24+ | General public |
+| **Blog post/social media** | 500-1000 words | Month 24+ | Broader audience |
+| **Webinar/workshop** | Interactive presentation | Month 24+ | Stakeholders |
+
+### Target Journal Selection Criteria
+
+| Criterion | Considerations |
+|-----------|----------------|
+| **Scope** | Does journal publish systematic reviews in your topic area? |
+| **Impact** | Journal impact factor and citation metrics |
+| **Audience** | Who reads the journal? |
+| **Open Access** | Required by funder? Cost? |
+| **Turnaround Time** | How quickly do they typically review and publish? |
+| **Requirements** | Word limits, structure requirements, supplement policies |
+
+### Data and Materials Sharing
+
+| Item | Where to Share | Purpose |
+|------|----------------|---------|
+| **Protocol** | PROSPERO, OSF, journal supplement | Transparency, replication |
+| **Search strategies** | Journal supplement | Replication |
+| **PRISMA checklist** | Journal supplement | Reporting completeness |
+| **Data extraction forms** | OSF, Figshare | Replication |
+| **Extracted data** | OSF, Figshare, Dryad | Replication, secondary analysis |
+| **Risk of bias assessments** | Journal supplement or OSF | Transparency |
+| **Analysis code** | GitHub, OSF | Reproducibility |
+| **Supplementary analyses** | Journal supplement | Complete reporting |
+
+### Update Planning
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│             SYSTEMATIC REVIEW UPDATE CYCLE                   │
+└─────────────────────────────────────────────────────────────┘
+
+INITIAL REVIEW PUBLISHED
+         │
+         ▼
+SURVEILLANCE (Ongoing)
+├─ Set up alerts for new studies
+├─ Monitor key journals
+├─ Check trial registries
+└─ Track citations to review
+         │
+         ▼
+ASSESSMENT (Every 6-12 months)
+├─ How many new studies identified?
+├─ Do new studies change conclusions?
+├─ Have methods/guidelines changed?
+└─ Is update warranted?
+         │
+         ▼
+DECISION POINT
+├─ No update needed → Continue surveillance
+├─ Minor update → Publish brief update/letter
+└─ Major update → Full systematic review update
+         │
+         ▼
+UPDATE REVIEW (If warranted)
+├─ Update search (same strategy)
+├─ Screen and select new studies
+├─ Extract data from new studies
+├─ Re-assess all included studies with current tools
+├─ Re-synthesize all data
+└─ Publish updated review
+         │
+         ▼
+REPEAT CYCLE
+```
+
+### Criteria for Update Decision
+
+| Trigger | Action |
+|---------|--------|
+| **5+ new studies meeting inclusion criteria** | Consider update |
+| **New study contradicts main findings** | Priority update |
+| **Substantial change in clinical practice** | Update needed |
+| **New/improved methodology available** | Consider update |
+| **3-5 years since publication** | Routine update assessment |
+| **Request from stakeholders** | Evaluate need |
+
+## Common Challenges and Solutions
+
+### Challenge Summary Table
+
+| Challenge | Potential Solutions | Prevention Strategies |
+|-----------|-------------------|----------------------|
+| **Too many results (>10,000)** | • Narrow PICO<br>• Add date limits<br>• Focus on specific populations<br>• Add study design filters | • Pilot test search strategy<br>• Consult librarian<br>• Define focused question |
+| **Too few results (<5)** | • Broaden inclusion criteria<br>• Include more study designs<br>• Extend date range<br>• Search more databases | • Preliminary scoping<br>• Literature familiarity check<br>• Consult experts |
+| **High heterogeneity (I²>75%)** | • Narrative synthesis instead<br>• Explore with subgroups<br>• Meta-regression<br>• Discuss as finding | • Clear eligibility criteria<br>• Pilot with similar studies<br>• Plan subgroup analyses |
+| **Missing data** | • Contact authors<br>• Use imputation<br>• Sensitivity analyses<br>• Note limitations | • Design comprehensive extraction form<br>• Plan for missing data |
+| **Poor study quality** | • Sensitivity analysis by quality<br>• Downgrade GRADE rating<br>• Discuss impact | • Include quality criteria<br>• Plan quality assessment |
+| **Publication bias detected** | • Trim-and-fill analysis<br>• Search gray literature<br>• Discuss impact<br>• Interpret cautiously | • Comprehensive search<br>• Gray literature inclusion<br>• Trial registry searches |
+| **Disagreements between reviewers** | • Third reviewer arbitration<br>• Team discussion<br>• Revise criteria<br>• Additional training | • Clear protocols<br>• Pilot screening<br>• Regular team meetings |
+| **Time/resource constraints** | • Prioritize critical steps<br>• Focus review scope<br>• Seek additional support<br>• Consider rapid review | • Realistic timeline<br>• Adequate team size<br>• Early resource planning |
+
+## Resource Requirements
+
+### Personnel and Time Estimates
+
+| Task | Personnel | Time Estimate |
+|------|-----------|---------------|
+| **Protocol development** | Lead + 1-2 co-investigators | 2-4 weeks |
+| **Search strategy** | Lead + librarian | 1-2 weeks |
+| **Database searching** | 1 reviewer | 1 week |
+| **Title/abstract screening** | 2 independent reviewers | 2-6 weeks |
+| **Full-text review** | 2 independent reviewers | 2-4 weeks |
+| **Data extraction** | 2 independent reviewers | 4-8 weeks |
+| **Quality assessment** | 2 independent reviewers | 2-4 weeks |
+| **Data synthesis** | Lead + statistician | 4-6 weeks |
+| **Manuscript writing** | Lead + co-authors | 6-8 weeks |
+| **Revisions** | All authors | 2-4 weeks |
+| **Total** | Team of 3-5 | **6-18 months** |
+
+### Software and Tools
+
+| Purpose | Free Options | Paid Options | Cost Range |
+|---------|--------------|--------------|------------|
+| **Reference Management** | Zotero, Mendeley | EndNote, RefWorks | $0-250/year |
+| **Screening** | Rayyan, Covidence (free trial) | Covidence, DistillerSR | $0-5,000/project |
+| **Data Extraction** | Microsoft Excel, Google Sheets | Covidence, DistillerSR | $0-5,000 |
+| **Quality Assessment** | RevMan (Cochrane) | Covidence | Free-$5,000 |
+| **Meta-Analysis** | RevMan, R (meta package), OpenMeta[Analyst] | Stata, Comprehensive Meta-Analysis | $0-1,500 |
+| **GRADE Assessment** | GRADEpro GDT | GRADEpro GDT (full version) | Free-$200 |
+| **Diagram Creation** | Microsoft PowerPoint, Google Slides | Adobe Illustrator, Lucidchart | $0-50/month |
+
+## Conclusion
+
+Conducting a systematic literature review is a rigorous, time-intensive process that requires careful planning, meticulous execution, and transparent reporting. By following these 12 detailed steps, you can produce a high-quality review that:
+
+- **Minimizes bias** through systematic, reproducible methods
+- **Synthesizes evidence** comprehensively and objectively  
+- **Informs practice** with reliable, trustworthy conclusions
+- **Guides future research** by identifying knowledge gaps
+- **Influences policy** with robust evidence summaries
+
+### Key Success Factors
+
+1. **Well-formulated question** using appropriate framework (PICO, PEO, etc.)
+2. **Detailed protocol** registered before starting
+3. **Comprehensive search** across multiple sources
+4. **Independent screening** by multiple reviewers
+5. **Systematic data extraction** with pilot testing
+6. **Rigorous quality assessment** using validated tools
+7. **Appropriate synthesis** matching data characteristics
+8. **Transparent reporting** following PRISMA guidelines
+9. **Honest limitation** acknowledgment
+10. **Plan for updates** to maintain relevance
+
+## Detailed Stage-by-Stage Analysis
+
+### Timeline Overview: Complete Systematic Review Process
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                  SYSTEMATIC REVIEW TIMELINE (6-18 MONTHS)                │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│ Month 1-2    │████████████│ Planning & Protocol Development             │
+│              │            │ - Define question                           │
+│              │            │ - Develop protocol                          │
+│              │            │ - Register protocol                         │
+│              │            │ - Assemble team                             │
+│                                                                          │
+│ Month 2-3    │      ██████│ Search Strategy & Execution                 │
+│              │            │ - Design searches                           │
+│              │            │ - Execute searches                          │
+│              │            │ - De-duplicate                              │
+│                                                                          │
+│ Month 3-5    │          ████████████████│ Screening & Selection          │
+│              │                          │ - Title/abstract screen        │
+│              │                          │ - Full-text review             │
+│              │                          │ - Final selection              │
+│                                                                          │
+│ Month 5-9    │                      ████████████████████│ Data Phase     │
+│              │                                          │ - Extract data │
+│              │                                          │ - Assess quality│
+│              │                                          │ - Contact authors│
+│                                                                          │
+│ Month 9-12   │                                  ████████████│ Synthesis  │
+│              │                                              │ - Analyze   │
+│              │                                              │ - Synthesize│
+│              │                                              │ - GRADE     │
+│                                                                          │
+│ Month 12-16  │                                          ████████████│ Writing│
+│              │                                                      │    │
+│                                                                          │
+│ Month 16-18  │                                                  ████│ Review│
+│              │                                                      │ & Submit│
+└─────────────────────────────────────────────────────────────────────────┘
+
+Critical Path Activities: ■■■■  Parallel Activities: ░░░░
+```
+
+### Milestone Checklist by Phase
+
+| Phase | Milestone | Deliverable | Team Review | Completed |
+|-------|-----------|-------------|-------------|-----------|
+| **Phase 1: Planning** | Research question finalized | PICO statement | ☐ | ☐ |
+| | Protocol draft complete | Full protocol document | ☐ | ☐ |
+| | Team roles assigned | Responsibility matrix | ☐ | ☐ |
+| | Protocol registered | Registration number | ☐ | ☐ |
+| **Phase 2: Search** | Search strategy finalized | Documented strategies | ☐ | ☐ |
+| | All searches executed | Search results log | ☐ | ☐ |
+| | De-duplication complete | Unique records count | ☐ | ☐ |
+| | Screening setup ready | Screening platform configured | ☐ | ☐ |
+| **Phase 3: Selection** | Pilot screening done | Inter-rater agreement | ☐ | ☐ |
+| | Title/abstract complete | Potentially relevant list | ☐ | ☐ |
+| | Full texts obtained | PDF library | ☐ | ☐ |
+| | Final selection done | Included studies list | ☐ | ☐ |
+| | PRISMA diagram created | Flow diagram | ☐ | ☐ |
+| **Phase 4: Data Collection** | Extraction form piloted | Refined form | ☐ | ☐ |
+| | Data extraction complete | Completed database | ☐ | ☐ |
+| | Quality assessment done | Risk of bias tables | ☐ | ☐ |
+| | Missing data resolved | Author correspondence log | ☐ | ☐ |
+| **Phase 5: Synthesis** | Statistical analysis done | Forest plots, statistics | ☐ | ☐ |
+| | GRADE completed | Evidence profiles | ☐ | ☐ |
+| | All tables/figures created | Complete visualizations | ☐ | ☐ |
+| **Phase 6: Writing** | First draft complete | Full manuscript | ☐ | ☐ |
+| | Co-author review done | Revised draft | ☐ | ☐ |
+| | PRISMA checklist done | Completed checklist | ☐ | ☐ |
+| | Submission ready | Final manuscript + supplements | ☐ | ☐ |
+
+### Final Checklist
+
+✓ Research question clearly defined
+✓ Protocol developed and registered
+✓ Search strategy comprehensive and documented
+✓ Study selection transparent with PRISMA diagram
+✓ Data extraction systematic and verified
+✓ Quality assessment rigorous and independent
+✓ Synthesis appropriate for data
+✓ GRADE certainty assessment completed
+✓ PRISMA checklist completed
+✓ All materials available for transparency
+✓ Limitations discussed honestly
+✓ Conclusions supported by evidence
+✓ Update plan established
+
+The systematic review methodology represents the highest level of evidence
+synthesis. While demanding in terms of time and resources, the investment
+produces trustworthy evidence that advances knowledge, informs decision-making,
+and ultimately improves outcomes in your field.
+
+Remember: **Transparency, rigor, and reproducibility** are the cornerstones of
+systematic review methodology. Document every decision, maintain objectivity
+throughout, and let the evidence guide your conclusions.

@@ -1,0 +1,14 @@
+---
+title: "Travel to India"
+description: In this blog I will share my experience about travelling to India.
+author:
+  - name: Lethean Scribe
+date: "2026-01-14"
+categories: [Travel, India]
+image: earthaccesslogo.png
+---
+
+*Blog post: /2026-01-14-travel-india*
+
+------------------------------------------------------------------------
+

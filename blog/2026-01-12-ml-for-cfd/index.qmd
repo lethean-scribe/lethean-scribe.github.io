@@ -1,0 +1,14 @@
+---
+title: "ML/AI tecnologies for CFD"
+description: In this blog we will explore several promising ML.AI technologies for Computational Fluid Dynamics.
+author:
+  - name: Lethean Scribe
+date: "2026-02-12"
+categories: [machine-learning, artificial-intelligence, CFD]
+image: earthaccesslogo.png
+draft: true
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------

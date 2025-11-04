@@ -1,0 +1,13 @@
+---
+title: "Non-equilibrium High Speed Flows"
+description: In this blog we will approach to the study of non-equilibrium high-speed flows.
+author:
+  - name: Lethean Scribe
+date: "2026-02-12"
+categories: [hypersonicsm CFD, non-equilibrium]
+image: earthaccesslogo.png
+---
+
+*Blog post: /2026-02-12-non-equilibrium-flows*
+
+------------------------------------------------------------------------
