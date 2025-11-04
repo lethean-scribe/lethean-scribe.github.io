@@ -1,0 +1,1207 @@
+---
+title: "Systematic Literature Review"
+description: In this blog we will explore systematic literature review approaches and tools.
+author:
+  - name: Lethean Scribe
+date: "2025-11-02"
+categories: [SLR]
+image: image.jpeg
+---
+
+*Blog post: /2025-11-02-systematic-literature-review*
+
+------------------------------------------------------------------------
+
+## Introduction
+
+A **systematic literature review (SLR)** is a rigorous, reproducible method
+that synthesizes evidence using a predefined protocol to minimize bias.<sup><a
+  href="#ref13">13</a>, <a href="#ref19">19</a>, <a href="#ref23">23</a></sup>
+Begin by clearly defining scope and research questions,<sup><a
+  href="#ref9">9</a>, <a href="#ref10">10</a></sup> structuring the review from
+broad context to focused themes.<sup><a href="#ref1">1</a>, <a
+  href="#ref2">2</a></sup> Unlike an introduction, which previews your study,
+an SLR critically synthesizes existing research.<sup><a
+  href="#ref4">4</a></sup> Place it early in a thesis to establish
+context,<sup><a href="#ref5">5</a></sup> adapting structure (thematic,
+chronological, or methodological) by discipline.<sup><a href="#ref6">6</a>, <a
+  href="#ref11">11</a></sup> Avoid mere summarization; critically evaluate
+sources for quality and contradictions.<sup><a href="#ref7">7</a>, <a
+  href="#ref8">8</a>, <a href="#ref20">20</a></sup> Conduct systematic searches
+across databases, document strategies, and use reference managers from the
+start.<sup><a href="#ref14">14</a>, <a href="#ref15">15</a></sup> Screen in two
+stages—title/abstract then full-text—before extracting data with
+templates.<sup><a href="#ref3">3</a>, <a href="#ref10">10</a></sup> Synthesize
+findings conceptually, identify gaps, and justify future research.<sup><a
+  href="#ref16">16</a>, <a href="#ref17">17</a>, <a href="#ref18">18</a></sup>
+Variants include bibliometric analysis for mapping impact<sup><a
+  href="#ref21">21</a></sup> and integrative reviews for diverse
+methodologies.<sup><a href="#ref22">22</a></sup>
+
+Systematic literature reviews have become the gold standard for synthesizing
+research evidence across disciplines. Unlike traditional narrative reviews,
+systematic reviews follow a rigorous, transparent, and reproducible methodology
+that minimizes bias and provides reliable conclusions. This comprehensive guide
+walks you through each step of conducting a systematic literature review, from
+initial planning to final dissemination.
+
+## What is a Systematic Literature Review?
+
+A systematic literature review is a methodical approach to identifying,
+evaluating, and synthesizing all relevant research on a specific question or
+topic. It differs from traditional literature reviews in its explicit
+methodology, comprehensive search strategy, and transparent reporting of how
+studies were selected and appraised.
+
+### Systematic vs. Traditional Literature Review
+
+| Feature | Traditional Literature Review | Systematic Literature Review |
+|---------|------------------------------|------------------------------|
+| **Research Question** | Broad, general | Focused, specific (e.g., PICO) |
+| **Search Strategy** | Not specified, potentially biased | Comprehensive, documented, reproducible |
+| **Study Selection** | Not specified, subjective | Explicit criteria, multiple reviewers |
+| **Quality Assessment** | Variable or absent | Standardized, rigorous tools |
+| **Data Synthesis** | Narrative, subjective | Systematic (narrative or meta-analysis) |
+| **Bias Minimization** | Limited | Multiple safeguards |
+| **Reproducibility** | Low | High |
+| **Time Required** | Weeks to months | 6-18 months |
+
+## Overall Systematic Review Workflow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PLANNING PHASE                           │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Define      │───▶│  Develop     │───▶│  Establish   │   │
+│  │  Research    │    │  Protocol    │    │  Eligibility │   │
+│  │  Question    │    │              │    │  Criteria    │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+│                            │                                │
+│                            ▼                                │
+│                   ┌──────────────┐                          │
+│                   │  Register    │                          │
+│                   │  Protocol    │                          │
+│                   └──────────────┘                          │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  SEARCH & SELECTION PHASE                   │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Design      │───▶│  Execute     │───▶│  Screen      │   │
+│  │  Search      │    │  Searches    │    │  Titles &    │   │
+│  │  Strategy    │    │              │    │  Abstracts   │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+│                                                 │           │
+│                                                 ▼           │
+│                                        ┌──────────────┐     │
+│                                        │  Full-Text   │     │
+│                                        │  Review      │     │
+│                                        └──────────────┘     │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  DATA COLLECTION PHASE                      │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Extract     │───▶│  Assess      │───▶│  Assess      │   │
+│  │  Data        │    │  Study       │    │  Evidence    │   │
+│  │              │    │  Quality     │    │  Certainty   │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  SYNTHESIS & REPORTING PHASE                │
+│  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
+│  │  Synthesize  │───▶│  Write       │───▶│  Disseminate │   │
+│  │  Data        │    │  Review      │    │  & Update    │   │
+│  │              │    │              │    │              │   │
+│  └──────────────┘    └──────────────┘    └──────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Step 1: Defining the Research Question
+
+The foundation of any systematic review is a well-formulated research question.
+A poorly defined question leads to unfocused searches, irrelevant studies, and
+ultimately, inconclusive results.
+
+### Research Question Frameworks
+
+| Framework | Best For | Components | Example |
+|-----------|----------|------------|---------|
+| **PICO** | Quantitative studies, interventions | Population, Intervention, Comparison, Outcome | In adults with T2DM (P), does Mediterranean diet (I) vs low-fat diet (C) improve HbA1c (O)? |
+| **PEO** | Observational studies | Population, Exposure, Outcome | In adolescents (P), does social media use (E) affect mental health (O)? |
+| **PICo** | Qualitative studies | Population, Interest, Context | What are experiences of nurses (P) regarding end-of-life care (I) in ICU settings (Co)? |
+| **SPIDER** | Qualitative/mixed methods | Sample, Phenomenon, Design, Evaluation, Research type | What are patients' (S) experiences of telehealth (PI) explored through interviews (D/R)? |
+| **SPICE** | Social sciences | Setting, Perspective, Intervention, Comparison, Evaluation | In schools (S), how do teachers (P) view anti-bullying programs (I) vs standard policies (C)? |
+
+### PICO Framework Detailed
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    PICO FRAMEWORK                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  P - POPULATION                                             │
+│  └─▶ Who are you studying?                                  │
+│      • Demographics (age, gender, ethnicity)                │
+│      • Condition/disease                                    │
+│      • Setting (hospital, community, school)                │
+│      • Severity/stage                                       │
+│                                                             │
+│  I - INTERVENTION                                           │
+│  └─▶ What is being tested/applied?                          │
+│      • Treatment/therapy                                    │
+│      • Diagnostic test                                      │
+│      • Exposure/risk factor                                 │
+│      • Prognostic factor                                    │
+│                                                             │
+│  C - COMPARISON                                             │
+│  └─▶ What is it compared to?                                │
+│      • Placebo                                              │
+│      • Standard care                                        │
+│      • Alternative intervention                             │
+│      • No intervention                                      │
+│                                                             │
+│  O - OUTCOME                                                │
+│  └─▶ What are you measuring?                                │
+│      • Primary outcomes                                     │
+│      • Secondary outcomes                                   │
+│      • Time points                                          │
+│      • Measurement method                                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Step 2: Developing the Review Protocol
+
+Before beginning your search, create a detailed protocol that outlines your
+entire methodology. This protocol serves as your roadmap and helps maintain
+consistency throughout the review process.
+
+### Protocol Components Checklist
+
+| Section | Key Elements | Status |
+|---------|-------------|---------|
+| **Title** | • Clear identification as systematic review<br>• Topic and population specified | ☐ |
+| **Background** | • Rationale for review<br>• Summary of existing evidence<br>• Knowledge gaps | ☐ |
+| **Objectives** | • Primary objectives<br>• Secondary objectives<br>• Research questions | ☐ |
+| **Methods: Eligibility** | • PICO/framework criteria<br>• Study designs included<br>• Language restrictions<br>• Publication dates | ☐ |
+| **Methods: Search** | • Databases to search<br>• Search terms<br>• Gray literature sources<br>• Citation searching plan | ☐ |
+| **Methods: Selection** | • Screening process<br>• Number of reviewers<br>• Disagreement resolution | ☐ |
+| **Methods: Data Collection** | • Extraction form design<br>• Variables to extract<br>• Pilot testing plan | ☐ |
+| **Methods: Quality Assessment** | • Assessment tools<br>• Domains to evaluate<br>• Independent assessment plan | ☐ |
+| **Methods: Synthesis** | • Narrative or meta-analysis<br>• Subgroup analyses planned<br>• Heterogeneity assessment | ☐ |
+| **Timeline** | • Estimated completion dates<br>• Milestones | ☐ |
+| **Team** | • Reviewers and roles<br>• Expertise areas | ☐ |
+
+### Protocol Registration Options
+
+| Registry | Suitable For | Website | Cost |
+|----------|--------------|---------|------|
+| **PROSPERO** | Health-related reviews | www.crd.york.ac.uk/prospero | Free |
+| **Open Science Framework** | Any discipline | osf.io | Free |
+| **Cochrane Library** | Cochrane reviews only | www.cochranelibrary.com | Free |
+| **Campbell Collaboration** | Social sciences | www.campbellcollaboration.org | Free |
+
+## Step 3: Establishing Inclusion and Exclusion Criteria
+
+Clear eligibility criteria ensure consistency in study selection and help other
+researchers understand the scope of your review.
+
+### Sample Eligibility Criteria Table
+
+| Criterion | Inclusion | Exclusion | Rationale |
+|-----------|-----------|-----------|-----------|
+| **Study Design** | Randomized controlled trials (RCTs), quasi-experimental studies | Case reports, editorials, opinion pieces | Need rigorous evaluation of causality |
+| **Population** | Adults aged 18-65 with diagnosed type 2 diabetes | Type 1 diabetes, gestational diabetes, prediabetes | Focus on specific diabetic population |
+| **Intervention** | Dietary interventions lasting ≥12 weeks | Pharmaceutical interventions, interventions <12 weeks | Sufficient duration to see metabolic effects |
+| **Comparison** | Any comparison diet or usual care | No comparison group | Need comparative data |
+| **Outcomes** | HbA1c, fasting glucose, lipid profiles | Quality of life only (without clinical markers) | Primary interest in metabolic outcomes |
+| **Language** | English, Spanish, French | All other languages | Team language capabilities |
+| **Publication Date** | January 2010 - present | Before 2010 | Recent dietary guidelines changed in 2010 |
+| **Publication Type** | Peer-reviewed journals | Conference abstracts without full publication | Need complete methodology and results |
+
+## Step 4: Designing the Search Strategy
+
+A comprehensive search strategy is crucial for identifying all relevant studies
+and minimizing publication bias.
+
+### Database Selection by Discipline
+
+| Discipline | Primary Databases | Supplementary Databases |
+|------------|-------------------|------------------------|
+| **Medicine/Health** | PubMed/MEDLINE, Embase, Cochrane Library | CINAHL, PsycINFO, Web of Science |
+| **Psychology** | PsycINFO, PubMed, Scopus | PsycARTICLES, Web of Science |
+| **Education** | ERIC, Education Source | British Education Index, Web of Science |
+| **Social Sciences** | Sociological Abstracts, Social Sciences Citation Index | JSTOR, ProQuest |
+| **Engineering** | IEEE Xplore, Engineering Village | ACM Digital Library, Scopus |
+| **Business** | Business Source Complete, ABI/INFORM | EconLit, Web of Science |
+| **Environmental** | Web of Science, Scopus | GeoRef, Environmental Science Database |
+
+### Search Strategy Development Process
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              SEARCH STRATEGY DEVELOPMENT                    │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ├─▶ STEP 1: Identify Key Concepts from PICO
+    │   • Break down each component
+    │   • List main concepts
+    │
+    ├─▶ STEP 2: Generate Synonyms and Related Terms
+    │   • Use thesauri and dictionaries
+    │   • Consider spelling variations
+    │   • Include acronyms and abbreviations
+    │
+    ├─▶ STEP 3: Identify Database Subject Headings
+    │   • MeSH terms (PubMed)
+    │   • Emtree terms (Embase)
+    │   • Check each database's controlled vocabulary
+    │
+    ├─▶ STEP 4: Build Search Strings
+    │   • Combine synonyms with OR
+    │   • Combine concepts with AND
+    │   • Use truncation (*) and wildcards (?)
+    │   • Apply proximity operators (NEAR, ADJ)
+    │
+    ├─▶ STEP 5: Add Filters
+    │   • Date range
+    │   • Language
+    │   • Publication type
+    │   • Study design (if possible)
+    │
+    ├─▶ STEP 6: Pilot Test
+    │   • Run in one database
+    │   • Check sample of results
+    │   • Verify known studies are captured
+    │
+    ├─▶ STEP 7: Refine
+    │   • Adjust sensitivity/specificity
+    │   • Add missing terms
+    │   • Remove ineffective terms
+    │
+    └─▶ STEP 8: Adapt for Each Database
+        • Modify syntax as needed
+        • Translate subject headings
+        • Document all variations
+```
+
+### Sample Search Strategy
+
+**Example Topic**: Mediterranean diet and glycemic control in type 2 diabetes
+
+| Concept | Search Terms | Combined With |
+|---------|--------------|---------------|
+| **Population** | ("diabetes mellitus, type 2"[MeSH] OR "type 2 diabetes" OR "T2DM" OR "adult onset diabetes" OR "non-insulin dependent diabetes" OR "NIDDM") | AND |
+| **Intervention** | ("diet, mediterranean"[MeSH] OR "mediterranean diet*" OR "Mediterranean-style diet*" OR "MedDiet" OR "med diet") | AND |
+| **Outcome** | ("glycated hemoglobin"[MeSH] OR "HbA1c" OR "hemoglobin A1c" OR "glycemic control" OR "blood glucose" OR "fasting glucose" OR "glucose control") | — |
+| **Filters** | English language, January 2010-present, Humans | — |
+
+**Combined Search String**:
+```
+("diabetes mellitus, type 2"[MeSH] OR "type 2 diabetes" OR "T2DM" OR 
+"adult onset diabetes" OR "non-insulin dependent diabetes" OR "NIDDM")
+AND
+("diet, mediterranean"[MeSH] OR "mediterranean diet*" OR 
+"Mediterranean-style diet*" OR "MedDiet" OR "med diet")
+AND
+("glycated hemoglobin"[MeSH] OR "HbA1c" OR "hemoglobin A1c" OR 
+"glycemic control" OR "blood glucose" OR "fasting glucose" OR 
+"glucose control")
+Filters: English, 2010-present, Humans
+```
+
+### Search Documentation Template
+
+| Database | Platform | Date | Search # | Search Terms | Limiters | Results |
+|----------|----------|------|----------|--------------|----------|---------|
+| PubMed | NLM | 2025-03-15 | #1 | "diabetes mellitus, type 2"[MeSH] | None | 156,823 |
+| PubMed | NLM | 2025-03-15 | #2 | "type 2 diabetes" OR T2DM OR NIDDM | None | 203,456 |
+| PubMed | NLM | 2025-03-15 | #3 | #1 OR #2 | None | 245,789 |
+| PubMed | NLM | 2025-03-15 | #4 | "diet, mediterranean"[MeSH] OR "mediterranean diet*" | None | 3,456 |
+| PubMed | NLM | 2025-03-15 | #5 | #3 AND #4 | None | 234 |
+| PubMed | NLM | 2025-03-15 | #6 | #5 AND ("HbA1c" OR "glycemic control"...) | English, 2010-present | 87 |
+
+## Step 5: Conducting the Search
+
+Execute your search strategy systematically across all selected databases.
+
+### Search Execution Timeline
+
+```
+Week 1-2: Database Searches
+│
+├─ Day 1-2: Primary databases (PubMed, Embase, Cochrane)
+├─ Day 3-4: Discipline-specific databases
+├─ Day 5-6: Gray literature sources
+└─ Day 7-10: Citation searching and hand searching
+
+Week 3: De-duplication and Organization
+│
+├─ Import all results to reference manager
+├─ Run automated duplicate detection
+├─ Manual duplicate check
+└─ Create screening database
+
+Week 4: Preparation for Screening
+│
+├─ Set up screening software (Covidence, DistillerSR, Rayyan)
+├─ Train additional reviewers
+├─ Conduct pilot screening on 50-100 records
+└─ Finalize screening forms and processes
+```
+
+### Search Results Summary Table
+
+| Source | Date Searched | Results Retrieved | After De-duplication |
+|--------|---------------|-------------------|---------------------|
+| PubMed | 2025-03-15 | 1,247 | — |
+| Embase | 2025-03-15 | 1,834 | — |
+| Cochrane Library | 2025-03-15 | 156 | — |
+| CINAHL | 2025-03-16 | 423 | — |
+| Web of Science | 2025-03-16 | 967 | — |
+| Citation searching | 2025-03-17 | 78 | — |
+| Gray literature | 2025-03-18 | 34 | — |
+| Hand searching | 2025-03-18 | 12 | — |
+| **Total** | — | **4,751** | **3,842** |
+
+## Step 6: Screening and Study Selection
+
+Study selection typically occurs in two stages: title/abstract screening followed by full-text review.
+
+### PRISMA 2020 Flow Diagram
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     IDENTIFICATION                          │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Records identified from:              Records identified   │
+│  Databases (n = 4,739)                 from other sources:  │
+│  • PubMed (n = 1,247)                  • Citation (n = 78)  │
+│  • Embase (n = 1,834)                  • Gray lit (n = 34)  │
+│  • Cochrane (n = 156)                  • Hand (n = 12)      │
+│  • CINAHL (n = 423)                                         │
+│  • Web of Science (n = 967)            (n = 124)            │
+│  • Registers (n = 112)                                      │
+│                                                             │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Records removed before screening:                          │
+│  • Duplicate records (n = 909)                              │
+│  • Records marked ineligible by automation tools (n = 112)  │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      SCREENING                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Records screened                    Records excluded       │
+│  (n = 3,842)                        (n = 3,567)             │
+│                                                             │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Reports sought for retrieval        Reports not retrieved  │
+│  (n = 275)                          (n = 8)                 │
+│                                                             │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│  Reports assessed for eligibility  Reports excluded:        │
+│  (n = 267)                         (n = 224)                │
+│                                    • Wrong population (87)  │
+│                                    • Wrong intervention (56)│
+│                                    • Wrong outcome (42)     │
+│                                    • Wrong study design (29)│
+│                                    • Wrong publication (10) │
+└────────────────────┬────────────────────────────────────────┘
+                     │
+                     ▼
+┌─────────────────────────────────────────────────────────────┐
+│                      INCLUDED                               │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  Studies included in review                                 │
+│  (n = 43)                                                   │
+│                                                             │
+│  Reports of included studies                                │
+│  (n = 43)                                                   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Screening Process Workflow
+
+| Stage | Process | Reviewers | Tool | Output |
+|-------|---------|-----------|------|--------|
+| **Title/Abstract** | Quick screening against broad eligibility | 2 independent | Covidence/Rayyan | Include/Exclude/Uncertain |
+| **Conflict Resolution** | Discuss disagreements | 2 + 1 arbiter if needed | Discussion meeting | Consensus decision |
+| **Full-Text** | Detailed assessment against all criteria | 2 independent | Covidence/Manual | Include/Exclude with reason |
+| **Final Selection** | Resolve conflicts, finalize list | 2 + 1 arbiter | Discussion meeting | Final included studies |
+
+### Inter-Rater Reliability
+
+| Kappa Value | Interpretation | Action Needed |
+|-------------|----------------|---------------|
+| < 0.20 | Poor agreement | Review criteria, retrain reviewers, discuss discrepancies |
+| 0.21 - 0.40 | Fair agreement | Clarify criteria, discuss challenging cases |
+| 0.41 - 0.60 | Moderate agreement | Minor refinements to process |
+| 0.61 - 0.80 | Good agreement | Continue with current process |
+| 0.81 - 1.00 | Excellent agreement | Process working well |
+
+## Step 7: Data Extraction
+
+Systematic data extraction ensures you collect consistent information from each
+study and reduces errors.
+
+### Data Extraction Form Template
+
+| Category | Data Elements | Details |
+|----------|---------------|---------|
+| **Study Identification** | • First author<br>• Publication year<br>• Title<br>• Journal<br>• DOI<br>• Country | Basic bibliographic info |
+| **Study Characteristics** | • Study design<br>• Setting (hospital, community, etc.)<br>• Study duration<br>• Follow-up period<br>• Funding source | Methodological details |
+| **Population** | • Sample size (total, per group)<br>• Age (mean, range)<br>• Sex distribution<br>• Inclusion criteria<br>• Exclusion criteria<br>• Baseline characteristics | Participant details |
+| **Intervention** | • Intervention description<br>• Duration<br>• Intensity/frequency<br>• Delivery method<br>• Provider training<br>• Adherence measurement | Treatment details |
+| **Comparison** | • Control/comparison description<br>• Duration<br>• Co-interventions | Control group details |
+| **Outcomes** | • Primary outcomes<br>• Secondary outcomes<br>• Measurement tools<br>• Time points<br>• Results (means, SDs, effect sizes)<br>• Statistical significance | Results data |
+| **Quality Indicators** | • Randomization method<br>• Allocation concealment<br>• Blinding<br>• Attrition rate<br>• ITT analysis<br>• Conflicts of interest | Risk of bias data |
+
+### Data Extraction Process
+
+```
+┌────────────────────────────────────────────────────────┐
+│            DATA EXTRACTION WORKFLOW                    │
+└────────────────────────────────────────────────────────┘
+
+STEP 1: Design Extraction Form
+│
+├─ List all data elements needed
+├─ Create standardized form/spreadsheet
+├─ Include dropdown menus for categorical data
+└─ Add instructions and coding guidelines
+
+STEP 2: Pilot Test (5-10 studies)
+│
+├─ Two reviewers extract independently
+├─ Compare results
+├─ Calculate agreement
+├─ Identify ambiguities
+└─ Revise form as needed
+
+STEP 3: Train Reviewers
+│
+├─ Review form instructions
+├─ Practice on sample studies
+├─ Discuss challenging scenarios
+└─ Establish decision rules
+
+STEP 4: Independent Extraction
+│
+├─ Each reviewer extracts data independently
+├─ Do not discuss until both complete
+├─ Use same form/software
+└─ Flag uncertainties
+
+STEP 5: Compare and Reconcile
+│
+├─ Compare extractions systematically
+├─ Calculate agreement statistics
+├─ Discuss discrepancies
+├─ Reach consensus
+└─ Document decisions
+
+STEP 6: Contact Authors (if needed)
+│
+├─ Draft polite, specific request
+├─ Allow 2-4 weeks for response
+├─ Send one reminder if no response
+├─ Document all correspondence
+└─ Note missing data in review
+
+STEP 7: Create Data Summary Tables
+│
+├─ Table of study characteristics
+├─ Table of results by outcome
+├─ Risk of bias summary
+└─ Additional tables as needed
+```
+
+## Step 8: Assessing Study Quality and Risk of Bias
+
+Quality assessment evaluates the methodological rigor of included studies and
+helps interpret findings.
+
+### Risk of Bias Tools by Study Design
+
+| Study Design | Recommended Tool | Key Domains |
+|--------------|------------------|-------------|
+| **Randomized Controlled Trials** | Cochrane RoB 2 | Randomization, deviations from intended interventions, missing outcome data, outcome measurement, selective reporting |
+| **Non-randomized Studies** | ROBINS-I | Confounding, participant selection, intervention classification, deviations, missing data, outcome measurement, selective reporting |
+| **Observational Studies** | Newcastle-Ottawa Scale | Selection, comparability, outcome/exposure |
+| **Diagnostic Accuracy** | QUADAS-2 | Patient selection, index test, reference standard, flow and timing |
+| **Qualitative Studies** | CASP Qualitative Checklist | Research design, data collection, trustworthiness, analysis, findings |
+| **Mixed Methods** | MMAT | Appropriate rationale, integration of methods, interpretation of results, limitations |
+| **Systematic Reviews** | AMSTAR 2 | Protocol registration, search comprehensiveness, study selection, quality assessment, synthesis methods |
+
+### Cochrane Risk of Bias 2 (RoB 2) Domains
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              COCHRANE ROB 2 ASSESSMENT                      │
+└─────────────────────────────────────────────────────────────┘
+
+Domain 1: Bias arising from randomization process
+├─ Was allocation sequence random?
+├─ Was allocation sequence concealed?
+└─ Were baseline differences suggesting a problem?
+   → Low risk / Some concerns / High risk
+
+Domain 2: Bias due to deviations from intended interventions
+├─ Were participants/personnel aware of intervention?
+├─ Were there deviations from intended intervention?
+├─ Were deviations balanced between groups?
+└─ Was analysis appropriate?
+   → Low risk / Some concerns / High risk
+
+Domain 3: Bias due to missing outcome data
+├─ Were data available for all/nearly all participants?
+├─ Is there evidence data missing depended on its true value?
+└─ Could missingness in outcome depend on its true value?
+   → Low risk / Some concerns / High risk
+
+Domain 4: Bias in measurement of outcome
+├─ Was measurement method appropriate?
+├─ Did measurement differ between groups?
+└─ Were outcome assessors aware of intervention?
+   → Low risk / Some concerns / High risk
+
+Domain 5: Bias in selection of reported result
+├─ Were outcomes analyzed according to pre-specified plan?
+├─ Were multiple analyses performed?
+└─ Was reported result likely selected from multiple analyses?
+   → Low risk / Some concerns / High risk
+
+OVERALL RISK OF BIAS
+└─ Low risk: Low across all domains
+   Some concerns: Some concerns in ≥1 domain
+   High risk: High in ≥1 domain OR concerns in multiple domains
+```
+
+### Risk of Bias Summary Table
+
+| Study | Random Sequence | Allocation Concealment | Blinding Participants | Blinding Assessors | Incomplete Data | Selective Reporting | Overall |
+|-------|----------------|----------------------|---------------------|-------------------|----------------|-------------------|---------|
+| Smith 2020 | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ⚠ Some concerns | ✓ Low | ⚠ Some concerns |
+| Jones 2021 | ✓ Low | ⚠ Some concerns | ✗ High | ✓ Low | ✓ Low | ✓ Low | ✗ High |
+| Brown 2022 | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ✓ Low | ✓ Low |
+| Davis 2023 | ⚠ Some concerns | ✓ Low | ✗ High | ⚠ Some concerns | ✓ Low | ✓ Low | ✗ High |
+
+**Legend**: ✓ = Low risk, ⚠ = Some concerns, ✗ = High risk
+
+### Risk of Bias Graph
+
+```
+Percentage of studies with each risk of bias judgment
+
+Randomization             ████████████████████ 85% Low
+                          ███ 15% Some concerns
+
+Allocation Concealment    ██████████████ 70% Low
+                          ████ 20% Some concerns
+                          ██ 10% High
+
+Blinding (participants)   ████████ 40% Low
+                          ████ 20% Some concerns
+                          ████████ 40% High
+
+Blinding (assessors)      ████████████ 60% Low
+                          ██████ 30% Some concerns
+                          ██ 10% High
+
+Incomplete Outcome Data   ████████████████ 80% Low
+                          ████ 20% Some concerns
+
+Selective Reporting       ██████████████████ 90% Low
+                          ██ 10% Some concerns
+
+Overall Risk of Bias      ██████████ 50% Low
+                          ██████ 30% Some concerns
+                          ████ 20% High
+```
+
+## Step 9: Data Synthesis
+
+Synthesis integrates findings across studies to answer your research question.
+
+### Choosing Synthesis Method
+
+| Factor | Narrative Synthesis | Meta-Analysis |
+|--------|-------------------|---------------|
+| **Study Homogeneity** | Studies too diverse | Studies sufficiently similar |
+| **Outcome Measures** | Different measurement tools/scales | Same or convertible measures |
+| **Statistical Data** | Incomplete or varied reporting | Complete statistical data available |
+| **Study Designs** | Multiple different designs | Same design (typically RCTs) |
+| **Populations** | Highly variable | Comparable populations |
+| **Interventions** | Diverse interventions | Similar interventions |
+| **When to Use** | High heterogeneity, limited data | Low-moderate heterogeneity, adequate data |
+
+### Meta-Analysis Statistical Concepts
+
+| Concept | Description | Interpretation |
+|---------|-------------|----------------|
+| **Effect Size** | Standardized measure of intervention effect | Cohen's d: 0.2=small, 0.5=medium, 0.8=large |
+| **Confidence Interval** | Range likely to contain true effect | If excludes null value, effect is significant |
+| **Heterogeneity (I²)** | Percentage of variability due to heterogeneity not chance | 0-40%: Low, 30-60%: Moderate, 50-90%: Substantial, 75-100%: Considerable |
+| **Fixed-Effect Model** | Assumes one true effect size | Use when I² <40% |
+| **Random-Effects Model** | Assumes distribution of true effects | Use when I² >40% |
+| **Forest Plot** | Visual display of study results and pooled estimate | Shows effect sizes with confidence intervals |
+| **Funnel Plot** | Scatter plot for publication bias detection | Asymmetry suggests bias |
+
+### Sample Forest Plot Structure
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    FOREST PLOT EXAMPLE                              │
+│  Effect of Mediterranean Diet on HbA1c (%) vs Control               │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│ Study                     Mean Difference [95% CI]        Weight %  │
+│                          -2.0  -1.0   0   1.0   2.0                 │
+│                           |     |     |    |     |                  │
+│ Smith 2020                ●─────|─────|    |     |        12.5%     │
+│   MD: -0.85 [-1.2, -0.5]  |     |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ Jones 2021                |    ●──────|────|     |        15.3%     │
+│   MD: -0.62 [-0.9, -0.3]  |     |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ Brown 2022                |     ●─────|────|     |        18.2%     │
+│   MD: -0.45 [-0.7, -0.2]  |     |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ Davis 2023                |     |    ●─────|─────|        14.7%     │
+│   MD: -0.35 [-0.6, -0.1]  |     |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ Wilson 2024               |     |   ●──────|─────|        13.8%     │
+│   MD: -0.28 [-0.5, -0.05]|      |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ Taylor 2024               |     |  ●───────|─────|        11.2%     │
+│   MD: -0.15 [-0.4, 0.1]   |     |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ Anderson 2024             |     |    ●─────|─────|        14.3%     │
+│   MD: -0.22 [-0.5, 0.05]  |     |     |    |     |                  │
+│                           |     |     |    |     |                  │
+│ ═══════════════════════════════════════════════════════════════     │
+│ Overall (Random)          |     ◆────|─────|     |        100%      │
+│   MD: -0.42 [-0.61, -0.23]|     |    |     |     |                  │
+│   I² = 68%, p < 0.001     |     |    |     |     |                  │
+│                           |     |    |     |     |                  │
+│                       Favours   |   Favours                         │
+│                       Mediterranean  Control                        │
+│                                                                     │
+│ Heterogeneity: I² = 68% (substantial), χ² = 21.8, p < 0.001         │
+│ Test for overall effect: Z = 4.32 (p < 0.0001)                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Heterogeneity Assessment
+
+| Statistical Test | What It Measures | Interpretation |
+|-----------------|------------------|----------------|
+| **Chi-squared (χ²) test** | Statistical significance of heterogeneity | p < 0.10 suggests significant heterogeneity |
+| **I² statistic** | Percentage of total variation due to heterogeneity | 0-40%: Might not be important<br>30-60%: Moderate<br>50-90%: Substantial<br>75-100%: Considerable |
+| **Tau² (τ²)** | Variance of true effect sizes | No universal interpretation; compare across subgroups |
+| **Prediction interval** | Range of true effects in similar future studies | Wider than CI; shows clinical applicability |
+
+### Subgroup Analysis Plan
+
+| Variable | Subgroups | Rationale | Minimum Studies per Subgroup |
+|----------|-----------|-----------|------------------------------|
+| **Age** | <50 years vs ≥50 years | Metabolic differences by age | 3 |
+| **Baseline HbA1c** | <8% vs ≥8% | Disease severity may affect response | 3 |
+| **Intervention Duration** | 12-24 weeks vs >24 weeks | Longer duration may show greater effects | 3 |
+| **Study Quality** | Low risk vs high risk of bias | Quality may impact effect estimates | 3 |
+| **Geographic Region** | North America vs Europe vs Asia | Cultural dietary differences | 3 |
+| **Adherence Level** | High (>80%) vs Low (<80%) | Adherence affects outcomes | 3 |
+
+### Publication Bias Assessment
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    FUNNEL PLOT                              │
+│         Standard Error (SE) vs Effect Size                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   0.0 ┐                      ●                              │
+│       │                    ●   ●                            │
+│   0.1 │                  ●   ●   ●                          │
+│       │                ●   ●   ●   ●                        │
+│   0.2 │              ●   ●   ●   ●   ●                      │
+│ S     │            ●   ●   ●   ●   ●   ●                    │
+│ E 0.3 │          ●   ●   ●   ● ◆ ●   ●   ●                  │
+│       │        ●   ●   ●   ●   ●   ●   ●   ●                │
+│   0.4 │      ●   ●   ●   ●   ●   ●   ●   ●   ●              │
+│       │    ●   ●   ●   ●   ●   ●   ●   ●   ●   ●            │
+│   0.5 └──┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──      │
+│         -2.0  -1.5  -1.0  -0.5   0   0.5   1.0   1.5   2.0  │
+│                      Mean Difference                        │
+│                                                             │
+│  ◆ = Pooled Effect Estimate                                 │
+│  Symmetrical funnel = Low publication bias                  │
+│  Asymmetry suggests missing studies on one side             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Publication Bias Tests**:
+
+| Test | Result | Interpretation |
+|------|--------|----------------|
+| **Egger's Test** | p = 0.03 | Significant asymmetry detected |
+| **Begg's Test** | p = 0.08 | Borderline significance |
+| **Trim and Fill** | 5 studies imputed | Adjusted MD: -0.38 [-0.55, -0.21] |
+| **Fail-safe N** | 124 studies | 124 null studies needed to nullify effect |
+
+## Step 10: Assessing Certainty of Evidence
+
+The GRADE (Grading of Recommendations Assessment, Development and Evaluation) approach provides a structured framework for rating evidence certainty.
+
+### GRADE Assessment Process
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│              GRADE ASSESSMENT WORKFLOW                      │
+└─────────────────────────────────────────────────────────────┘
+
+STARTING POINT
+├─ Randomized Controlled Trials → HIGH certainty
+└─ Observational Studies → LOW certainty
+
+↓ DOWNGRADE FOR:
+
+1. Risk of Bias (-1 or -2)
+   └─ Study limitations affecting confidence in results
+
+2. Inconsistency (-1 or -2)
+   └─ Unexplained heterogeneity or variability in results
+
+3. Indirectness (-1 or -2)
+   └─ Differences in population, intervention, or outcomes
+
+4. Imprecision (-1 or -2)
+   └─ Wide confidence intervals, small sample size
+
+5. Publication Bias (-1)
+   └─ Strong evidence of missing studies
+
+↑ UPGRADE FOR (observational studies only):
+
+1. Large Effect (+1 or +2)
+   └─ RR >2 or <0.5 (no confounders)
+
+2. Dose-Response Gradient (+1)
+   └─ Clear gradient supports causality
+
+3. All Plausible Confounding Would Reduce Effect (+1)
+   └─ Strengthens confidence in findings
+
+FINAL CERTAINTY RATING
+├─ High: Very confident in effect estimate
+├─ Moderate: Moderately confident; true effect likely close
+├─ Low: Limited confidence; true effect may differ substantially
+└─ Very Low: Very little confidence; true effect likely differs
+```
+
+### GRADE Evidence Profile Example
+
+| Outcome | Studies (Participants) | Risk of Bias | Inconsistency | Indirectness | Imprecision | Publication Bias | Effect Size | Certainty | Importance |
+|---------|------------------------|--------------|---------------|--------------|-------------|------------------|-------------|-----------|------------|
+| **HbA1c reduction at 6 months** | 7 RCTs (n=843) | Serious (-1) | Not serious | Not serious | Not serious | Suspected (-1) | MD -0.42% [-0.61, -0.23] | ⊕⊕○○ LOW | Critical |
+| **Fasting glucose** | 5 RCTs (n=612) | Serious (-1) | Serious (-1) | Not serious | Not serious | Not detected | MD -12.5 mg/dL [-18.3, -6.7] | ⊕⊕○○ LOW | Critical |
+| **Total cholesterol** | 6 RCTs (n=734) | Not serious | Serious (-1) | Not serious | Serious (-1) | Not detected | MD -8.2 mg/dL [-15.1, -1.3] | ⊕⊕○○ LOW | Important |
+| **Adverse events** | 4 RCTs (n=523) | Serious (-1) | Not serious | Not serious | Very serious (-2) | Not detected | RR 1.12 [0.68, 1.85] | ⊕○○○ VERY LOW | Important |
+
+**GRADE Certainty Legend**: 
+- ⊕⊕⊕⊕ HIGH
+- ⊕⊕⊕○ MODERATE  
+- ⊕⊕○○ LOW
+- ⊕○○○ VERY LOW
+
+## Step 11: Writing the Review
+
+Structure your systematic review following reporting guidelines like PRISMA.
+
+### PRISMA 2020 Checklist
+
+| Section | Item # | Checklist Item | Reported? | Page # |
+|---------|--------|----------------|-----------|---------|
+| **TITLE** | | | | |
+| Title | 1 | Identify report as systematic review | ☐ | |
+| **ABSTRACT** | | | | |
+| Abstract | 2 | Structured summary (background, objectives, methods, results, conclusions) | ☐ | |
+| **INTRODUCTION** | | | | |
+| Rationale | 3 | Describe rationale in context of existing knowledge | ☐ | |
+| Objectives | 4 | Provide explicit statement of objectives/questions (PICO) | ☐ | |
+| **METHODS** | | | | |
+| Eligibility criteria | 5 | Specify inclusion/exclusion criteria with rationale | ☐ | |
+| Information sources | 6 | Specify all databases, registers, websites, date last searched | ☐ | |
+| Search strategy | 7 | Present full search strategy for ≥1 database | ☐ | |
+| Selection process | 8 | Specify process for selecting studies (screening, eligibility) | ☐ | |
+| Data collection | 9 | Specify methods for data extraction and any confirmation processes | ☐ | |
+| Data items | 10a | List and define all outcomes, variables collected | ☐ | |
+| | 10b | Specify assumptions and simplifications made | ☐ | |
+| Study risk of bias | 11 | Specify methods for assessing risk of bias | ☐ | |
+| Effect measures | 12 | Specify effect measures used (RR, MD, etc.) | ☐ | |
+| Synthesis methods | 13a | Describe processes for deciding which studies eligible for meta-analysis | ☐ | |
+| | 13b | Describe methods for tabular/visual display of results | ☐ | |
+| | 13c | Describe methods for synthesizing results (statistical methods) | ☐ | |
+| | 13d | Describe methods for exploring causes of heterogeneity | ☐ | |
+| | 13e | Describe sensitivity analyses | ☐ | |
+| Reporting bias | 14 | Describe methods for assessing publication bias | ☐ | |
+| Certainty assessment | 15 | Describe methods for assessing certainty of evidence | ☐ | |
+| **RESULTS** | | | | |
+| Study selection | 16a | Describe results of search and selection (with flow diagram) | ☐ | |
+| | 16b | Cite excluded studies and reasons | ☐ | |
+| Study characteristics | 17 | Cite each study and present characteristics | ☐ | |
+| Risk of bias | 18 | Present assessments of risk of bias | ☐ | |
+| Results synthesis | 19a | Present results for all outcomes (with confidence intervals) | ☐ | |
+| | 19b | Present results of meta-analyses (forest plots) | ☐ | |
+| Reporting biases | 20 | Present assessment of publication bias | ☐ | |
+| Certainty | 21 | Present certainty of evidence assessments | ☐ | |
+| **DISCUSSION** | | | | |
+| Discussion | 22a | Provide general interpretation in context of other evidence | ☐ | |
+| | 22b | Discuss limitations | ☐ | |
+| | 22c | Discuss implications for practice, policy, and research | ☐ | |
+| **OTHER** | | | | |
+| Registration | 23a | Provide registration info including number | ☐ | |
+| | 23b | Indicate where protocol can be accessed | ☐ | |
+| | 23c | Describe and explain deviations from protocol | ☐ | |
+| Support | 24 | Describe sources of financial/non-financial support | ☐ | |
+| Competing interests | 25 | Declare competing interests | ☐ | |
+| Data availability | 26 | Report which data are publicly available and where | ☐ | |
+| Code availability | 27 | Report which analysis code is available and where | ☐ | |
+
+### Review Writing Timeline
+
+```
+Week 1-2: Results Section
+├─ Create all tables and figures
+├─ Write study selection results
+├─ Describe study characteristics
+├─ Present quality assessment
+└─ Report synthesis results
+
+Week 3-4: Methods Section
+├─ Document protocol details
+├─ Describe search strategy
+├─ Explain selection process
+├─ Detail data extraction
+└─ Describe analysis methods
+
+Week 5: Introduction & Abstract
+├─ Write background and rationale
+├─ State objectives clearly
+├─ Draft structured abstract
+└─ Finalize title
+
+Week 6-7: Discussion & Conclusion
+├─ Interpret findings
+├─ Discuss in context of existing evidence
+├─ Address limitations honestly
+├─ State implications
+└─ Draw evidence-based conclusions
+
+Week 8: Finalization
+├─ Check PRISMA compliance
+├─ Format references
+├─ Proofread thoroughly
+├─ Prepare supplementary materials
+└─ Submit to co-authors for review
+```
+
+### Essential Tables and Figures
+
+| Table/Figure | Purpose | Contents |
+|--------------|---------|----------|
+| **PRISMA Flow Diagram** | Show study selection process | Numbers at each stage, exclusion reasons |
+| **Table 1: Study Characteristics** | Describe included studies | Author, year, design, setting, sample size, intervention details |
+| **Table 2: Risk of Bias Summary** | Present quality assessment | Judgments for each domain per study |
+| **Table 3: Summary of Findings** | Present key results | Outcomes, effect estimates, certainty ratings |
+| **Forest Plot(s)** | Show meta-analysis results | Individual study effects, pooled estimate, heterogeneity |
+| **Funnel Plot** | Assess publication bias | Visual asymmetry check |
+
+## Step 12: Dissemination and Updates
+
+### Publication Strategy
+
+| Target | Format | Timeline | Audience |
+|--------|--------|----------|----------|
+| **Peer-reviewed journal** | Full manuscript | Months 18-24 | Academic/clinical |
+| **Conference presentation** | Abstract + slides/poster | Months 12-18 | Academic/clinical |
+| **Policy brief** | 2-4 page summary | Month 24+ | Policymakers |
+| **Plain language summary** | 1-page infographic | Month 24+ | General public |
+| **Blog post/social media** | 500-1000 words | Month 24+ | Broader audience |
+| **Webinar/workshop** | Interactive presentation | Month 24+ | Stakeholders |
+
+### Target Journal Selection Criteria
+
+| Criterion | Considerations |
+|-----------|----------------|
+| **Scope** | Does journal publish systematic reviews in your topic area? |
+| **Impact** | Journal impact factor and citation metrics |
+| **Audience** | Who reads the journal? |
+| **Open Access** | Required by funder? Cost? |
+| **Turnaround Time** | How quickly do they typically review and publish? |
+| **Requirements** | Word limits, structure requirements, supplement policies |
+
+### Data and Materials Sharing
+
+| Item | Where to Share | Purpose |
+|------|----------------|---------|
+| **Protocol** | PROSPERO, OSF, journal supplement | Transparency, replication |
+| **Search strategies** | Journal supplement | Replication |
+| **PRISMA checklist** | Journal supplement | Reporting completeness |
+| **Data extraction forms** | OSF, Figshare | Replication |
+| **Extracted data** | OSF, Figshare, Dryad | Replication, secondary analysis |
+| **Risk of bias assessments** | Journal supplement or OSF | Transparency |
+| **Analysis code** | GitHub, OSF | Reproducibility |
+| **Supplementary analyses** | Journal supplement | Complete reporting |
+
+### Update Planning
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│             SYSTEMATIC REVIEW UPDATE CYCLE                  │
+└─────────────────────────────────────────────────────────────┘
+
+INITIAL REVIEW PUBLISHED
+         │
+         ▼
+SURVEILLANCE (Ongoing)
+├─ Set up alerts for new studies
+├─ Monitor key journals
+├─ Check trial registries
+└─ Track citations to review
+         │
+         ▼
+ASSESSMENT (Every 6-12 months)
+├─ How many new studies identified?
+├─ Do new studies change conclusions?
+├─ Have methods/guidelines changed?
+└─ Is update warranted?
+         │
+         ▼
+DECISION POINT
+├─ No update needed → Continue surveillance
+├─ Minor update → Publish brief update/letter
+└─ Major update → Full systematic review update
+         │
+         ▼
+UPDATE REVIEW (If warranted)
+├─ Update search (same strategy)
+├─ Screen and select new studies
+├─ Extract data from new studies
+├─ Re-assess all included studies with current tools
+├─ Re-synthesize all data
+└─ Publish updated review
+         │
+         ▼
+REPEAT CYCLE
+```
+
+### Criteria for Update Decision
+
+| Trigger | Action |
+|---------|--------|
+| **5+ new studies meeting inclusion criteria** | Consider update |
+| **New study contradicts main findings** | Priority update |
+| **Substantial change in clinical practice** | Update needed |
+| **New/improved methodology available** | Consider update |
+| **3-5 years since publication** | Routine update assessment |
+| **Request from stakeholders** | Evaluate need |
+
+## Common Challenges and Solutions
+
+### Challenge Summary Table
+
+| Challenge | Potential Solutions | Prevention Strategies |
+|-----------|-------------------|----------------------|
+| **Too many results (>10,000)** | • Narrow PICO<br>• Add date limits<br>• Focus on specific populations<br>• Add study design filters | • Pilot test search strategy<br>• Consult librarian<br>• Define focused question |
+| **Too few results (<5)** | • Broaden inclusion criteria<br>• Include more study designs<br>• Extend date range<br>• Search more databases | • Preliminary scoping<br>• Literature familiarity check<br>• Consult experts |
+| **High heterogeneity (I²>75%)** | • Narrative synthesis instead<br>• Explore with subgroups<br>• Meta-regression<br>• Discuss as finding | • Clear eligibility criteria<br>• Pilot with similar studies<br>• Plan subgroup analyses |
+| **Missing data** | • Contact authors<br>• Use imputation<br>• Sensitivity analyses<br>• Note limitations | • Design comprehensive extraction form<br>• Plan for missing data |
+| **Poor study quality** | • Sensitivity analysis by quality<br>• Downgrade GRADE rating<br>• Discuss impact | • Include quality criteria<br>• Plan quality assessment |
+| **Publication bias detected** | • Trim-and-fill analysis<br>• Search gray literature<br>• Discuss impact<br>• Interpret cautiously | • Comprehensive search<br>• Gray literature inclusion<br>• Trial registry searches |
+| **Disagreements between reviewers** | • Third reviewer arbitration<br>• Team discussion<br>• Revise criteria<br>• Additional training | • Clear protocols<br>• Pilot screening<br>• Regular team meetings |
+| **Time/resource constraints** | • Prioritize critical steps<br>• Focus review scope<br>• Seek additional support<br>• Consider rapid review | • Realistic timeline<br>• Adequate team size<br>• Early resource planning |
+
+## Resource Requirements
+
+### Personnel and Time Estimates
+
+| Task | Personnel | Time Estimate |
+|------|-----------|---------------|
+| **Protocol development** | Lead + 1-2 co-investigators | 2-4 weeks |
+| **Search strategy** | Lead + librarian | 1-2 weeks |
+| **Database searching** | 1 reviewer | 1 week |
+| **Title/abstract screening** | 2 independent reviewers | 2-6 weeks |
+| **Full-text review** | 2 independent reviewers | 2-4 weeks |
+| **Data extraction** | 2 independent reviewers | 4-8 weeks |
+| **Quality assessment** | 2 independent reviewers | 2-4 weeks |
+| **Data synthesis** | Lead + statistician | 4-6 weeks |
+| **Manuscript writing** | Lead + co-authors | 6-8 weeks |
+| **Revisions** | All authors | 2-4 weeks |
+| **Total** | Team of 3-5 | **6-18 months** |
+
+### Software and Tools
+
+| Purpose | Free Options | Paid Options | Cost Range |
+|---------|--------------|--------------|------------|
+| **Reference Management** | Zotero, Mendeley | EndNote, RefWorks | $0-250/year |
+| **Screening** | Rayyan, Covidence (free trial) | Covidence, DistillerSR | $0-5,000/project |
+| **Data Extraction** | Microsoft Excel, Google Sheets | Covidence, DistillerSR | $0-5,000 |
+| **Quality Assessment** | RevMan (Cochrane) | Covidence | Free-$5,000 |
+| **Meta-Analysis** | RevMan, R (meta package), OpenMeta[Analyst] | Stata, Comprehensive Meta-Analysis | $0-1,500 |
+| **GRADE Assessment** | GRADEpro GDT | GRADEpro GDT (full version) | Free-$200 |
+| **Diagram Creation** | Microsoft PowerPoint, Google Slides | Adobe Illustrator, Lucidchart | $0-50/month |
+
+## Conclusion
+
+Conducting a systematic literature review is a rigorous, time-intensive process
+that requires careful planning, meticulous execution, and transparent
+reporting. By following these 12 detailed steps, you can produce a high-quality
+review that:
+
+- **Minimizes bias** through systematic, reproducible methods
+- **Synthesizes evidence** comprehensively and objectively  
+- **Informs practice** with reliable, trustworthy conclusions
+- **Guides future research** by identifying knowledge gaps
+- **Influences policy** with robust evidence summaries
+
+### Key Success Factors
+
+1. **Well-formulated question** using appropriate framework (PICO, PEO, etc.)
+2. **Detailed protocol** registered before starting
+3. **Comprehensive search** across multiple sources
+4. **Independent screening** by multiple reviewers
+5. **Systematic data extraction** with pilot testing
+6. **Rigorous quality assessment** using validated tools
+7. **Appropriate synthesis** matching data characteristics
+8. **Transparent reporting** following PRISMA guidelines
+9. **Honest limitation** acknowledgment
+10. **Plan for updates** to maintain relevance
+
+### Final Checklist
+
+✓ Research question clearly defined 
+
+✓ Protocol developed and registered
+
+✓ Search strategy comprehensive and documented
+
+✓ Study selection transparent with PRISMA diagram
+
+✓ Data extraction systematic and verified
+
+✓ Quality assessment rigorous and independent
+
+✓ Synthesis appropriate for data
+
+✓ GRADE certainty assessment completed
+
+✓ PRISMA checklist completed
+
+✓ All materials available for transparency
+
+✓ Limitations discussed honestly
+
+✓ Conclusions supported by evidence
+
+✓ Update plan established
+
+The systematic review methodology represents the highest level of evidence
+synthesis. While demanding in terms of time and resources, the investment
+produces trustworthy evidence that advances knowledge, informs decision-making,
+and ultimately improves outcomes in your field.
+
+Remember: **Transparency, rigor, and reproducibility** are the cornerstones of
+systematic review methodology. Document every decision, maintain objectivity
+throughout, and let the evidence guide your conclusions.
+
+## References
+
+1. <a name="ref1"></a> **Monash University.** *Structuring a literature review.* https://www.monash.edu/student-academic-success/excel-at-writing/how-to-write/literature-review/structuring-a-literature-review  
+2. <a name="ref2"></a> **QUT Cite|Write.** *Writing a literature review.* https://www.citewrite.qut.edu.au/write/writing-well/litreview.html  
+3. <a name="ref3"></a> **University of Melbourne.** *Writing a literature review.* https://students.unimelb.edu.au/academic-skills/resources/reading,-writing-and-referencing/literature-reviews/writing-a-lit-review  
+4. <a name="ref4"></a> **USC Graduate Writing Coach.** *Introductions vs. literature reviews.* https://sites.usc.edu/graduate-writing-coach/introductions-vs-and-literature-reviews  
+5. <a name="ref5"></a> **Australian National University.** *Placement of the traditional literature review.* https://www.anu.edu.au/students/academic-skills/research-writing/literature-reviews/placement-of-traditional-literature  
+6. <a name="ref6"></a> **University of Queensland Library.** *Literature reviews: Tools and techniques.* https://guides.library.uq.edu.au/tools-and-techniques/literature-reviews  
+7. <a name="ref7"></a> **UTS HELPS.** *Literature reviews.* https://www.uts.edu.au/for-students/current-students/support/helps/self-help-resources/types-assignments/literature-reviews  
+8. <a name="ref8"></a> **Curtin University Library.** *Introduction to literature reviews.* https://researchtoolkit.library.curtin.edu.au/searching/literature-reviews/introduction  
+9. <a name="ref9"></a> **Charles Darwin University.** *Writing a literature review.* https://www.cdu.edu.au/library/language-and-learning-support/study-skills/research-communication/writing-literature-review  
+10. <a name="ref10"></a> **UNSW Sydney Library.** *Literature reviews.* https://subjectguides.library.unsw.edu.au/literature-reviews  
+11. <a name="ref11"></a> **University of Wollongong.** *Literature review.* https://www.uow.edu.au/student/support-services/academic-skills/online-resources/assessments/literature-review  
+13. <a name="ref13"></a> **NCBI Bookshelf.** *A How-to Guide for Conducting a Systematic Review.* https://www.ncbi.nlm.nih.gov/books/NBK481583  
+14. <a name="ref14"></a> **University of Reading Library.** *Getting started with your literature review.* https://libguides.reading.ac.uk/literaturereview/starting  
+15. <a name="ref15"></a> **University of Canberra Library.** *Literature reviews.* https://canberra.libguides.com/c.php?g=940615  
+16. <a name="ref16"></a> **University of Edinburgh.** *Literature review.* https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/literature-review  
+17. <a name="ref17"></a> **Snyder, H. (2019).** *Literature review as a research methodology.* Journal of Business Research, 104, 333–339.  
+18. <a name="ref18"></a> **Paul, J., & Criado, A. R. (2020).** *The art of writing literature review.* International Business Review, 29(4), 101717.  
+19. <a name="ref19"></a> **Tranfield, D., et al. (2003).** *Towards a methodology for evidence-informed management.* British Journal of Management, 14(3), 207–222.  
+20. <a name="ref20"></a> **Webster, J., & Watson, R. T. (2002).** *Analyzing the past to prepare for the future.* MIS Quarterly, xiii–xxiii.  
+21. <a name="ref21"></a> **Donthu, N., et al. (2021).** *How to conduct a bibliometric analysis.* Journal of Business Research, 133, 285–296.  
+22. <a name="ref22"></a> **Whittemore, R., & Knafl, K. (2005).** *The integrative review: updated methodology.* Journal of Advanced Nursing, 52(5), 546–553.  
+23. <a name="ref23"></a> **Booth, A., et al. (2021).** *Systematic approaches to a successful literature review.* Sage.
+
+[^1]: https://www.monash.edu/student-academic-success/excel-at-writing/how-to-write/literature-review/structuring-a-literature-review
+
+[^2]: https://www.citewrite.qut.edu.au/write/writing-well/litreview.html
+
+[^3]: https://students.unimelb.edu.au/academic-skills/resources/reading,-writing-and-referencing/literature-reviews/writing-a-lit-review
+
+[^4]: https://sites.usc.edu/graduate-writing-coach/introductions-vs-and-literature-reviews
+
+[^5]: https://www.anu.edu.au/students/academic-skills/research-writing/literature-reviews/placement-of-traditional-literature
+
+[^6]: https://guides.library.uq.edu.au/tools-and-techniques/literature-reviews
+
+[^7]: https://www.uts.edu.au/for-students/current-students/support/helps/self-help-resources/types-assignments/literature-reviews
+
+[^8]: https://researchtoolkit.library.curtin.edu.au/searching/literature-reviews/introduction
+
+[^9]: https://www.cdu.edu.au/library/language-and-learning-support/study-skills/research-communication/writing-literature-review
+
+[^10]: https://subjectguides.library.unsw.edu.au/literature-reviews
+
+[^11]: https://www.uow.edu.au/student/support-services/academic-skills/online-resources/assessments/literature-review
+
+[^12]: https://owl.purdue.edu/owl/research_and_citation/conducting_research/writing_a_literature_review.html
+
+[^13]: https://www.ncbi.nlm.nih.gov/books/NBK481583
+
+[^14]: https://libguides.reading.ac.uk/literaturereview/starting
+
+[^15]: https://canberra.libguides.com/c.php?g=940615
+
+[^16]: https://institute-academic-development.ed.ac.uk/study-hub/learning-resources/literature-review
+
+[^17]: Snyder, Hannah. "Literature review as a research methodology: An overview and guidelines." Journal of business research 104 (2019): 333-339.
+
+[^18]: Paul, Justin, and Alex Rialp Criado. "The art of writing literature review: what do we know and what do we need to know?." International business review 29.4 (2020): 101717.
+
+[^19]: Tranfield, David, David Denyer, and Palminder Smart. "Towards a methodology for developing evidence‐informed management knowledge by means of systematic review." British journal of management 14.3 (2003): 207-222.
+
+[^20]: Webster, Jane, and Richard T. Watson. "Analyzing the past to prepare for the future: Writing a literature review." MIS quarterly (2002): xiii-xxiii.
+
+[^21]: Donthu, Naveen, et al. "How to conduct a bibliometric analysis: An overview and guidelines." Journal of business research 133 (2021): 285-296.
+
+[^22]: Whittemore, Robin, and Kathleen Knafl. "The integrative review: updated methodology." Journal of advanced nursing 52.5 (2005): 546-553.
+
+[^23]: Booth, Andrew, et al. "Systematic approaches to a successful literature review." (2021): 1-100.

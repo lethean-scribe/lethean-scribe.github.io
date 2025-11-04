@@ -1,0 +1,14 @@
+---
+title: "Travel to Mexico"
+description: In this blog I will share my experience about travelling to Mexico.
+author:
+  - name: Lethean Scribe
+date: "2026-01-21"
+categories: [Travel, Mexico]
+image: earthaccesslogo.png
+---
+
+*Blog post: /2026-01-21-travel-mexico*
+
+------------------------------------------------------------------------
+

@@ -1,0 +1,15 @@
+---
+title: "Shock-capturing vs Shock-fitting"
+description: In this blog we will compare shock-capturing and shock-fitting numerical approaches to simulate flows with shocks and other discontinuities.
+author:
+  - name: Lethean Scribe
+date: "2025-11-16"
+categories: [shock-capturing, shock-fitting]
+image: sc-vs-sf.png
+draft: true
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+

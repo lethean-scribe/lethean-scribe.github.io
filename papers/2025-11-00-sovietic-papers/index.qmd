@@ -1,0 +1,13 @@
+---
+title: "Sovietic Papers Review"
+description: In this blog we will review several fundamental papers from the Sovietic times.
+author:
+  - name: Lethean Scribe
+date: "2025-11-00"
+categories: [Papers, Sovietic]
+image: earthaccesslogo.png
+---
+
+*Blog post: /2025-11-00-sovietic-papers*
+
+------------------------------------------------------------------------

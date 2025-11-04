@@ -1,0 +1,14 @@
+---
+title: "Hypersonics Books Review"
+description: In this blog we will review a vast set of books about hypersonic flow regime.
+author:
+  - name: Lethean Scribe
+date: "2025-11-00"
+categories: [Books, Hypersonics]
+image: earthaccesslogo.png
+---
+
+*Blog post: /2025-11-00-hypersonics-books*
+
+------------------------------------------------------------------------
+

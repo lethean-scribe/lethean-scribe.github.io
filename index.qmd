@@ -1,0 +1,12 @@
+<center><a><img src="images/delphic-node17.jpeg" alt="Delphic Node logo" width="350px"/></a></center>
+
+<center>
+<h1 style="margin-bottom: 0.2em; line-height: 1.1;">Welcome to the Delphic Node</h1>
+<h2 style="margin-top: 0.2em; line-height: 1.1;">Where a Lethean Scribe collects Fragments of Gnosis</h2>
+</center>
+
+<br>
+
+The Delphic Node is the official repository of the Lethean Scribe,
+record-keeper of oblivion. This blog unearths forgotten fragments of cosmic
+gnosis, with a steadfast focus on space science.

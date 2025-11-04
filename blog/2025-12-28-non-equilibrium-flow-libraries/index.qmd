@@ -1,0 +1,15 @@
+---
+title: "Non-equilibrium flow libraries"
+description: In this blog we will explore numerical libraries for hypersonic non-equilibrium flows.
+author:
+  - name: Lethean Scribe
+date: "2025-12-28"
+categories: [shock-capturing, hypersonics, non-equilibrium, libraries]
+image: earthaccesslogo.png
+draft: true
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+

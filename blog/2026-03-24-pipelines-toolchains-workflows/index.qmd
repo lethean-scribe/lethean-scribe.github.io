@@ -1,0 +1,91 @@
+---
+title: "Pipelines, Toolchains and Workflows in scientific environments"
+description: In this blog we will investigate pipelines, toolchains and workflows in scientific environments."
+author:
+  - name: Lethean Scribe
+date: "2026-03-24"
+categories: [pipeline, toolchain, workflow]
+image: pipelines.png
+mathjax: true
+draft: true
+---
+
+------------------------------------------------------------------------
+
+# ⚙️ Pipelines, Toolchains, and Workflows — What’s the Difference?
+
+These three concepts often overlap in scientific and computational work, but
+they describe different layers of process and automation. Let’s break them down
+👇  
+
+---
+
+## ⚙️ 1. Toolchain
+A **toolchain** is a *set of tools* that work together to perform a complex task.  
+Think of it as the *ecosystem* of software components that enable scientific or computational work.
+
+- **Focus:** Tools and technologies  
+- **Analogy:** The *instruments in a laboratory*  
+- **Example:**  
+  In computational biology, a toolchain might include:
+  - FASTQC (quality control)  
+  - BWA (sequence alignment)  
+  - SAMtools (data manipulation)  
+  - R or Python (data analysis)
+
+Each tool does one job, and they can be combined in different ways.
+
+---
+
+## 🔄 2. Pipeline
+A **pipeline** is a *structured, automated sequence of processes* that connect
+tools together — turning raw data into results.
+
+- **Focus:** Automation and data flow  
+- **Analogy:** The *assembly line* in the lab  
+- **Example:**  
+  - Input: Raw sequencing reads  
+  - Step 1: Quality check (FASTQC)  
+  - Step 2: Alignment (BWA)  
+  - Step 3: Variant calling (GATK)  
+  - Output: Annotated variants  
+
+**A pipeline often uses a toolchain** — it’s the *process* that connects the tools.
+
+---
+
+## 🔁 3. Workflow
+A **workflow** is the *broader conceptual framework* that defines how
+scientific tasks are organized — including human decisions, data inputs, and
+analysis pipelines.
+
+- **Focus:** The overall process, including logic, dependencies, and iteration  
+- **Analogy:** The *research protocol* or *recipe* that includes multiple pipelines  
+- **Example:**  
+  A research workflow for a paper might include:
+  1. Data collection  
+  2. Data cleaning (Pipeline A)  
+  3. Statistical modeling (Pipeline B)  
+  4. Visualization and reporting  
+
+Workflows can combine several pipelines and manual steps.
+
+---
+
+## 🧠 Summary Table
+
+| Aspect | Toolchain | Pipeline | Workflow |
+|--------|------------|-----------|-----------|
+| **Definition** | A set of compatible tools | A series of automated steps using tools | A high-level process combining multiple pipelines |
+| **Focus** | Tools & infrastructure | Data flow & automation | Task coordination & logic |
+| **Automation** | Low | High | Variable (may include manual steps) |
+| **Example** | Compiler + debugger + linker | RNA-seq analysis pipeline | Full research data analysis and publication process |
+
+---
+
+In short:
+- **Toolchains** provide the instruments,  
+- **Pipelines** provide the automation,  
+- **Workflows** provide the orchestration.
+
+------------------------------------------------------------------------

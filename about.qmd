@@ -1,0 +1,12 @@
+---
+title: "About"
+description: |
+  Welcome to the Delphic Node! 
+  Where a Lethean Scribe collects Fragments of Gnosis.
+---
+
+The Delphic Node repository hosts the official blog of the Lethean Scribe,
+record-keeper of oblivion. A platform dedicated to exploring and documenting
+various technical topics, with a particular focus on Computational Fluid
+Dynamics.
+
